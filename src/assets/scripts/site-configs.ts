@@ -25,7 +25,7 @@ const defaultConfig: gc.Configs.SiteConfigs = {
         proxyPath: GAME_NAME.toLowerCase(),
         route: GAME_NAME.toLowerCase(),
     },
-    storagePrefixKey: "fruit_samurai",
+    storagePrefixKey: "lucky_neko",
     tolgeeUrl: "",
 };
 
