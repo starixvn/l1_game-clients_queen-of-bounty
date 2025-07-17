@@ -1,108 +1,156 @@
 {
-"skeleton": { "hash": "40plKQWvczm3jPo3hhuxsPy2sOs", "spine": "3.8.99" },
+"skeleton": {
+	"hash": "le/skrgAsDZjGevRqxgcpiKl0vs",
+	"spine": "3.8.99",
+	"x": -116.5,
+	"y": -113,
+	"width": 233,
+	"height": 226,
+	"images": "./image/",
+	"audio": "/Users/mia.lin/@OneLab/＠Project/VN_Slot_game/LuckyNeko/spine/symbol-spine"
+},
 "bones": [
 	{ "name": "root" },
-	{ "name": "splash", "parent": "root", "scaleX": 1.3, "scaleY": 1.3 },
-	{ "name": "water melon", "parent": "root" },
-	{ "name": "highlight", "parent": "water melon", "rotation": -23.88, "x": -70.78, "y": 24.88 },
-	{ "name": "symbol-0-cut2", "parent": "water melon", "x": 6.57, "y": -1.25 },
-	{ "name": "symbol-0-cut1", "parent": "water melon", "x": -2.37, "y": 6.04 },
-	{ "name": "splash-liquid", "parent": "root", "y": 28.04 },
-	{ "name": "blink", "parent": "root" },
-	{ "name": "explode", "parent": "root" }
+	{ "name": "smoke-null", "parent": "root" },
+	{ "name": "smoke-1", "parent": "smoke-null" },
+	{ "name": "smoke-2", "parent": "smoke-null" },
+	{ "name": "smoke-3", "parent": "smoke-null" },
+	{ "name": "smoke-4", "parent": "smoke-null" },
+	{ "name": "smoke-5", "parent": "smoke-null" },
+	{ "name": "smoke-6", "parent": "smoke-null" },
+	{ "name": "symbol-6", "parent": "root", "color": "76ff00ff" },
+	{ "name": "front", "parent": "root", "x": -47.21, "y": -22.63, "color": "abe323ff" },
+	{ "name": "back", "parent": "root", "x": -6.86, "y": 27.89 },
+	{
+		"name": "lantern_null",
+		"parent": "symbol-6",
+		"length": 174.37,
+		"rotation": -112.84,
+		"x": 18.36,
+		"y": 43.83,
+		"color": "ff0000ff"
+	},
+	{ "name": "lantern_particle", "parent": "root", "y": -18.31 }
 ],
 "slots": [
-	{ "name": "splash-liquid", "bone": "splash-liquid", "color": "ffffffc7" },
-	{ "name": "water melon", "bone": "water melon" },
-	{ "name": "symbol-0-bright", "bone": "water melon", "color": "ffffffbe" },
-	{ "name": "symbol-0-cut2", "bone": "symbol-0-cut2" },
-	{ "name": "symbol-0-cut1", "bone": "symbol-0-cut1" },
-	{ "name": "blink", "bone": "blink" },
-	{ "name": "splash", "bone": "splash", "color": "0084ffff", "blend": "additive" },
-	{ "name": "plum-mask", "bone": "water melon" },
-	{ "name": "highlight", "bone": "highlight", "color": "ffffff95", "blend": "additive" },
-	{ "name": "explode", "bone": "explode", "blend": "additive" }
+	{ "name": "s5-8_bg", "bone": "symbol-6", "attachment": "s5-8_bg" },
+	{ "name": "lantern_glow", "bone": "lantern_null", "attachment": "lantern_glow", "blend": "additive" },
+	{ "name": "lantern_glow2", "bone": "lantern_null", "attachment": "lantern_glow", "blend": "additive" },
+	{ "name": "s6_lantern", "bone": "lantern_null", "attachment": "s6_lantern" },
+	{ "name": "lantern_light", "bone": "lantern_null", "attachment": "lantern_light", "blend": "additive" },
+	{ "name": "lantern_starglow", "bone": "lantern_null", "attachment": "lantern_starglow", "blend": "additive" },
+	{ "name": "smoke/smoke-1", "bone": "smoke-1", "attachment": "smoke/smoke-1" },
+	{ "name": "smoke/smoke-2", "bone": "smoke-2", "attachment": "smoke/smoke-2" },
+	{ "name": "smoke/smoke-3", "bone": "smoke-3", "attachment": "smoke/smoke-3" },
+	{ "name": "smoke/smoke-4", "bone": "smoke-4", "attachment": "smoke/smoke-4" },
+	{ "name": "smoke/smoke-5", "bone": "smoke-5", "attachment": "smoke/smoke-5" },
+	{ "name": "smoke/smoke-6", "bone": "smoke-6", "attachment": "smoke/smoke-6" },
+	{ "name": "explode_sakura/explode_sakura_00", "bone": "root", "attachment": "explode_sakura/explode_sakura_17" },
+	{ "name": "lantern_particle/lantern_particle_00", "bone": "lantern_particle", "attachment": "lantern_particle/lantern_particle_06", "blend": "additive" }
+],
+"transform": [
+	{
+		"name": "front",
+		"bones": [ "back" ],
+		"target": "front",
+		"rotateMix": 0,
+		"translateMix": -1,
+		"scaleMix": 0,
+		"shearMix": 0
+	}
 ],
 "skins": [
 	{
 		"name": "default",
 		"attachments": {
-			"blink": {
-				"blink": { "x": 20.63, "y": -7.41, "width": 110, "height": 110 }
+			"explode_sakura/explode_sakura_00": {
+				"explode_sakura/explode_sakura_00": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_01": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_02": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_03": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_04": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_05": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_06": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_07": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_08": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_09": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_10": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_11": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_12": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_13": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_14": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_15": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_16": { "width": 233, "height": 226 },
+				"explode_sakura/explode_sakura_17": { "width": 233, "height": 226 }
 			},
-			"explode": {
-				"explode/Explosion_00": { "width": 220, "height": 220 },
-				"explode/Explosion_01": { "width": 220, "height": 220 },
-				"explode/Explosion_02": { "width": 220, "height": 220 },
-				"explode/Explosion_03": { "width": 220, "height": 220 },
-				"explode/Explosion_04": { "width": 220, "height": 220 },
-				"explode/Explosion_05": { "width": 220, "height": 220 },
-				"explode/Explosion_06": { "width": 220, "height": 220 },
-				"explode/Explosion_07": { "width": 220, "height": 220 },
-				"explode/Explosion_08": { "width": 220, "height": 220 },
-				"explode/Explosion_09": { "width": 220, "height": 220 },
-				"explode/Explosion_10": { "width": 220, "height": 220 },
-				"explode/Explosion_11": { "width": 220, "height": 220 },
-				"explode/Explosion_12": { "width": 220, "height": 220 },
-				"explode/Explosion_13": { "width": 220, "height": 220 },
-				"explode/Explosion_14": { "width": 220, "height": 220 },
-				"explode/Explosion_15": { "width": 220, "height": 220 },
-				"explode/Explosion_16": { "width": 220, "height": 220 },
-				"explode/Explosion_17": { "width": 220, "height": 220 },
-				"explode/Explosion_18": { "width": 220, "height": 220 },
-				"explode/Explosion_19": { "width": 220, "height": 220 },
-				"explode/Explosion_20": { "width": 220, "height": 220 }
+			"lantern_glow": {
+				"lantern_glow": { "x": 47.52, "y": 0.09, "rotation": 112.93, "width": 134, "height": 134 }
 			},
-			"highlight": {
-				"highlight": { "width": 58, "height": 200 }
+			"lantern_glow2": {
+				"lantern_glow": { "x": 47.52, "y": 0.09, "rotation": 112.93, "width": 134, "height": 134 }
 			},
-			"plum-mask": {
-				"dragon-mask": {
-					"type": "clipping",
-					"end": "highlight",
-					"vertexCount": 58,
-					"vertices": [ -4.1, 24.24, 4.2, 29.47, 8.94, 33.44, 14.33, 41.12, 14.9, 35.29, 15.08, 32.86, 20.22, 36.05, 27.4, 39.63, 32.9, 40.29, 32.01, 36.52, 27.74, 31.33, 22.16, 21.68, 32.52, 29.96, 34.69, 30.27, 34.32, 26.03, 31.73, 20.95, 29.32, 16.19, 33.1, 17.91, 35.13, 18.05, 34.91, 15.91, 30.33, 10.97, 28.39, 7.47, 27.5, 4.73, 26.82, 1.03, 26.05, -3.72, 25.95, -7.34, 25.33, -13.08, 28, -10.57, 31.28, -8.61, 30.93, -12.21, 28.89, -16.29, 26.45, -20.12, 23.59, -24.3, 20.99, -27, 18.22, -29.35, 15.26, -31.39, 10.17, -33.73, 6.95, -35.36, 9.35, -36.26, 12.13, -36.67, 12.28, -38.89, 8.62, -39.88, 2.83, -41.15, -4.78, -41.08, -10.5, -41.09, -17.24, -39.15, -23.47, -36.79, -27.13, -33.61, -30.31, -29.95, -31.58, -25.5, -34.6, -19.3, -34.92, -2.61, -32.69, -0.06, -31.12, -0.9, -25.71, 11.35, -14.53, 24.38, -13.15, 23.06, -13.32, 18.96 ]
-				}
+			"lantern_light": {
+				"lantern_light": { "x": 47.52, "y": 0.09, "rotation": 112.93, "width": 96, "height": 96 }
 			},
-			"splash": {
-				"splash/Splash Spark 03 Color_00": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_01": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_02": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_03": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_04": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_05": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_06": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_07": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_08": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_09": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_10": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_11": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_12": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_13": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_14": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_15": { "width": 110, "height": 110 },
-				"splash/Splash Spark 03 Color_16": { "width": 110, "height": 110 }
+			"lantern_particle/lantern_particle_00": {
+				"lantern_particle/lantern_particle_00": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_01": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_02": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_03": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_04": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_05": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_06": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_07": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_08": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_09": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_10": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_11": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_12": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_13": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_14": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_15": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_16": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_17": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_18": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_19": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_20": { "width": 175, "height": 136 },
+				"lantern_particle/lantern_particle_21": { "width": 175, "height": 136 }
 			},
-			"splash-liquid": {
-				"liquid-red": { "width": 110, "height": 110 }
+			"lantern_starglow": {
+				"lantern_starglow": { "x": 47.52, "y": 0.09, "rotation": 112.84, "width": 120, "height": 120 }
 			},
-			"symbol-0-bright": {
-				"symbol-6-bright": { "width": 110, "height": 110 }
+			"s5-8_bg": {
+				"s5-8_bg": { "width": 110, "height": 110 }
 			},
-			"symbol-0-cut1": {
-				"symbol-6-cut1": { "width": 110, "height": 110 }
-			},
-			"symbol-0-cut2": {
-				"symbol-6-cut2": { "width": 110, "height": 110 }
-			},
-			"water melon": {
-				"symbol-6": {
+			"s6_lantern": {
+				"s6_lantern": {
 					"type": "mesh",
-					"uvs": [ 0.63645, 0.12724, 0.63645, 0.19983, 0.69086, 0.16356, 0.69087, 0.16356, 0.72723, 0.14537, 0.72724, 0.14537, 0.75452, 0.13628, 0.75454, 0.13627, 0.80004, 0.13627, 0.80009, 0.13633, 0.80009, 0.16365, 0.80008, 0.16368, 0.77281, 0.20004, 0.76376, 0.23623, 0.79089, 0.22718, 0.7909, 0.22718, 0.81822, 0.22718, 0.81827, 0.22724, 0.81827, 0.25456, 0.81827, 0.25458, 0.77291, 0.3453, 0.79998, 0.33628, 0.79999, 0.33627, 0.81822, 0.33627, 0.81827, 0.33633, 0.81827, 0.35456, 0.81826, 0.35459, 0.7819, 0.40005, 0.75462, 0.4637, 0.75457, 0.46373, 0.74555, 0.46373, 0.74555, 0.5364, 0.74549, 0.53645, 0.73645, 0.53645, 0.73645, 0.59983, 0.7636, 0.58174, 0.76362, 0.58173, 0.78186, 0.58173, 0.78191, 0.58178, 0.78191, 0.6091, 0.7819, 0.60912, 0.74553, 0.68186, 0.74553, 0.68187, 0.70916, 0.72733, 0.70916, 0.72734, 0.68188, 0.75461, 0.68188, 0.75462, 0.64551, 0.78189, 0.64551, 0.78189, 0.61823, 0.80008, 0.61823, 0.80008, 0.60011, 0.80914, 0.60918, 0.83634, 0.60918, 0.83636, 0.60918, 0.85457, 0.60915, 0.85462, 0.58184, 0.86372, 0.58184, 0.86373, 0.52728, 0.87282, 0.52728, 0.87282, 0.38181, 0.87282, 0.38179, 0.87282, 0.30906, 0.84554, 0.30905, 0.84554, 0.27268, 0.82735, 0.27267, 0.82734, 0.2272, 0.78188, 0.22719, 0.78187, 0.2181, 0.76368, 0.2181, 0.76367, 0.18173, 0.67275, 0.18173, 0.67274, 0.18173, 0.51816, 0.18174, 0.51813, 0.19085, 0.50902, 0.19087, 0.50901, 0.21811, 0.49993, 0.22719, 0.4727, 0.22719, 0.47269, 0.26356, 0.39996, 0.26356, 0.39995, 0.33629, 0.30903, 0.3363, 0.30903, 0.36358, 0.28174, 0.36362, 0.28173, 0.37275, 0.28173, 0.37278, 0.28174, 0.3819, 0.29086, 0.38191, 0.29089, 0.38191, 0.30001, 0.3819, 0.30003, 0.37294, 0.31797, 0.52723, 0.23628, 0.52723, 0.23628, 0.5454, 0.2272, 0.61811, 0.1363, 0.61812, 0.1363, 0.62722, 0.1272, 0.62725, 0.12718, 0.6364, 0.12718 ],
-					"triangles": [ 8, 9, 10, 10, 7, 8, 98, 99, 0, 11, 12, 7, 10, 11, 7, 0, 97, 98, 0, 96, 97, 0, 95, 96, 12, 6, 7, 12, 5, 6, 12, 4, 5, 12, 3, 4, 13, 3, 12, 16, 17, 18, 18, 15, 16, 87, 88, 89, 89, 86, 87, 86, 90, 83, 89, 90, 86, 15, 19, 14, 18, 19, 15, 19, 13, 14, 13, 19, 20, 23, 24, 25, 25, 22, 23, 83, 84, 85, 86, 83, 85, 91, 83, 90, 82, 83, 91, 26, 27, 20, 26, 22, 25, 21, 22, 26, 26, 20, 21, 2, 13, 20, 13, 2, 3, 27, 30, 20, 20, 1, 2, 1, 20, 94, 27, 28, 30, 29, 30, 28, 81, 82, 91, 80, 81, 91, 20, 30, 94, 31, 33, 30, 32, 33, 31, 30, 33, 94, 36, 37, 38, 38, 39, 36, 76, 71, 72, 76, 70, 71, 40, 41, 34, 39, 35, 36, 40, 35, 39, 40, 34, 35, 42, 34, 41, 33, 34, 44, 43, 34, 42, 34, 43, 44, 44, 45, 33, 45, 46, 33, 75, 73, 74, 75, 76, 73, 72, 73, 76, 69, 70, 76, 1, 95, 0, 94, 95, 1, 33, 93, 94, 33, 92, 93, 33, 91, 92, 66, 67, 68, 91, 79, 80, 78, 47, 76, 76, 77, 78, 69, 76, 66, 69, 66, 68, 79, 91, 33, 64, 65, 66, 46, 47, 33, 33, 78, 79, 78, 33, 47, 47, 48, 76, 76, 48, 51, 51, 48, 49, 49, 50, 51, 66, 76, 64, 76, 63, 64, 76, 62, 63, 51, 62, 76, 53, 56, 52, 52, 56, 51, 54, 55, 53, 61, 62, 60, 53, 55, 56, 56, 57, 51, 60, 62, 51, 57, 58, 51, 51, 59, 60, 58, 59, 51 ],
-					"vertices": [ 15.01, 41, 15.01, 33.02, 20.99, 37.01, 21, 37.01, 25, 39.01, 25, 39.01, 28, 40.01, 28, 40.01, 33, 40.01, 33.01, 40, 33.01, 37, 33.01, 37, 30.01, 33, 29.01, 29.02, 32, 30.01, 32, 30.01, 35, 30.01, 35.01, 30, 35.01, 27, 35.01, 27, 30.02, 17.02, 33, 18.01, 33, 18.01, 35, 18.01, 35.01, 18, 35.01, 16, 35.01, 16, 31.01, 10.99, 28.01, 3.99, 28, 3.99, 27.01, 3.99, 27.01, -4, 27, -4.01, 26.01, -4.01, 26.01, -10.98, 29, -8.99, 29, -8.99, 31, -8.99, 31.01, -9, 31.01, -12, 31.01, -12, 27.01, -20, 27.01, -20.01, 23.01, -25.01, 23.01, -25.01, 20.01, -28.01, 20.01, -28.01, 16.01, -31.01, 16.01, -31.01, 13.01, -33.01, 13, -33.01, 11.01, -34.01, 12.01, -37, 12.01, -37, 12.01, -39, 12.01, -39.01, 9, -40.01, 9, -40.01, 3, -41.01, 3, -41.01, -13, -41.01, -13, -41.01, -21, -38.01, -21, -38.01, -25.01, -36.01, -25.01, -36.01, -30.01, -31.01, -30.01, -31.01, -31.01, -29, -31.01, -29, -35.01, -19, -35.01, -19, -35.01, -2, -35.01, -1.99, -34.01, -0.99, -34, -0.99, -31.01, 0.01, -30.01, 3, -30.01, 3, -26.01, 11, -26.01, 11.01, -18.01, 21.01, -18.01, 21.01, -15.01, 24.01, -15, 24.01, -14, 24.01, -13.99, 24.01, -12.99, 23.01, -12.99, 23, -12.99, 22, -12.99, 22, -13.98, 20.02, 3, 29.01, 3, 29.01, 4.99, 30.01, 12.99, 40.01, 12.99, 40.01, 13.99, 41.01, 14, 41.01, 15, 41.01 ],
-					"hull": 100
+					"uvs": [ 0.67376, 0, 0.68788, 0, 0.75965, 0.01254, 0.79228, 0.03678, 0.8194, 0.08499, 0.87867, 0.27691, 0.94422, 0.35097, 0.97637, 0.42001, 0.97631, 0.65562, 0.92134, 0.7611, 0.79146, 0.87648, 0.69267, 0.91493, 0.56023, 0.91542, 0.51348, 0.99787, 0.46926, 0.97896, 0.38241, 0.99189, 0.26602, 0.95822, 0.19157, 0.92513, 0.14381, 0.88259, 0.13109, 0.8356, 0.13201, 0.80239, 0.04854, 0.69271, 0.01183, 0.59583, 0.01169, 0.42628, 0.08674, 0.29265, 0.13478, 0.2326, 0.2624, 0.15717, 0.38371, 0.13053, 0.42759, 0.09952, 0.61134, 0.01099 ],
+					"triangles": [ 22, 23, 24, 7, 5, 6, 21, 22, 24, 5, 8, 11, 7, 8, 5, 24, 26, 21, 20, 21, 26, 3, 29, 0, 0, 1, 3, 28, 29, 5, 2, 3, 1, 4, 29, 3, 5, 29, 4, 27, 28, 5, 5, 11, 27, 8, 9, 11, 25, 26, 24, 27, 18, 20, 19, 20, 18, 27, 20, 26, 18, 27, 12, 11, 9, 10, 11, 12, 27, 16, 17, 18, 12, 16, 18, 12, 15, 16, 14, 15, 12, 13, 14, 12 ],
+					"vertices": [ -1.39, -4.93, -1.84, -3.85, -3.08, 2.09, -2.04, 5.48, 1.26, 9.31, 15.96, 20.87, 20.25, 28.59, 25.19, 33.58, 45.59, 42.2, 56.5, 41.86, 70.69, 36.16, 77.21, 30.02, 81.54, 19.91, 90.19, 19.35, 89.98, 15.28, 93.91, 9.12, 94.75, -1.01, 94.3, -7.92, 92.16, -13.13, 88.5, -15.82, 85.6, -16.96, 78.8, -27.36, 71.6, -33.71, 56.92, -39.93, 42.93, -39.09, 36.18, -37.62, 25.52, -30.62, 19.29, -22.32, 15.19, -20.11, 1.58, -9.3 ],
+					"hull": 30,
+					"edges": [ 0, 58, 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 24, 24, 26, 26, 28, 28, 30, 30, 32, 32, 34, 34, 36, 36, 38, 38, 40, 40, 42, 42, 44, 44, 46, 46, 48, 48, 50, 50, 52, 52, 54, 54, 56, 56, 58 ],
+					"width": 83,
+					"height": 94
 				}
+			},
+			"smoke/smoke-1": {
+				"smoke/smoke-1": { "width": 48, "height": 37 }
+			},
+			"smoke/smoke-2": {
+				"smoke/smoke-2": { "width": 100, "height": 92 }
+			},
+			"smoke/smoke-3": {
+				"smoke/smoke-3": { "width": 91, "height": 90 }
+			},
+			"smoke/smoke-4": {
+				"smoke/smoke-4": { "width": 99, "height": 96 }
+			},
+			"smoke/smoke-5": {
+				"smoke/smoke-5": { "width": 104, "height": 103 }
+			},
+			"smoke/smoke-6": {
+				"smoke/smoke-6": { "width": 95, "height": 92 }
 			}
 		}
 	}
@@ -110,219 +158,304 @@
 "animations": {
 	"explode": {
 		"slots": {
-			"blink": {
+			"explode_sakura/explode_sakura_00": {
 				"attachment": [
-					{ "time": 0.3, "name": "blink" },
+					{ "time": 0.1, "name": "explode_sakura/explode_sakura_00" },
+					{ "time": 0.1333, "name": "explode_sakura/explode_sakura_01" },
+					{ "time": 0.1667, "name": "explode_sakura/explode_sakura_02" },
+					{ "time": 0.2, "name": "explode_sakura/explode_sakura_03" },
+					{ "time": 0.2333, "name": "explode_sakura/explode_sakura_04" },
+					{ "time": 0.2667, "name": "explode_sakura/explode_sakura_05" },
+					{ "time": 0.3, "name": "explode_sakura/explode_sakura_06" },
+					{ "time": 0.3333, "name": "explode_sakura/explode_sakura_07" },
+					{ "time": 0.3667, "name": "explode_sakura/explode_sakura_08" },
+					{ "time": 0.4, "name": "explode_sakura/explode_sakura_09" },
+					{ "time": 0.4333, "name": "explode_sakura/explode_sakura_10" },
+					{ "time": 0.4667, "name": "explode_sakura/explode_sakura_11" },
+					{ "time": 0.5, "name": "explode_sakura/explode_sakura_12" },
+					{ "time": 0.5333, "name": "explode_sakura/explode_sakura_13" },
+					{ "time": 0.5667, "name": "explode_sakura/explode_sakura_14" },
+					{ "time": 0.6, "name": "explode_sakura/explode_sakura_15" },
+					{ "time": 0.6333, "name": "explode_sakura/explode_sakura_16" },
+					{ "time": 0.6667, "name": "explode_sakura/explode_sakura_17" }
+				]
+			},
+			"lantern_glow": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_glow2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_light": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_particle/lantern_particle_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_starglow": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"s5-8_bg": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff", "curve": 0.157, "c3": 0.329 },
+					{ "time": 0.4333, "color": "ffffff00" }
+				]
+			},
+			"s6_lantern": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff", "curve": 0.157, "c3": 0.329 },
+					{ "time": 0.4333, "color": "ffffff00" }
+				]
+			},
+			"smoke/smoke-1": {
+				"attachment": [
+					{ "time": 0.1333, "name": null }
+				]
+			},
+			"smoke/smoke-2": {
+				"attachment": [
+					{ "time": 0.1, "name": null },
+					{ "time": 0.1333, "name": "smoke/smoke-2" },
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"smoke/smoke-3": {
+				"attachment": [
+					{ "time": 0.1, "name": null },
+					{ "time": 0.1667, "name": "smoke/smoke-3" },
+					{ "time": 0.2333, "name": null }
+				]
+			},
+			"smoke/smoke-4": {
+				"attachment": [
+					{ "time": 0.1, "name": null },
+					{ "time": 0.2333, "name": "smoke/smoke-4" },
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"smoke/smoke-5": {
+				"attachment": [
+					{ "time": 0.1, "name": null },
+					{ "time": 0.3, "name": "smoke/smoke-5" },
 					{ "time": 0.3667, "name": null }
 				]
 			},
-			"explode": {
-				"attachment": [
-					{ "time": 0.8333, "name": "explode/Explosion_00" },
-					{ "time": 0.8667, "name": "explode/Explosion_01" },
-					{ "time": 0.9, "name": "explode/Explosion_02" },
-					{ "time": 0.9333, "name": "explode/Explosion_03" },
-					{ "time": 0.9667, "name": "explode/Explosion_04" },
-					{ "time": 1, "name": "explode/Explosion_05" },
-					{ "time": 1.0333, "name": "explode/Explosion_06" },
-					{ "time": 1.0667, "name": "explode/Explosion_07" },
-					{ "time": 1.1, "name": "explode/Explosion_08" },
-					{ "time": 1.1333, "name": "explode/Explosion_09" },
-					{ "time": 1.1667, "name": "explode/Explosion_10" },
-					{ "time": 1.2, "name": "explode/Explosion_11" },
-					{ "time": 1.2333, "name": "explode/Explosion_12" },
-					{ "time": 1.2667, "name": "explode/Explosion_13" },
-					{ "time": 1.3, "name": "explode/Explosion_14" },
-					{ "time": 1.3333, "name": "explode/Explosion_15" },
-					{ "time": 1.3667, "name": "explode/Explosion_16" },
-					{ "time": 1.4, "name": "explode/Explosion_17" },
-					{ "time": 1.4333, "name": "explode/Explosion_18" },
-					{ "time": 1.4667, "name": "explode/Explosion_19" },
-					{ "time": 1.5, "name": "explode/Explosion_20" }
-				]
-			},
-			"highlight": {
-				"attachment": [
-					{ "name": "highlight" }
-				]
-			},
-			"plum-mask": {
-				"attachment": [
-					{ "name": "dragon-mask" }
-				]
-			},
-			"splash": {
+			"smoke/smoke-6": {
 				"color": [
-					{ "color": "ffffffff" }
+					{ "time": 0.3667, "color": "ffffffff" },
+					{ "time": 0.4667, "color": "ffffff00" }
 				],
 				"attachment": [
-					{ "name": "splash/Splash Spark 03 Color_00" },
-					{ "time": 0.0333, "name": "splash/Splash Spark 03 Color_01" },
-					{ "time": 0.0667, "name": "splash/Splash Spark 03 Color_02" },
-					{ "time": 0.1, "name": "splash/Splash Spark 03 Color_03" },
-					{ "time": 0.1333, "name": "splash/Splash Spark 03 Color_04" },
-					{ "time": 0.1667, "name": "splash/Splash Spark 03 Color_05" },
-					{ "time": 0.2, "name": "splash/Splash Spark 03 Color_06" },
-					{ "time": 0.2333, "name": "splash/Splash Spark 03 Color_07" },
-					{ "time": 0.2667, "name": "splash/Splash Spark 03 Color_08" },
-					{ "time": 0.3, "name": "splash/Splash Spark 03 Color_09" },
-					{ "time": 0.3333, "name": "splash/Splash Spark 03 Color_10" },
-					{ "time": 0.3667, "name": "splash/Splash Spark 03 Color_11" },
-					{ "time": 0.4, "name": "splash/Splash Spark 03 Color_12" },
-					{ "time": 0.4333, "name": "splash/Splash Spark 03 Color_13" },
-					{ "time": 0.4667, "name": "splash/Splash Spark 03 Color_14" },
-					{ "time": 0.5, "name": "splash/Splash Spark 03 Color_15" },
-					{ "time": 0.5333, "name": "splash/Splash Spark 03 Color_16" }
-				]
-			},
-			"splash-liquid": {
-				"color": [
-					{ "color": "ffffffc7" },
-					{ "time": 0.4, "color": "ffffffff", "curve": "stepped" },
-					{ "time": 1.3333, "color": "ffffffff" },
-					{ "time": 1.5, "color": "ffffff00" }
-				],
-				"attachment": [
-					{ "name": "liquid-red" }
-				]
-			},
-			"symbol-0-bright": {
-				"attachment": [
-					{ "name": "symbol-6-bright" },
-					{ "time": 0.2667, "name": null },
-					{ "time": 0.3, "name": "symbol-6-bright" },
-					{ "time": 0.3333, "name": null }
-				]
-			},
-			"symbol-0-cut1": {
-				"color": [
-					{ "color": "ffffff00", "curve": "stepped" },
-					{ "time": 0.3333, "color": "ffffff00" },
-					{ "time": 0.3667, "color": "ffffffff", "curve": "stepped" },
-					{ "time": 1.1667, "color": "ffffffff" },
-					{ "time": 1.5, "color": "ffffff00" }
-				],
-				"attachment": [
-					{ "name": "symbol-6-cut1" }
-				]
-			},
-			"symbol-0-cut2": {
-				"color": [
-					{ "color": "ffffff00", "curve": "stepped" },
-					{ "time": 0.3333, "color": "ffffff00" },
-					{ "time": 0.3667, "color": "ffffffff", "curve": "stepped" },
-					{ "time": 1.1667, "color": "ffffffff" },
-					{ "time": 1.5, "color": "ffffff00" }
-				],
-				"attachment": [
-					{ "name": "symbol-6-cut2" }
-				]
-			},
-			"water melon": {
-				"color": [
-					{ "time": 0.5333, "color": "ffffffff" },
-					{ "time": 0.6333, "color": "ffffff00" }
-				],
-				"attachment": [
-					{ "name": "symbol-6" },
-					{ "time": 0.3667, "name": null },
-					{ "time": 0.6333, "name": "symbol-6" }
+					{ "time": 0.1, "name": null },
+					{ "time": 0.3667, "name": "smoke/smoke-6" }
 				]
 			}
 		},
 		"bones": {
-			"water melon": {
-				"translate": [
-					{ "curve": 0.651, "c2": 0.17, "c3": 0.873, "c4": 0.58 },
-					{ "time": 0.2333, "y": 3.87, "curve": 0.181, "c2": 0.46, "c3": 0.157, "c4": 0.96 },
-					{ "time": 0.2667, "y": 10.89, "curve": 0.181, "c2": 0.46, "c3": 0.157, "c4": 0.96 },
-					{ "time": 0.3, "y": 3.87, "curve": 0.181, "c2": 0.46, "c3": 0.157, "c4": 0.96 },
-					{ "time": 0.4667, "y": 15.45 }
-				],
+			"smoke-6": {
 				"scale": [
-					{ "time": 0.2333 },
-					{ "time": 0.2667, "x": 0.919, "y": 0.927 },
-					{ "time": 0.3 }
+					{ "time": 0.3667 },
+					{ "time": 0.4667, "x": 1.301, "y": 1.301 }
 				]
 			},
-			"highlight": {
-				"translate": [
-					{},
-					{ "time": 0.3333, "x": 149.97 }
-				]
-			},
-			"symbol-0-cut2": {
-				"translate": [
-					{ "time": 0.3333 },
-					{ "time": 0.8, "x": 1.76, "y": -5.52 },
-					{ "time": 1.5, "x": 1.76, "y": -7.03 }
-				]
-			},
-			"symbol-0-cut1": {
-				"translate": [
-					{ "time": 0.8 },
-					{ "time": 1.5, "x": -2.76, "y": -1.76 }
-				]
-			},
-			"splash-liquid": {
-				"translate": [
-					{},
-					{ "time": 0.1, "y": 3.87, "curve": 0.181, "c2": 0.46, "c3": 0.157, "c4": 0.96 },
-					{ "time": 0.9333 },
-					{ "time": 1.5, "y": -3.7 }
-				],
+			"smoke-null": {
 				"scale": [
-					{ "x": 0.1, "y": 0.1, "curve": "stepped" },
-					{ "time": 0.3667, "x": 0.1, "y": 0.1, "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.4667 }
+					{ "x": 0.008, "y": 0.008, "curve": "stepped" },
+					{ "time": 0.1, "x": 0.008, "y": 0.008, "curve": 0.086, "c3": 0.301 },
+					{ "time": 0.5667, "x": 1.881, "y": 1.881 }
+				]
+			},
+			"symbol-6": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.32 },
+					{ "time": 0.1, "x": 0.95, "y": 0.95, "curve": 0.124, "c3": 0.306 },
+					{ "time": 0.4333, "x": 1.5, "y": 1.5 }
 				]
 			}
 		}
 	},
 	"highlight": {
 		"slots": {
-			"highlight": {
+			"explode_sakura/explode_sakura_00": {
 				"attachment": [
-					{ "name": "highlight" }
+					{ "name": null }
 				]
 			},
-			"plum-mask": {
-				"attachment": [
-					{ "name": "dragon-mask" }
+			"lantern_glow": {
+				"color": [
+					{ "color": "ff5f5f00", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "color": "ff5f5fff" }
 				]
 			},
-			"water melon": {
+			"lantern_glow2": {
+				"color": [
+					{ "color": "ff5f5f00", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "color": "ff5f5fff" }
+				]
+			},
+			"lantern_light": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "color": "ffffff8b" }
+				]
+			},
+			"lantern_particle/lantern_particle_00": {
 				"attachment": [
-					{ "name": "symbol-6" }
+					{ "name": "lantern_particle/lantern_particle_00" },
+					{ "time": 0.0333, "name": "lantern_particle/lantern_particle_01" },
+					{ "time": 0.0667, "name": "lantern_particle/lantern_particle_02" },
+					{ "time": 0.1, "name": "lantern_particle/lantern_particle_03" },
+					{ "time": 0.1333, "name": "lantern_particle/lantern_particle_04" },
+					{ "time": 0.1667, "name": "lantern_particle/lantern_particle_05" },
+					{ "time": 0.2, "name": "lantern_particle/lantern_particle_06" },
+					{ "time": 0.2333, "name": "lantern_particle/lantern_particle_07" },
+					{ "time": 0.2667, "name": "lantern_particle/lantern_particle_08" },
+					{ "time": 0.3, "name": "lantern_particle/lantern_particle_09" },
+					{ "time": 0.3333, "name": "lantern_particle/lantern_particle_10" },
+					{ "time": 0.3667, "name": "lantern_particle/lantern_particle_11" },
+					{ "time": 0.4, "name": "lantern_particle/lantern_particle_12" },
+					{ "time": 0.4333, "name": "lantern_particle/lantern_particle_13" },
+					{ "time": 0.4667, "name": "lantern_particle/lantern_particle_14" },
+					{ "time": 0.5, "name": "lantern_particle/lantern_particle_15" },
+					{ "time": 0.5333, "name": "lantern_particle/lantern_particle_16" },
+					{ "time": 0.5667, "name": "lantern_particle/lantern_particle_17" },
+					{ "time": 0.6, "name": "lantern_particle/lantern_particle_18" },
+					{ "time": 0.6333, "name": "lantern_particle/lantern_particle_19" },
+					{ "time": 0.6667, "name": "lantern_particle/lantern_particle_20" },
+					{ "time": 0.7, "name": "lantern_particle/lantern_particle_21" },
+					{ "time": 0.7333, "name": null }
+				]
+			},
+			"lantern_starglow": {
+				"color": [
+					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "color": "ffffffff" }
+				]
+			},
+			"smoke/smoke-1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-3": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-4": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-5": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-6": {
+				"attachment": [
+					{ "name": null }
 				]
 			}
 		},
 		"bones": {
-			"water melon": {
-				"translate": [
+			"lantern_null": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667, "angle": 8.24, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "angle": -15.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 10.38, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "angle": -14.47, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6, "angle": 6.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": -3.94, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8667, "curve": "stepped" },
 					{ "time": 1 }
 				],
 				"scale": [
-					{ "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.1333, "x": 0.98, "y": 0.98, "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.3333, "x": 1.2, "y": 1.2, "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.5, "x": 0.96, "y": 0.96, "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.5333 }
-				]
-			},
-			"highlight": {
-				"translate": [
-					{ "x": 22.13, "y": -1.47 },
-					{ "time": 0.5333, "x": 122.13, "y": -50.92 }
+					{ "x": 0.563, "y": 0.563, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "x": 1.139, "y": 1.139, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": 0.999, "y": 0.999, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "x": 1.017, "y": 1.017, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6, "x": 0.997, "y": 0.997 }
 				]
 			}
 		}
 	},
 	"idle": {
 		"slots": {
-			"water melon": {
+			"explode_sakura/explode_sakura_00": {
 				"attachment": [
-					{ "name": "symbol-6" }
+					{ "name": null }
+				]
+			},
+			"lantern_glow": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_glow2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_light": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_particle/lantern_particle_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"lantern_starglow": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-1": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-2": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-3": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-4": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-5": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"smoke/smoke-6": {
+				"attachment": [
+					{ "name": null }
 				]
 			}
 		}
