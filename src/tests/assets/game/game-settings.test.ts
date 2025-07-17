@@ -27,7 +27,7 @@ describe("settings", () => {
             },
             isMiniGame: false,
             numberOfRoundHistory: 11,
-            observerNamespace: "FruitSamurai",
+            observerNamespace: "LuckyNeko",
             validateBalanceWhenBet: true,
         });
     });
