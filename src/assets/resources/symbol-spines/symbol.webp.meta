@@ -8,30 +8,6 @@
     ".webp"
   ],
   "subMetas": {
-    "6c48a": {
-      "importer": "texture",
-      "uuid": "0ee4d8f8-aa1d-4162-a7f7-ba008fd613ff@6c48a",
-      "displayName": "symbol",
-      "id": "6c48a",
-      "name": "texture",
-      "userData": {
-        "wrapModeS": "clamp-to-edge",
-        "wrapModeT": "clamp-to-edge",
-        "imageUuidOrDatabaseUri": "0ee4d8f8-aa1d-4162-a7f7-ba008fd613ff",
-        "isUuid": true,
-        "visible": false,
-        "minfilter": "linear",
-        "magfilter": "linear",
-        "mipfilter": "none",
-        "anisotropy": 0
-      },
-      "ver": "1.0.22",
-      "imported": true,
-      "files": [
-        ".json"
-      ],
-      "subMetas": {}
-    },
     "f9941": {
       "importer": "sprite-frame",
       "uuid": "0ee4d8f8-aa1d-4162-a7f7-ba008fd613ff@f9941",
@@ -118,6 +94,30 @@
         "trimType": "auto"
       },
       "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "0ee4d8f8-aa1d-4162-a7f7-ba008fd613ff@6c48a",
+      "displayName": "symbol",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "0ee4d8f8-aa1d-4162-a7f7-ba008fd613ff",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
       "imported": true,
       "files": [
         ".json"

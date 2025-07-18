@@ -43,7 +43,7 @@
             "height": 16
           },
           "xOffset": 0,
-          "yOffset": 0,
+          "yOffset": 23,
           "xAdvance": 13
         },
         "46": {
@@ -54,7 +54,7 @@
             "height": 11
           },
           "xOffset": 0,
-          "yOffset": 0,
+          "yOffset": 23,
           "xAdvance": 13
         },
         "48": {
@@ -175,7 +175,7 @@
             "height": 26
           },
           "xOffset": 0,
-          "yOffset": 0,
+          "yOffset": 7,
           "xAdvance": 30
         }
       },
