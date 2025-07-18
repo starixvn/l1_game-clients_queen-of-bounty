@@ -1,90 +1,97 @@
 
 mascot.webp
-size: 465,1020
+size: 1266,363
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Eyelid
-  rotate: false
-  xy: 332, 43
-  size: 45, 17
-  orig: 45, 17
-  offset: 0, 0
-  index: -1
-Flag
+bell
   rotate: true
-  xy: 2, 2
-  size: 159, 260
-  orig: 161, 262
-  offset: 0, 0
-  index: -1
-Group 1
-  rotate: false
-  xy: 2, 163
-  size: 278, 448
-  orig: 279, 449
-  offset: 1, 0
-  index: -1
-Head
-  rotate: false
-  xy: 282, 62
-  size: 172, 215
-  orig: 172, 216
+  xy: 649, 124
+  size: 98, 92
+  orig: 98, 92
   offset: 0, 0
   index: -1
 body
-  rotate: false
-  xy: 2, 613
-  size: 300, 405
-  orig: 306, 405
-  offset: 5, 0
-  index: -1
-eyes
-  rotate: false
-  xy: 379, 43
-  size: 44, 17
-  orig: 44, 17
-  offset: 0, 0
-  index: -1
-hip-armor-left
   rotate: true
-  xy: 264, 8
-  size: 52, 66
-  orig: 54, 66
+  xy: 344, 3
+  size: 360, 305
+  orig: 395, 320
   offset: 0, 0
   index: -1
-hip-armor-right
+eyebrow-L
   rotate: false
-  xy: 304, 688
-  size: 92, 80
-  orig: 92, 80
+  xy: 747, 2
+  size: 27, 20
+  orig: 27, 20
   offset: 0, 0
   index: -1
-left-hand
+eyebrow-R
   rotate: false
-  xy: 282, 279
-  size: 181, 332
-  orig: 181, 333
+  xy: 649, 2
+  size: 37, 20
+  orig: 37, 20
   offset: 0, 0
   index: -1
-right-arm 1
-  rotate: false
-  xy: 304, 878
-  size: 104, 140
-  orig: 105, 141
-  offset: 0, 0
-  index: -1
-shoulder-armor-left
+hand_L
   rotate: true
-  xy: 304, 614
-  size: 72, 79
-  orig: 72, 79
+  xy: 649, 22
+  size: 102, 170
+  orig: 137, 178
   offset: 0, 0
   index: -1
-shoulder-armor-right
+hand_R
+  rotate: false
+  xy: 819, 12
+  size: 160, 210
+  orig: 160, 210
+  offset: 0, 0
+  index: -1
+head
   rotate: true
-  xy: 304, 770
-  size: 106, 97
-  orig: 107, 99
-  offset: 1, 1
+  xy: 0, 0
+  size: 363, 344
+  orig: 363, 344
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 979, 107
+  size: 130, 115
+  orig: 133, 117
+  offset: 0, 2
+  index: -1
+paw-L
+  rotate: true
+  xy: 1109, 24
+  size: 100, 74
+  orig: 102, 74
+  offset: 0, 0
+  index: -1
+sparkle
+  rotate: false
+  xy: 741, 155
+  size: 67, 67
+  orig: 67, 67
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 1114, 124
+  size: 152, 239
+  orig: 152, 240
+  offset: 0, 0
+  index: -1
+whisker
+  rotate: false
+  xy: 686, 10
+  size: 61, 12
+  orig: 61, 13
+  offset: 0, 1
+  index: -1
+wood
+  rotate: false
+  xy: 649, 222
+  size: 465, 141
+  orig: 465, 141
+  offset: 0, 0
   index: -1

@@ -391,7 +391,7 @@
     "_debugBones": false,
     "_debugSlots": false,
     "_enableBatch": true,
-    "loop": false,
+    "loop": true,
     "_id": ""
   },
   {
