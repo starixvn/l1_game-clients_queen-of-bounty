@@ -1,0 +1,83 @@
+{
+    "welcome": "🎮 Welcome to Move Assets CLI Tool!",
+    "config": {
+        "loaded": "✅ Configuration file loaded successfully",
+        "notFound": "⚠️ Configuration file not found, creating new configuration file...",
+        "created": "✅ Default configuration file created, please modify path settings",
+        "formatError": "Configuration file format error: {error}",
+        "saved": "✅ Configuration saved",
+        "missing": "❌ config.json configuration file not found",
+        "useCli": "Please use interactive CLI tool: npm run cli"
+    },
+    "paths": {
+        "title": "📁 Current path configuration:",
+        "sourceFolder": "   Source folder: {path}",
+        "projectRoot": "   Project root: {path}",
+        "notSet": "(not set)",
+        "confirm": "Are the paths correct? (y/n): ",
+        "needSetup": "⚠️ Found unset paths, need to configure paths before continuing",
+        "updateTitle": "🔧 Update path configuration:",
+        "firstSetup": "🆕 Initial setup, please enter complete paths:",
+        "hint": "💡 Tip: Press Enter directly to keep current value",
+        "sourceFolderPrompt": "Source folder: ",
+        "sourceFolderCurrent": "Source folder [{current}]: ",
+        "projectRootPrompt": "Project root: ",
+        "projectRootCurrent": "Project root [{current}]: ",
+        "sourceNotExists": "⚠️ Warning: Source folder does not exist",
+        "projectNotExists": "⚠️ Warning: Project root directory does not exist",
+        "updated": "✅ Path configuration updated"
+    },
+    "sync": {
+        "title": "🔄 Select sync options:",
+        "option1": "   1. all  - Sync all folders",
+        "option2": "   2. 2D   - Sync 2D assets only",
+        "option3": "   3. 3D   - Sync 3D assets only", 
+        "option4": "   4. folder - Specify particular folder",
+        "prompt": "Please select (1-4 or enter type name directly): ",
+        "folderPrompt": "Please enter folder name: ",
+        "starting": "Starting sync: {type}{folder}",
+        "confirm": "Confirm execution? (y/n): ",
+        "cancelled": "❌ Sync operation cancelled",
+        "failed": "❌ Sync failed: {error}",
+        "completed": "✅ Completed! Total {count} operations",
+        "noFolders": "⚠️ No folders found to sync",
+        "willSync": "Will sync {count} folders"
+    },
+    "validation": {
+        "invalidYesNo": "❌ Please enter y or n",
+        "invalidChoice": "❌ Please enter 1-4 number, type name or folder name",
+        "emptyFolder": "❌ Folder name cannot be empty",
+        "emptySourcePath": "❌ Source folder path cannot be empty",
+        "emptyProjectPath": "❌ Project root path cannot be empty",
+        "retryInput": "Please try again."
+    },
+    "operations": {
+        "createFolder": "Create folder",
+        "copyFile": "Copy file",
+        "deleteMeta": "Delete .meta",
+        "skip": "Skip"
+    },
+    "status": {
+        "📁": "📁",
+        "✅": "✅",
+        "🗑️": "🗑️", 
+        "⏭️": "⏭️"
+    },
+    "results": {
+        "title": "📊 Operation Results",
+        "headers": {
+            "status": "Status",
+            "operation": "Operation",
+            "source": "Source", 
+            "target": "Target"
+        }
+    },
+    "errors": {
+        "general": "❌ Error: {error}",
+        "interrupted": "⚠️ Interrupted",
+        "configRequired": "Must provide config parameter",
+        "configNotFound": "Configuration file {path} not found, please create configuration file first",
+        "mappingNotFound": "Cannot find {file}",
+        "readlineClose": "readline was closed"
+    }
+} 

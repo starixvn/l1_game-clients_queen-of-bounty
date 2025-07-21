@@ -1,0 +1,83 @@
+{
+    "welcome": "🎮 歡迎使用 Move Assets CLI 工具！",
+    "config": {
+        "loaded": "✅ 成功加載配置文件",
+        "notFound": "⚠️ 找不到配置文件，正在創建新的配置文件...",
+        "created": "✅ 已創建預設配置文件，請修改路徑設定",
+        "formatError": "配置文件格式錯誤: {error}",
+        "saved": "✅ 配置已保存",
+        "missing": "❌ 找不到 config.json 配置文件",
+        "useCli": "請使用交互式 CLI 工具：npm run cli"
+    },
+    "paths": {
+        "title": "📁 當前路徑配置：",
+        "sourceFolder": "   來源資料夾: {path}",
+        "projectRoot": "   專案根目錄: {path}",
+        "notSet": "(未設定)",
+        "confirm": "路徑是否正確？ (y/n): ",
+        "needSetup": "⚠️ 發現未設定的路徑，需要先設定路徑才能繼續",
+        "updateTitle": "🔧 更新路徑配置：",
+        "firstSetup": "🆕 首次設定，請輸入完整路徑：",
+        "hint": "💡 提示：直接按 Enter 可保持當前值",
+        "sourceFolderPrompt": "來源資料夾: ",
+        "sourceFolderCurrent": "來源資料夾 [{current}]: ",
+        "projectRootPrompt": "專案根目錄: ",
+        "projectRootCurrent": "專案根目錄 [{current}]: ",
+        "sourceNotExists": "⚠️ 警告：來源資料夾不存在",
+        "projectNotExists": "⚠️ 警告：專案根目錄不存在",
+        "updated": "✅ 路徑配置已更新"
+    },
+    "sync": {
+        "title": "🔄 選擇同步選項：",
+        "option1": "   1. all  - 同步所有資料夾",
+        "option2": "   2. 2D   - 只同步 2D 資源",
+        "option3": "   3. 3D   - 只同步 3D 資源",
+        "option4": "   4. folder - 指定特定資料夾",
+        "prompt": "請選擇 (1-4 或直接輸入類型名稱): ",
+        "folderPrompt": "請輸入資料夾名稱: ",
+        "starting": "開始同步：{type}{folder}",
+        "confirm": "確認執行？ (y/n): ",
+        "cancelled": "❌ 已取消同步操作",
+        "failed": "❌ 同步失敗: {error}",
+        "completed": "✅ 完成！共 {count} 個操作",
+        "noFolders": "⚠️ 沒有找到要同步的資料夾",
+        "willSync": "將同步 {count} 個資料夾"
+    },
+    "validation": {
+        "invalidYesNo": "❌ 請輸入 y 或 n",
+        "invalidChoice": "❌ 請輸入 1-4 的數字、類型名稱或資料夾名稱",
+        "emptyFolder": "❌ 資料夾名稱不能為空",
+        "emptySourcePath": "❌ 來源資料夾路徑不能為空",
+        "emptyProjectPath": "❌ 專案根目錄路徑不能為空",
+        "retryInput": "請重新輸入。"
+    },
+    "operations": {
+        "createFolder": "建立資料夾",
+        "copyFile": "複製文件",
+        "deleteMeta": "刪除 .meta",
+        "skip": "跳過"
+    },
+    "status": {
+        "📁": "📁",
+        "✅": "✅", 
+        "🗑️": "🗑️",
+        "⏭️": "⏭️"
+    },
+    "results": {
+        "title": "📊 操作結果",
+        "headers": {
+            "status": "狀態",
+            "operation": "操作", 
+            "source": "來源",
+            "target": "目標"
+        }
+    },
+    "errors": {
+        "general": "❌ 錯誤: {error}",
+        "interrupted": "⚠️ 已中斷",
+        "configRequired": "必須提供配置參數 config",
+        "configNotFound": "找不到配置文件 {path}，請先創建配置文件",
+        "mappingNotFound": "找不到 {file}",
+        "readlineClose": "readline was closed"
+    }
+} 

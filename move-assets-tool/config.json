@@ -1,0 +1,22 @@
+{
+    "sourceFolder": "/Users/jaysonCheng/Downloads/Test",
+    "projectRoot": "/Users/jaysonCheng/pentagon/lucky-neko",
+    "mappingFile": "folder-mapping.json",
+    "language": "en",
+    "excludePatterns": [
+        ".DS_Store",
+        ".DS_Store?",
+        "Thumbs.db",
+        "ehthumbs.db",
+        "Desktop.ini",
+        "*.tmp",
+        "*.temp",
+        "*.log",
+        ".git",
+        ".gitignore",
+        ".svn",
+        ".vscode",
+        ".idea",
+        "node_modules"
+    ]
+}

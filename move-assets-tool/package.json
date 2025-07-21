@@ -5,7 +5,14 @@
   "main": "move-assets.js",
   "scripts": {
     "start": "node move-assets.js",
-    "sync": "node move-assets.js"
+    "sync": "node move-assets.js",
+    "sync:2d": "node move-assets.js --type 2D", 
+    "sync:3d": "node move-assets.js --type 3D",
+    "help": "node move-assets.js --help",
+    "cli": "node move-assets-cli.js"
+  },
+  "bin": {
+    "move-assets-cli": "./move-assets-cli.js"
   },
   "engines": {
     "node": ">=18.20.6"
