@@ -55,10 +55,10 @@ head
   index: -1
 mouth
   rotate: false
-  xy: 979, 107
-  size: 130, 115
+  xy: 979, 106
+  size: 130, 116
   orig: 133, 117
-  offset: 0, 2
+  offset: 0, 1
   index: -1
 paw-L
   rotate: true
