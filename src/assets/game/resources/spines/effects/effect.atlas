@@ -1,328 +1,328 @@
 
 effect.webp
-size: 1985,1892
+size: 2017,1876
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 big-neko-blue
   rotate: true
-  xy: 1588, 1566
+  xy: 1588, 1550
   size: 326, 359
   orig: 332, 366
   offset: 3, 3
   index: -1
 board
   rotate: false
-  xy: 0, 1474
+  xy: 0, 1458
   size: 544, 418
   orig: 544, 418
   offset: 0, 0
   index: -1
 centerRibbon
   rotate: false
-  xy: 1824, 1268
+  xy: 1947, 1785
   size: 70, 91
   orig: 70, 91
   offset: 0, 0
   index: -1
 coin_rotate/coin_rotate_06
-  rotate: false
-  xy: 1873, 267
+  rotate: true
+  xy: 357, 41
   size: 79, 113
   orig: 79, 113
   offset: 0, 0
   index: -1
 coin_rotate_02
-  rotate: true
-  xy: 1606, 591
+  rotate: false
+  xy: 907, 199
   size: 80, 113
   orig: 80, 113
   offset: 0, 0
   index: -1
 coin_rotate/coin_rotate_02
-  rotate: true
-  xy: 1606, 591
+  rotate: false
+  xy: 907, 199
   size: 80, 113
   orig: 80, 113
   offset: 0, 0
   index: -1
 coin_rotate_03
   rotate: false
-  xy: 1873, 154
+  xy: 1947, 1672
   size: 66, 113
   orig: 66, 113
   offset: 0, 0
   index: -1
 coin_rotate/coin_rotate_03
   rotate: false
-  xy: 1873, 154
+  xy: 1947, 1672
   size: 66, 113
   orig: 66, 113
   offset: 0, 0
   index: -1
 coin_rotate_04
-  rotate: true
-  xy: 1601, 0
+  rotate: false
+  xy: 1996, 450
   size: 21, 112
   orig: 21, 112
   offset: 0, 0
   index: -1
 coin_rotate/coin_rotate_04
-  rotate: true
-  xy: 1601, 0
+  rotate: false
+  xy: 1996, 450
   size: 21, 112
   orig: 21, 112
   offset: 0, 0
   index: -1
 coin_rotate_05
   rotate: false
-  xy: 1873, 41
+  xy: 1947, 1559
   size: 66, 113
   orig: 66, 113
   offset: 0, 0
   index: -1
 coin_rotate/coin_rotate_05
   rotate: false
-  xy: 1873, 41
+  xy: 1947, 1559
   size: 66, 113
   orig: 66, 113
   offset: 0, 0
   index: -1
 fish
   rotate: false
-  xy: 1753, 587
+  xy: 1395, 595
   size: 232, 301
   orig: 232, 301
   offset: 0, 0
   index: -1
 free spins
-  rotate: true
-  xy: 1601, 21
+  rotate: false
+  xy: 0, 65
   size: 357, 55
   orig: 357, 55
   offset: 0, 0
   index: -1
 gradientLight
-  rotate: false
-  xy: 1947, 1782
+  rotate: true
+  xy: 1768, 43
   size: 29, 110
   orig: 29, 110
   offset: 0, 0
   index: -1
 light_rotate/light_rotate_00
   rotate: false
-  xy: 520, 15
+  xy: 1066, 1250
   size: 514, 313
   orig: 576, 362
   offset: 31, 27
   index: -1
 light_rotate/light_rotate_01
   rotate: false
-  xy: 520, 328
+  xy: 520, 312
   size: 516, 313
   orig: 576, 362
   offset: 30, 27
   index: -1
 light_rotate/light_rotate_02
   rotate: false
-  xy: 521, 641
+  xy: 521, 625
   size: 519, 313
   orig: 576, 362
   offset: 29, 27
   index: -1
 light_rotate/light_rotate_03
   rotate: false
-  xy: 0, 216
+  xy: 0, 200
   size: 520, 313
   orig: 576, 362
   offset: 28, 27
   index: -1
 light_rotate/light_rotate_04
   rotate: false
-  xy: 544, 1266
+  xy: 544, 1250
   size: 520, 312
   orig: 576, 362
   offset: 28, 27
   index: -1
 light_rotate/light_rotate_05
   rotate: false
-  xy: 522, 954
+  xy: 522, 938
   size: 520, 312
   orig: 576, 362
   offset: 28, 27
   index: -1
 light_rotate/light_rotate_06
   rotate: false
-  xy: 1066, 1579
+  xy: 1066, 1563
   size: 522, 313
   orig: 576, 362
   offset: 27, 27
   index: -1
 light_rotate/light_rotate_07
   rotate: false
-  xy: 544, 1578
+  xy: 544, 1562
   size: 522, 314
   orig: 576, 362
   offset: 27, 27
   index: -1
 light_rotate/light_rotate_08
   rotate: false
-  xy: 0, 1159
+  xy: 0, 1143
   size: 522, 315
   orig: 576, 362
   offset: 27, 27
   index: -1
 light_rotate/light_rotate_09
   rotate: false
-  xy: 0, 844
+  xy: 0, 828
   size: 521, 315
   orig: 576, 362
   offset: 27, 27
   index: -1
 light_rotate/light_rotate_10
   rotate: false
-  xy: 0, 529
+  xy: 0, 513
   size: 520, 315
   orig: 576, 362
   offset: 29, 27
   index: -1
 mega-neko-orange
   rotate: true
-  xy: 1042, 925
+  xy: 1042, 924
   size: 326, 359
   orig: 332, 366
   offset: 3, 3
   index: -1
 money_back_lf
   rotate: false
-  xy: 1399, 671
+  xy: 1036, 385
   size: 354, 217
   orig: 354, 217
   offset: 0, 0
   index: -1
 money_back_rt
   rotate: true
-  xy: 1656, 26
+  xy: 1401, 896
   size: 354, 217
   orig: 354, 217
   offset: 0, 0
   index: -1
 money_front_lf
-  rotate: true
-  xy: 377, 9
+  rotate: false
+  xy: 1768, 72
   size: 207, 115
   orig: 207, 115
   offset: 0, 0
   index: -1
 money_front_rt
-  rotate: true
-  xy: 1843, 1359
+  rotate: false
+  xy: 470, 1
   size: 207, 115
   orig: 207, 115
   offset: 0, 0
   index: -1
 money_number_bg
   rotate: false
-  xy: 1401, 888
+  xy: 0, 120
   size: 528, 80
   orig: 528, 80
   offset: 0, 0
   index: -1
 ribbon
-  rotate: false
-  xy: 1066, 1432
+  rotate: true
+  xy: 1820, 931
   size: 398, 147
   orig: 398, 147
   offset: 0, 0
   index: -1
 ribbon2
-  rotate: true
-  xy: 1406, 378
-  size: 293, 200
+  rotate: false
+  xy: 1479, 12
+  size: 289, 198
   orig: 297, 204
-  offset: 3, 1
+  offset: 4, 2
   index: -1
 ring
-  rotate: false
-  xy: 1773, 978
-  size: 191, 194
+  rotate: true
+  xy: 1293, 0
+  size: 181, 186
   orig: 191, 194
-  offset: 0, 0
+  offset: 5, 4
   index: -1
 sparkle/sparkle_00
   rotate: false
-  xy: 1401, 968
+  xy: 1036, 181
   size: 372, 204
   orig: 400, 300
   offset: 15, 36
   index: -1
 sparkle/sparkle_01
   rotate: true
-  xy: 1407, 9
+  xy: 1815, 562
   size: 369, 194
   orig: 400, 300
   offset: 17, 47
   index: -1
 sparkle/sparkle_02
   rotate: false
-  xy: 1036, 378
+  xy: 1580, 1329
   size: 370, 221
   orig: 400, 300
   offset: 17, 50
   index: -1
 sparkle/sparkle_03
-  rotate: false
-  xy: 1606, 380
+  rotate: true
+  xy: 1606, 210
   size: 364, 207
   orig: 400, 300
   offset: 24, 53
   index: -1
 sparkle/sparkle_04
-  rotate: false
-  xy: 0, 14
+  rotate: true
+  xy: 1618, 952
   size: 377, 202
   orig: 400, 300
   offset: 11, 53
   index: -1
 sparkle/sparkle_05
-  rotate: false
-  xy: 1450, 1172
+  rotate: true
+  xy: 1408, 221
   size: 374, 198
   orig: 400, 300
   offset: 13, 54
   index: -1
 sparkle/sparkle_06
   rotate: false
-  xy: 1064, 1251
+  xy: 907, 0
   size: 386, 181
   orig: 400, 300
   offset: 14, 44
   index: -1
 sparkle/sparkle_07
   rotate: false
-  xy: 1464, 1370
+  xy: 528, 116
   size: 379, 196
   orig: 400, 300
   offset: 13, 53
   index: -1
 sparkle/sparkle_08
   rotate: true
-  xy: 1036, 0
+  xy: 1627, 574
   size: 378, 188
   orig: 400, 300
   offset: 12, 56
   index: -1
 sparkle/sparkle_09
   rotate: true
-  xy: 1224, 3
+  xy: 1813, 187
   size: 375, 183
   orig: 400, 300
   offset: 13, 58
   index: -1
 super-neko-gold
   rotate: true
-  xy: 1040, 599
-  size: 326, 359
+  xy: 1040, 602
+  size: 322, 355
   orig: 332, 366
-  offset: 3, 3
+  offset: 5, 5
   index: -1
