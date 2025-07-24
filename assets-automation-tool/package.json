@@ -1,0 +1,31 @@
+{
+  "name": "assets-automation-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download": "node src/scripts/download-tool.js",
+    "download-test": "node src/scripts/download-tool.js --dry-run",
+    "copytype": "node src/scripts/move-assets.js",
+    "copytype:2d": "node src/scripts/move-assets.js --copytype 2D", 
+    "copytype:3d": "node src/scripts/move-assets.js --copytype 3D",
+    "help": "node src/scripts/move-assets.js --help",
+    "cli": "node src/scripts/move-assets-cli.js"
+  },
+  "dependencies": {
+    "googleapis": "^129.0.0"
+  },
+  "keywords": [
+    "google-drive",
+    "download",
+    "nodejs",
+    "folder",
+    "batch-download",
+    "file-sync",
+    "cocos-creator",
+    "assets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

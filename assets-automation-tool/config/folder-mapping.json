@@ -1,0 +1,19 @@
+{
+    "categories": {
+        "2D": {
+            "font-bitmap": "src/assets/game/resources/fonts",
+            "replace-assets/resources/textures/big-images": "src/assets/game/resources/textures/big-images",
+            "replace-assets/resources/i18n/images": "src/assets/resources/i18n-images",
+            "texture-packer": "graphics/images"
+        },
+        "3D": {
+            "mascot": "src/assets/resources/spines/mascot",
+            "symbol-spines": "src/assets/resources/symbol-spines", 
+            "btn-spin": "src/assets/game/resources/spines/btn-spin",
+            "decor": "src/assets/resources/spines/decor",
+            "transition": "src/assets/game/resources/spines/transition",
+            "effect": "src/assets/game/resources/spines/effects",
+            "icon-game": "src/remote/icon"
+        }
+    }
+}

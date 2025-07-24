@@ -1,0 +1,15 @@
+{
+    "sourceFolder": "/Users/jaysonCheng/pentagon/lucky-neko/assets-automation-tool/output/downloads",
+    "projectRoot": "/Users/jaysonCheng/pentagon/lucky-neko",
+    "mappingFile": "folder-mapping.json",
+    "google": {
+        "folderId": "1TKh17Q9yX5HM2q91MHkNs2qYR8b_IH2-",
+        "credentialsPath": "config/credentials.json"
+    },
+    "download": {
+        "maxConcurrentDownloads": 10,
+        "maxConcurrentFolders": 5,
+        "retryAttempts": 3,
+        "retryDelay": 1000
+    }
+}
