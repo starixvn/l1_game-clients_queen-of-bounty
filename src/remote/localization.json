@@ -2,17 +2,21 @@
     "lobbyNames": {
         "en": "Lucky Neko",
         "id": "Lucky Neko",
-        "th": "Lucky Neko",
-        "vi": "Lucky Neko",
-        "zh_cn": "Lucky Neko",
-        "zh_tw": "Lucky Neko"
+        "th": "แมวนำโชค",
+        "vi": "Mèo May Mắn",
+        "zh_cn": "Mèo May Mắn",
+        "zh_tw": "招財貓",
+        "ja": "Lucky Neko",
+        "es": "Lucky Neko"
     },
     "gameNames": {
         "en": "Lucky Neko",
         "id": "Lucky Neko",
-        "th": "Lucky Neko",
-        "vi": "Lucky Neko",
-        "zh_cn": "Lucky Neko",
-        "zh_tw": "Lucky Neko"
+        "th": "แมวนำโชค",
+        "vi": "Mèo May Mắn",
+        "zh_cn": "Mèo May Mắn",
+        "zh_tw": "招財貓",
+        "ja": "ラッキーネコ",
+        "es": "Lucky Neko"
     }
 }
