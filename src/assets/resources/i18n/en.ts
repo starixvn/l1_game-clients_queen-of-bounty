@@ -29,7 +29,7 @@ export const languages = {
         "cards_not_equal": "Cards are not equal value.",
         "character_name": "Nickname",
         "copy_failed_md5": "Copy function is temporarily unavailable.",
-        "copy_successfully_md5": "Copy successful!",
+        "copy_successfully_md5": "Copy Successful!",
         "create_nick_name": "Create Your Nickname",
         "details": "Details",
         "enter_your_name": "Enter your nickname.",

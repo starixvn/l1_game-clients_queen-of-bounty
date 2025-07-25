@@ -200,7 +200,7 @@ export const languages = {
         "result": "结果",
         "rotateDevice": "请旋转您的设备。",
         "round": "回合",
-        "sabaplay_tagline": "超越游戏",
+        "sabaplay_tagline": "趣游无限",
         "searching_for_players": "正在搜索玩家...",
         "sha256": "SHA-256",
         "splash_check_downloading": "正在检查和下载最新的更新包...",
@@ -282,8 +282,8 @@ export const languages = {
         "you_win_free_spin": "您赢得"
     },
     "LuckyNeko": {
-        "game_icon_name": "Lucky Neko",
-        "game_name": "Lucky Neko"
+        "game_icon_name": "招财猫",
+        "game_name": "招财猫"
     }
 };
 

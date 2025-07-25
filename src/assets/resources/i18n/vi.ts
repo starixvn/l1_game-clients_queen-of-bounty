@@ -282,8 +282,8 @@ export const languages = {
         "you_win_free_spin": "Bạn đã thắng"
     },
     "LuckyNeko": {
-        "game_icon_name": "Lucky Neko",
-        "game_name": "Lucky Neko"
+        "game_icon_name": "Mèo May Mắn",
+        "game_name": "Mèo May Mắn"
     }
 };
 
