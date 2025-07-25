@@ -286,7 +286,7 @@ export const languages = {
     },
     "LuckyNeko": {
         "game_icon_name": "Lucky Neko",
-        "game_name": "ラッキーネコ"
+        "game_name": "Lucky Neko"
     }
 };
 
