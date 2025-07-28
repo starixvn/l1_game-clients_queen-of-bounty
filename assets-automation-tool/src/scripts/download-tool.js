@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { google } = require('googleapis');
-const { CommonUtils } = require('../utils/common');
+const { CommonUtils, ConfigManager, StatsManager } = require('../utils/common');
 const { logger } = require('../utils/logger');
 const PROJECT_PATHS = require('../utils/paths');
 
@@ -11,8 +11,6 @@ const auth = new google.auth.GoogleAuth({
     keyFile: PROJECT_PATHS.CONFIG.CREDENTIALS,
     scopes: ['https://www.googleapis.com/auth/drive.readonly'],
 });
-
-const folderMapPath = path.join(PROJECT_PATHS.CONFIG.ROOT, 'folder-mapping.json');
 
 const DOWNLOAD_CONFIG = {
     maxConcurrentDownloads: 20,
@@ -27,50 +25,20 @@ class FastBulkDownloader {
         this.drive = null;
         this.isDetailMode = options.detail || false;
         this.downloadStats = {
-            total: 0,
-            completed: 0,
-            failed: 0,
-            skipped: 0,
             totalSize: 0,
             downloaded: 0,
-            startTime: null,
             folders: new Map()
         };
         this.fileQueue = [];
         this.activeTasks = new Set();
         this.outputPath = PROJECT_PATHS.OUTPUT.DOWNLOADS;
-        this.config = this.loadConfig();
+        this.configManager = ConfigManager.getInstance();
+        this.stats = new StatsManager('Download');
         
-        // API Token tracking
         this.apiStats = {
             filesListCalls: 0,
             filesGetCalls: 0
         };
-    }
-
-    loadConfig() {
-        try {
-            const configData = fs.readFileSync(folderMapPath, 'utf8');
-            return JSON.parse(configData);
-        } catch (error) {
-            logger.error('❌ Failed to load configuration file:', error.message);
-            process.exit(1);
-        }
-    }
-
-    getItemsToProcess(target = 'all') {
-        const { groups, items } = this.config;
-        
-        if (groups[target]) {
-            return groups[target];
-        }
-        
-        if (items[target]) {
-            return [target];
-        }
-
-        logger.warn(`⚠️  Target '${target}' not found, using default group 'all'`);
-        return groups.all || [];
     }
 
     async initialize() {
@@ -78,6 +46,7 @@ class FastBulkDownloader {
             this.authClient = await auth.getClient();
             this.drive = google.drive({ version: 'v3', auth: this.authClient });
             this.ensureOutputDirectory();
+            await this.configManager.loadFolderMapping();
             logger.success('🚀 Downloader initialized successfully');
         } catch (error) {
             logger.error('Failed to initialize Google Drive API', error);
@@ -93,9 +62,10 @@ class FastBulkDownloader {
     }
 
     async downloadItem(itemName) {
-        const item = this.config.items[itemName];
+        const item = this.configManager.getItemConfig(itemName);
         if (!item) {
             logger.error(`❌ Item configuration not found: ${itemName}`);
+            this.stats.increment('failed', itemName);
             return false;
         }
 
@@ -107,18 +77,20 @@ class FastBulkDownloader {
 
         try {
             const folderName = item.sourcePath.split('/')[0];
-            await this.processFolderByName(folderName);
+            await this.processFolderByName(folderName, itemName);
             if (this.isDetailMode) {
                 logger.success(`✅ Download completed: ${itemName}`);
             }
+            this.stats.increment('completed', itemName);
             return true;
         } catch (error) {
             logger.error(`❌ Download failed ${itemName}:`, error.message);
+            this.stats.increment('failed', itemName);
             return false;
         }
     }
 
-    async processFolderByName(folderName) {
+    async processFolderByName(folderName, itemName = null) {
         try {
             if (this.isDetailMode) {
                 logger.info(`📂 Processing folder: ${folderName}`);
@@ -127,6 +99,7 @@ class FastBulkDownloader {
             const folderId = await this.findFolderByName(folderName, FOLDER_ID);
             if (!folderId) {
                 logger.warn(`⚠️ Folder '${folderName}' not found`);
+                if (itemName) this.stats.increment('failed', itemName);
                 return;
             }
 
@@ -134,7 +107,7 @@ class FastBulkDownloader {
             
         } catch (error) {
             logger.error(`❌ Failed to process folder '${folderName}'`, error);
-            this.downloadStats.failed++;
+            if (itemName) this.stats.increment('failed', itemName);
         }
     }
 
@@ -209,7 +182,6 @@ class FastBulkDownloader {
                 pageSize: 1000
             });
 
-            // Track API usage
             this.apiStats.filesListCalls++;
 
             return response.data.files || [];
@@ -230,16 +202,11 @@ class FastBulkDownloader {
 
                 const result = await this.downloadSingleFile(file, folderName, relativePath);
                 
-                if (result === 'skipped') {
-                    this.downloadStats.skipped++;
-                    const folderStats = this.downloadStats.folders.get(folderName);
-                    if (folderStats) {
+                const folderStats = this.downloadStats.folders.get(folderName);
+                if (folderStats) {
+                    if (result === 'skipped') {
                         folderStats.skipped++;
-                    }
-                } else {
-                    this.downloadStats.completed++;
-                    const folderStats = this.downloadStats.folders.get(folderName);
-                    if (folderStats) {
+                    } else {
                         folderStats.completed++;
                     }
                 }
@@ -251,7 +218,6 @@ class FastBulkDownloader {
                 
                 if (attempt === DOWNLOAD_CONFIG.retryAttempts) {
                     logger.error(`❌ Final attempt failed for '${file.name}'`);
-                    this.downloadStats.failed++;
                     const folderStats = this.downloadStats.folders.get(folderName);
                     if (folderStats) {
                         folderStats.failed++;
@@ -289,7 +255,6 @@ class FastBulkDownloader {
             supportsAllDrives: true
         }, { responseType: 'stream' });
 
-        // Track API usage
         this.apiStats.filesGetCalls++;
 
         return new Promise((resolve, reject) => {
@@ -332,7 +297,7 @@ class FastBulkDownloader {
         const target = args[0] || 'all';
         logger.info(`🚀 Starting download - target: ${target}`);
         
-        const itemsToProcess = this.getItemsToProcess(target);
+        const itemsToProcess = this.configManager.getItemsToProcess(target);
         
         if (itemsToProcess.length === 0) {
             logger.info('ℹ️  No items to process');
@@ -343,41 +308,28 @@ class FastBulkDownloader {
             logger.info(`📦 Will process ${itemsToProcess.length} items:`, itemsToProcess.join(', '));
         }
         
-        this.downloadStats.startTime = Date.now();
-        let successCount = 0;
-        let failCount = 0;
+        this.stats.start();
 
         for (const itemName of itemsToProcess) {
             try {
-                const success = await this.downloadItem(itemName);
-                if (success) {
-                    successCount++;
-                } else {
-                    failCount++;
-                }
+                await this.downloadItem(itemName);
             } catch (error) {
                 logger.error(`❌ Download failed ${itemName}:`, error.message);
-                failCount++;
+                this.stats.increment('failed', itemName);
             }
         }
         
+        this.stats.end();
         this.showFinalStats();
     }
 
     showFinalStats() {
-        const endTime = Date.now();
-        const duration = (endTime - this.downloadStats.startTime) / 1000;
-        const speed = CommonUtils.calculateSpeed(this.downloadStats.downloaded, this.downloadStats.startTime, endTime);
+        const speed = CommonUtils.calculateSpeed(this.downloadStats.downloaded, this.stats.stats.startTime, this.stats.stats.endTime);
 
         if (this.isDetailMode) {
             logger.info('\n📊 Download Statistics:');
             logger.info('='.repeat(50));
-            logger.info(`Total files: ${this.downloadStats.completed + this.downloadStats.failed + this.downloadStats.skipped}`);
-            logger.info(`✅ Downloaded: ${this.downloadStats.completed}`);
-            logger.info(`⏭️ Skipped: ${this.downloadStats.skipped}`);
-            logger.info(`❌ Failed: ${this.downloadStats.failed}`);
             logger.info(`📊 Total downloaded: ${CommonUtils.formatBytes(this.downloadStats.downloaded)}`);
-            logger.info(`🕒 Duration: ${duration.toFixed(2)} seconds`);
             logger.info(`🚀 Average speed: ${speed}`);
             logger.info('='.repeat(50));
 
@@ -386,13 +338,7 @@ class FastBulkDownloader {
             });
 
             logger.info('='.repeat(50));
-        } else {
-            // Simple summary for non-detail mode
-            logger.info('\n📊 Download Summary:');
-            logger.info(`Total files: ${this.downloadStats.completed + this.downloadStats.failed + this.downloadStats.skipped}`);
-            logger.info(`Downloaded: ${this.downloadStats.completed}, Skipped: ${this.downloadStats.skipped}, Failed: ${this.downloadStats.failed}`);
-            logger.info(`Duration: ${duration.toFixed(2)}s`);
-            
+        } else {        
             if (this.downloadStats.downloaded > 0) {
                 logger.info(`Total downloaded: ${CommonUtils.formatBytes(this.downloadStats.downloaded)}`);
             }
@@ -401,8 +347,9 @@ class FastBulkDownloader {
         logger.info('\n🔌 API Token Usage:');
         logger.info(`files.list calls: ${this.apiStats.filesListCalls}`);
         logger.info(`files.get calls: ${this.apiStats.filesGetCalls}`);
+        
+        CommonUtils.logOperationResult(this.stats, logger);
     }
-
 
     chunkArray(array, chunkSize) {
         const chunks = [];
@@ -417,7 +364,6 @@ class FastBulkDownloader {
     }
 }
 
-// Execute
 async function main() {
     const args = process.argv.slice(2);
     const options = CommonUtils.parseArgs(args);
@@ -433,8 +379,7 @@ async function main() {
         await tool.run();
 
     } catch (error) {
-        logger.error('❌ Application failed', error);
-        process.exit(1);
+        CommonUtils.handleError(error, 'Download');
     }
 }
 

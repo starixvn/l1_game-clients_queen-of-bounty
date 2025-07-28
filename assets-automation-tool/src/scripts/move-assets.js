@@ -1,24 +1,22 @@
 const path = require('path');
-const { CommonUtils, copyFile, mkdir, readdir, stat, unlink, readFile, writeFile } = require('../utils/common');
+const { CommonUtils, ConfigManager, StatsManager, copyFile, mkdir, readdir, stat, unlink } = require('../utils/common');
 const { logger } = require('../utils/logger');
 const PROJECT_PATHS = require('../utils/paths');
 
 class FileSynchronizer {
     constructor(options = {}) {
         this.operationLog = [];
-        this.config = null;
         this.copyType = options.type || 'all';
-        
-        // Configuration paths
-        this.folderMapPath = path.join(PROJECT_PATHS.CONFIG.ROOT, 'folder-mapping.json');
+        this.configManager = ConfigManager.getInstance();
+        this.stats = new StatsManager('File Sync');
     }
 
     async run() {
         logger.info(`Starting sync: ${this.copyType}`);
         
-        await this._loadConfig();
+        await this.configManager.loadFolderMapping();
         
-        const itemsToProcess = this.getItemsToProcess(this.copyType);
+        const itemsToProcess = this.configManager.getItemsToProcess(this.copyType);
         
         if (itemsToProcess.length === 0) {
             logger.warn('⚠️ No items found to sync');
@@ -27,56 +25,21 @@ class FileSynchronizer {
         
         logger.info(`Will sync ${itemsToProcess.length} items: ${itemsToProcess.join(', ')}`);
         
+        this.stats.start();
         await this._syncAllItems(itemsToProcess);
+        this.stats.end();
+        
         this._showResults();
         
         logger.success(`✅ Completed! Total ${this.operationLog.length} operations`);
     }
 
-    async _loadConfig() {
-        try {
-            const data = await readFile(this.folderMapPath, 'utf8');
-            this.config = JSON.parse(data);
-        } catch (error) {
-            const message = error.code === 'ENOENT' 
-                ? `Cannot find folder-mapping.json at ${this.folderMapPath}`
-                : `Configuration file format error: ${error.message}`;
-            throw new Error(message);
-        }
-    }
-
-    getItemsToProcess(target = 'all') {
-        const { groups, items } = this.config;
-        
-        // First check if target is a specific item (like 'font-bitmap')
-        if (items[target]) {
-            return [target];
-        }
-        
-        // Then check if target is a group
-        const groupMap = {
-            'all': 'all',
-            '2D': '2d',
-            '3D': '3d',
-            '2d': '2d',
-            '3d': '3d'
-        };
-        
-        const groupName = groupMap[target] || target;
-        
-        if (groups[groupName]) {
-            return groups[groupName];
-        }
-
-        logger.warn(`⚠️ Target '${target}' not found in groups or items, using default group 'all'`);
-        return groups.all || [];
-    }
-
     async _syncAllItems(itemsToProcess) {
         for (const itemName of itemsToProcess) {
-            const item = this.config.items[itemName];
+            const item = this.configManager.getItemConfig(itemName);
             if (!item) {
                 logger.warn(`⚠️ Item configuration not found: ${itemName}`);
+                this.stats.increment('failed', itemName);
                 continue;
             }
 
@@ -85,12 +48,13 @@ class FileSynchronizer {
             
             logger.info(`📂 Syncing: ${itemName} (${item.description})`);
             
-            await this.syncFolder(sourcePath, destinationPath);
+            await this.syncFolder(sourcePath, destinationPath, itemName);
         }
     }
 
-    async syncFolder(sourcePath, destinationPath) {
+    async syncFolder(sourcePath, destinationPath, itemName = null) {
         if (!await this._validateAndPrepare(sourcePath, destinationPath)) {
+            if (itemName) this.stats.increment('failed', itemName);
             return;
         }
 
@@ -99,10 +63,11 @@ class FileSynchronizer {
         for (const item of items) {
             if (this._shouldSkip(item)) {
                 this._log("⏭️", "Skip", path.join(sourcePath, item));
+                if (itemName) this.stats.increment('skipped', itemName);
                 continue;
             }
             
-            await this._processItem(item, sourcePath, destinationPath);
+            await this._processItem(item, sourcePath, destinationPath, itemName);
         }
     }
 
@@ -131,7 +96,7 @@ class FileSynchronizer {
         return true;
     }
 
-    async _processItem(item, sourcePath, destinationPath) {
+    async _processItem(item, sourcePath, destinationPath, itemName = null) {
         const sourceItem = path.join(sourcePath, item);
         const destItem = path.join(destinationPath, item);
         
@@ -139,12 +104,14 @@ class FileSynchronizer {
             const itemStats = await stat(sourceItem);
             
             if (itemStats.isDirectory()) {
-                await this.syncFolder(sourceItem, destItem);
+                await this.syncFolder(sourceItem, destItem, itemName);
             } else {
                 await this._copyFileAndCleanup(sourceItem, destItem);
+                if (itemName) this.stats.increment('completed', itemName);
             }
         } catch (error) {
             logger.error(`Error processing file: ${sourceItem}`, error);
+            if (itemName) this.stats.increment('failed', itemName);
         }
     }
 
@@ -162,7 +129,6 @@ class FileSynchronizer {
     }
 
     _shouldSkip(itemName) {
-        // Default exclude patterns - can be made configurable if needed
         const excludePatterns = ['.DS_Store', 'Thumbs.db', '.git', '.meta'];
         return CommonUtils.shouldSkipFile(itemName, excludePatterns);
     }
@@ -194,40 +160,18 @@ class FileSynchronizer {
         });
         
         logger.info('='.repeat(40));
+   
+        CommonUtils.logOperationResult(this.stats, logger);
     }
-}
-
-function logMessage(key, params = {}, level = 'error') {
-    const fallbackMessages = {
-        'errors.configMissing': '❌ folder-mapping.json configuration file not found',
-        'errors.configError': `❌ Configuration error: ${params.error}`,
-        'errors.interrupted': '⚠️ Interrupted',
-        'errors.general': `❌ Error: ${params.error}`
-    };
-    
-    const message = fallbackMessages[key] || key;
-    
-    if (level === 'warn') {
-        logger.warn(message);
-    } else {
-        logger.error(message);
-    }
-}
-
-function logError(key, params = {}) {
-    logMessage(key, params, 'error');
 }
 
 function parseArgs() {
     const args = process.argv.slice(2);
-    const options = { type: 'all' };
+    const options = CommonUtils.parseArgs(args);
     
-    // Simple argument parsing - first non-flag argument is the target
-    if (args.length > 0 && !args[0].startsWith('-')) {
-        options.type = args[0];
-    } else if (args.length > 0) {
-        logger.error(`Unknown parameter: ${args[0]}`);
-        process.exit(1);
+    // Set default type if no type was specified
+    if (!options.type) {
+        options.type = 'all';
     }
     
     return options;
@@ -240,18 +184,12 @@ async function main() {
         const synchronizer = new FileSynchronizer(options);
         await synchronizer.run();
     } catch (error) {
-        if (error.code === 'SIGINT') {
-            logMessage('errors.interrupted', {}, 'warn');
-        } else {
-            logError('errors.general', { error: error.message });
-            process.exit(1);
-        }
+        CommonUtils.handleError(error, 'File sync');
     }
 }
 
 process.on('SIGINT', () => {
-    logMessage('errors.interrupted', {}, 'warn');
-    process.exit(0);
+    CommonUtils.handleError({ code: 'SIGINT' }, 'File sync');
 });
 
 if (require.main === module) {
