@@ -329,7 +329,7 @@ class FastBulkDownloader {
 
     async run() {
         const args = process.argv.slice(2).filter(arg => arg !== '--detail');
-        const target = args[0] || this.config.settings.defaultGroup;
+        const target = args[0] || 'all';
         logger.info(`🚀 Starting download - target: ${target}`);
         
         const itemsToProcess = this.getItemsToProcess(target);

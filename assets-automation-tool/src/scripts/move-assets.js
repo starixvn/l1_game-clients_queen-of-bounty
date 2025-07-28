@@ -2,38 +2,91 @@ const path = require('path');
 const { CommonUtils, copyFile, mkdir, readdir, stat, unlink, readFile, writeFile } = require('../utils/common');
 const { logger } = require('../utils/logger');
 const PROJECT_PATHS = require('../utils/paths');
-const ConfigManager = require('../core/ConfigManager');
 
 class FileSynchronizer {
     constructor(options = {}) {
         this.operationLog = [];
-        this.folderMapping = null;
+        this.config = null;
         this.copyType = options.type || 'all';
-        this.targetFolder = options.folder || null;
         
-        if (!options.config) {
-            throw new Error('Must provide config parameter');
-        }
-        this.CONFIG = options.config;
+        // Configuration paths
+        this.folderMapPath = path.join(PROJECT_PATHS.CONFIG.ROOT, 'folder-mapping.json');
     }
 
     async run() {
-        logger.info(`Starting sync: ${this.copyType}${this.targetFolder ? ': ' + this.targetFolder : ''}`);
+        logger.info(`Starting sync: ${this.copyType}`);
         
-        await this._loadMapping();
+        await this._loadConfig();
         
-        const folderCount = Object.keys(this.folderMapping).length;
-        if (folderCount === 0) {
-            logger.warn('⚠️ No folders found to sync');
+        const itemsToProcess = this.getItemsToProcess(this.copyType);
+        
+        if (itemsToProcess.length === 0) {
+            logger.warn('⚠️ No items found to sync');
             return;
         }
         
-        logger.info(`Will sync ${folderCount} folders`);
+        logger.info(`Will sync ${itemsToProcess.length} items: ${itemsToProcess.join(', ')}`);
         
-        await this._syncAllFolders();
+        await this._syncAllItems(itemsToProcess);
         this._showResults();
         
         logger.success(`✅ Completed! Total ${this.operationLog.length} operations`);
+    }
+
+    async _loadConfig() {
+        try {
+            const data = await readFile(this.folderMapPath, 'utf8');
+            this.config = JSON.parse(data);
+        } catch (error) {
+            const message = error.code === 'ENOENT' 
+                ? `Cannot find folder-mapping.json at ${this.folderMapPath}`
+                : `Configuration file format error: ${error.message}`;
+            throw new Error(message);
+        }
+    }
+
+    getItemsToProcess(target = 'all') {
+        const { groups, items } = this.config;
+        
+        // First check if target is a specific item (like 'font-bitmap')
+        if (items[target]) {
+            return [target];
+        }
+        
+        // Then check if target is a group
+        const groupMap = {
+            'all': 'all',
+            '2D': '2d',
+            '3D': '3d',
+            '2d': '2d',
+            '3d': '3d'
+        };
+        
+        const groupName = groupMap[target] || target;
+        
+        if (groups[groupName]) {
+            return groups[groupName];
+        }
+
+        logger.warn(`⚠️ Target '${target}' not found in groups or items, using default group 'all'`);
+        return groups.all || [];
+    }
+
+    async _syncAllItems(itemsToProcess) {
+        for (const itemName of itemsToProcess) {
+            const item = this.config.items[itemName];
+            if (!item) {
+                logger.warn(`⚠️ Item configuration not found: ${itemName}`);
+                continue;
+            }
+
+            const sourcePath = path.join(PROJECT_PATHS.OUTPUT.DOWNLOADS, item.sourcePath);
+            const destinationPath = path.join(PROJECT_PATHS.REPO_ROOT, item.targetPath);
+            
+            logger.info(`📂 Syncing: ${itemName} (${item.description})`);
+            
+            await this.syncFolder(sourcePath, destinationPath);
+        }
     }
 
     async syncFolder(sourcePath, destinationPath) {
@@ -50,61 +103,6 @@ class FileSynchronizer {
             }
             
             await this._processItem(item, sourcePath, destinationPath);
-        }
-    }
-
-    async _loadMapping() {
-        try {
-            const mappingPath = path.join(PROJECT_PATHS.CONFIG.ROOT, this.CONFIG.mappingFile);
-            const data = await readFile(mappingPath, 'utf8');
-            const config = JSON.parse(data);
-            
-            this.folderMapping = this._filterMapping(config);
-        } catch (error) {
-            const message = error.code === 'ENOENT' 
-                ? `Cannot find ${this.CONFIG.mappingFile}`
-                : `Configuration file format error: ${error.message}`;
-            throw new Error(message);
-        }
-    }
-
-    _filterMapping(config) {
-        const categories = config.categories || {};
-        
-        switch (this.copyType) {
-            case '2D':
-                return categories['2D'] || {};
-                
-            case '3D':
-                return categories['3D'] || {};
-                
-            case 'folder':
-                if (!this.targetFolder) {
-                    throw new Error('Must specify targetFolder when using folder mode');
-                }
-                for (const categoryMapping of Object.values(categories)) {
-                    if (categoryMapping[this.targetFolder]) {
-                        return { [this.targetFolder]: categoryMapping[this.targetFolder] };
-                    }
-                }
-                throw new Error(`Folder not found: ${this.targetFolder}`);
-                
-            case 'all':
-            default:
-                return Object.values(categories).reduce((all, category) => {
-                    return { ...all, ...category };
-                }, {});
-        }
-    }
-
-    async _syncAllFolders() {
-        for (const [key, destPath] of Object.entries(this.folderMapping)) {
-            const sourcePath = path.join(this.CONFIG.sourceFolder, key);
-            const fullDestPath = path.join(this.CONFIG.projectRoot, destPath);
-            
-            logger.info(`📂 Syncing: ${key}`);
-            
-            await this.syncFolder(sourcePath, fullDestPath);
         }
     }
 
@@ -164,7 +162,9 @@ class FileSynchronizer {
     }
 
     _shouldSkip(itemName) {
-        return CommonUtils.shouldSkipFile(itemName, this.CONFIG.excludePatterns);
+        // Default exclude patterns - can be made configurable if needed
+        const excludePatterns = ['.DS_Store', 'Thumbs.db', '.git', '.meta'];
+        return CommonUtils.shouldSkipFile(itemName, excludePatterns);
     }
 
     _log(status, operation, source = "", destination = "") {
@@ -199,8 +199,7 @@ class FileSynchronizer {
 
 function logMessage(key, params = {}, level = 'error') {
     const fallbackMessages = {
-        'errors.configMissing': '❌ config.json configuration file not found',
-        'errors.useCli': 'Please use interactive CLI tool: npm run cli',
+        'errors.configMissing': '❌ folder-mapping.json configuration file not found',
         'errors.configError': `❌ Configuration error: ${params.error}`,
         'errors.interrupted': '⚠️ Interrupted',
         'errors.general': `❌ Error: ${params.error}`
@@ -219,36 +218,16 @@ function logError(key, params = {}) {
     logMessage(key, params, 'error');
 }
 
-
 function parseArgs() {
     const args = process.argv.slice(2);
-    const options = { type: 'all', folder: null };
+    const options = { type: 'all' };
     
-    for (let i = 0; i < args.length; i++) {
-        switch (args[i]) {
-            case '--copytype':
-            case '-c':
-                if (i + 1 < args.length) {
-                    options.type = args[++i];
-                    if (!['all', '2D', '3D'].includes(options.type)) {
-                        logger.error(`Invalid copytype: ${options.type}`);
-                        process.exit(1);
-                    }
-                }
-                break;
-                
-            case '--folder':
-            case '-f':
-                if (i + 1 < args.length) {
-                    options.folder = args[++i];
-                    options.type = 'folder';
-                }
-                break;
-                
-            default:
-                logger.error(`Unknown parameter: ${args[i]}`);
-                process.exit(1);
-        }
+    // Simple argument parsing - first non-flag argument is the target
+    if (args.length > 0 && !args[0].startsWith('-')) {
+        options.type = args[0];
+    } else if (args.length > 0) {
+        logger.error(`Unknown parameter: ${args[0]}`);
+        process.exit(1);
     }
     
     return options;
@@ -256,25 +235,8 @@ function parseArgs() {
 
 async function main() {
     try {
-        let configManager = null;
-        
-        try {
-            configManager = await ConfigManager.createInstance();
-        } catch (error) {
-            if (error.message.includes('Configuration file not found')) {                
-                logError('errors.configMissing');
-                logError('errors.useCli');
-            } else {
-                logError('errors.configError', { error: error.message });
-            }
-            process.exit(1);
-        }
-        
         const options = parseArgs();
         
-        logger.success('✅ Configuration file loaded successfully');
-        
-        options.config = configManager.config;
         const synchronizer = new FileSynchronizer(options);
         await synchronizer.run();
     } catch (error) {
@@ -296,4 +258,4 @@ if (require.main === module) {
     main();
 }
 
-module.exports = { FileSynchronizer, ConfigManager };
+module.exports = { FileSynchronizer };

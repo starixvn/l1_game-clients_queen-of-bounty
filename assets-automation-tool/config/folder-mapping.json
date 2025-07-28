@@ -60,10 +60,5 @@
             "targetPath": "src/remote/icon",
             "description": "Game icons"
         }
-    },
-    "settings": {
-        "defaultGroup": "all",
-        "baseDownloadPath": "output/downloads",
-        "logLevel": "info"
     }
 }
