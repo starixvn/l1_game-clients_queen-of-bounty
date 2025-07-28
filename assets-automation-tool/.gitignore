@@ -3,5 +3,5 @@ dist/
 yarn.lock
 
 # protected files
-config/credentials.json
+# config/credentials.json
 output/downloads/

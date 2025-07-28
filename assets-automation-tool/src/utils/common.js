@@ -68,18 +68,8 @@ class ConfigManager {
         }
         
         // Then check if target is a group
-        const groupMap = {
-            'all': 'all',
-            '2D': '2d',
-            '3D': '3d',
-            '2d': '2d',
-            '3d': '3d'
-        };
-        
-        const groupName = groupMap[target] || target;
-        
-        if (groups[groupName]) {
-            return groups[groupName];
+        if (groups[target]) {
+            return groups[target];
         }
 
         console.warn(`⚠️ Target '${target}' not found in groups or items, using default group 'all'`);
@@ -195,37 +185,16 @@ class CommonUtils {
                     options.detail = true;
                     break;
                     
-                case '--copytype':
-                case '-c':
-                    if (i + 1 < args.length) {
-                        options.type = args[++i];
-                    }
-                    break;
-                    
                 default:
                     if (arg.startsWith('--')) {
                         console.warn(`⚠️ Unknown option: ${arg}`);
                     } else if (!arg.startsWith('-')) {
-                        // First non-flag argument is the target type (always override)
                         options.type = arg;
                     }
             }
         }
         
         return options;
-    }
-
-    static showProgress(current, total, prefix = 'Progress') {
-        const percentage = Math.round((current / total) * 100);
-        const barLength = 30;
-        const filledLength = Math.round((barLength * current) / total);
-        const bar = '█'.repeat(filledLength) + '░'.repeat(barLength - filledLength);
-        
-        process.stdout.write(`\r${prefix}: ${bar} ${percentage}% (${current}/${total})`);
-        
-        if (current === total) {
-            process.stdout.write('\n');
-        }
     }
 
     static async safeFileOperation(operation, errorMessage = 'File operation failed') {

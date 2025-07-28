@@ -5,7 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "download": "node src/scripts/download-tool.js",
-    "copytype": "node src/scripts/move-assets.js"
+    "download:2d": "node src/scripts/download-tool.js 2d",
+    "download:3d": "node src/scripts/download-tool.js 3d",
+    "download:detail": "node src/scripts/download-tool.js --detail",
+    "download:font-bitmap": "node src/scripts/download-tool.js font-bitmap",
+    "copytype": "node src/scripts/move-assets.js",
+    "copytype:2d": "node src/scripts/move-assets.js 2d",
+    "copytype:3d": "node src/scripts/move-assets.js 3d",
+    "copytype:font-bitmap": "node src/scripts/move-assets.js font-bitmap",
+    "full": "npm run download && npm run copytype"
   },
   "dependencies": {
     "googleapis": "^129.0.0"
