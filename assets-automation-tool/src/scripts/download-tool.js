@@ -5,7 +5,10 @@ const { CommonUtils, ConfigManager, StatsManager } = require('../utils/common');
 const { logger } = require('../utils/logger');
 const PROJECT_PATHS = require('../utils/paths');
 
-const FOLDER_ID = '1TKh17Q9yX5HM2q91MHkNs2qYR8b_IH2-';
+// Load configuration
+const configPath = path.join(__dirname, '../../config/config.json');
+const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+const FOLDER_ID = config.google.folderId;
 
 const auth = new google.auth.GoogleAuth({
     keyFile: PROJECT_PATHS.CONFIG.CREDENTIALS,

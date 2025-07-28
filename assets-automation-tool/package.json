@@ -13,7 +13,9 @@
     "copytype:2d": "node src/scripts/move-assets.js 2d",
     "copytype:3d": "node src/scripts/move-assets.js 3d",
     "copytype:font-bitmap": "node src/scripts/move-assets.js font-bitmap",
-    "full": "npm run download && npm run copytype"
+    "full": "npm run download && npm run copytype",
+    "cli": "node src/scripts/move-assets-cli.js",
+    "del-downloads": "rm -rf output/downloads"
   },
   "dependencies": {
     "googleapis": "^129.0.0"
