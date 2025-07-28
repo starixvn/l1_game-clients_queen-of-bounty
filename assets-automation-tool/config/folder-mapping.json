@@ -1,19 +1,69 @@
 {
-    "categories": {
-        "2D": {
-            "font-bitmap": "src/assets/game/resources/fonts",
-            "replace-assets/resources/textures/big-images": "src/assets/game/resources/textures/big-images",
-            "replace-assets/resources/i18n/images": "src/assets/resources/i18n-images",
-            "texture-packer": "graphics/images"
+    "groups": {
+        "2d": ["font-bitmap", "big-images", "i18n-images", "texture-packer"],
+        "3d": ["mascot", "symbol-spines", "btn-spin", "decor", "transition", "effect", "icon-game"],
+        "all": ["font-bitmap", "big-images", "i18n-images", "texture-packer", "mascot", "symbol-spines", "btn-spin", "decor", "transition", "effect", "icon-game"]
+    },
+    "items": {
+        "font-bitmap": {
+            "sourcePath": "font-bitmap",
+            "targetPath": "src/assets/game/resources/fonts",
+            "description": "Font bitmap files"
         },
-        "3D": {
-            "mascot": "src/assets/resources/spines/mascot",
-            "symbol-spines": "src/assets/resources/symbol-spines", 
-            "btn-spin": "src/assets/game/resources/spines/btn-spin",
-            "decor": "src/assets/resources/spines/decor",
-            "transition": "src/assets/game/resources/spines/transition",
-            "effect": "src/assets/game/resources/spines/effects",
-            "icon-game": "src/remote/icon"
+        "big-images": {
+            "sourcePath": "replace-assets/resources/textures/big-images",
+            "targetPath": "src/assets/game/resources/textures/big-images",
+            "description": "Large texture images"
+        },
+        "i18n-images": {
+            "sourcePath": "replace-assets/resources/i18n/images",
+            "targetPath": "src/assets/resources/i18n-images",
+            "description": "Internationalization images"
+        },
+        "texture-packer": {
+            "sourcePath": "texture-packer",
+            "targetPath": "graphics/images",
+            "description": "Texture packer resources"
+        },
+        "mascot": {
+            "sourcePath": "mascot",
+            "targetPath": "src/assets/resources/spines/mascot",
+            "description": "Mascot spine animations"
+        },
+        "symbol-spines": {
+            "sourcePath": "symbol-spines",
+            "targetPath": "src/assets/resources/symbol-spines",
+            "description": "Symbol spine animations"
+        },
+        "btn-spin": {
+            "sourcePath": "btn-spin",
+            "targetPath": "src/assets/game/resources/spines/btn-spin",
+            "description": "Spin button spine animation"
+        },
+        "decor": {
+            "sourcePath": "decor",
+            "targetPath": "src/assets/resources/spines/decor",
+            "description": "Decoration spine animations"
+        },
+        "transition": {
+            "sourcePath": "transition",
+            "targetPath": "src/assets/game/resources/spines/transition",
+            "description": "Transition spine animations"
+        },
+        "effect": {
+            "sourcePath": "effect",
+            "targetPath": "src/assets/game/resources/spines/effects",
+            "description": "Effect spine animations"
+        },
+        "icon-game": {
+            "sourcePath": "icon-game",
+            "targetPath": "src/remote/icon",
+            "description": "Game icons"
         }
+    },
+    "settings": {
+        "defaultGroup": "all",
+        "baseDownloadPath": "output/downloads",
+        "logLevel": "info"
     }
 }

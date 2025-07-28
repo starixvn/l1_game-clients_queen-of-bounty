@@ -219,24 +219,6 @@ function logError(key, params = {}) {
     logMessage(key, params, 'error');
 }
 
-function showHelp() {
-    console.log(`
-File Synchronization Tool - Usage Guide
-
-Usage: node move-assets.js [options]
-
-Options:
-  --copytype <type> Sync type: all | 2D | 3D (default: all)
-  --folder <n>      Specify folder name (sync single folder directly)
-  --help            Show this help message
-
-Examples:
-  node move-assets.js                        # Sync all folders
-  node move-assets.js --copytype 2D          # Sync 2D assets only
-  node move-assets.js --copytype 3D          # Sync 3D assets only
-  node move-assets.js --folder mascot        # Sync mascot folder only
-    `);
-}
 
 function parseArgs() {
     const args = process.argv.slice(2);
@@ -244,12 +226,6 @@ function parseArgs() {
     
     for (let i = 0; i < args.length; i++) {
         switch (args[i]) {
-            case '--help':
-            case '-h':
-                showHelp();
-                process.exit(0);
-                break;
-                
             case '--copytype':
             case '-c':
                 if (i + 1 < args.length) {
@@ -271,7 +247,6 @@ function parseArgs() {
                 
             default:
                 logger.error(`Unknown parameter: ${args[i]}`);
-                showHelp();
                 process.exit(1);
         }
     }
@@ -286,13 +261,7 @@ async function main() {
         try {
             configManager = await ConfigManager.createInstance();
         } catch (error) {
-            if (error.message.includes('Configuration file not found')) {
-                const args = process.argv.slice(2);
-                if (args.includes('--help') || args.includes('-h')) {
-                    showHelp();
-                    process.exit(0);
-                }
-                
+            if (error.message.includes('Configuration file not found')) {                
                 logError('errors.configMissing');
                 logError('errors.useCli');
             } else {

@@ -52,13 +52,9 @@ class CommonUtils {
         for (let i = 0; i < args.length; i++) {
             const arg = args[i];
             
-            switch (arg) {
-                case '--help':
-                case '-h':
-                    return { help: true };
-                    
-                case '--dry-run':
-                    options.isDryRun = true;
+            switch (arg) {                    
+                case '--detail':
+                    options.detail = true;
                     break;
                     
                 case '--copytype':
