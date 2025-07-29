@@ -265,6 +265,7 @@ export const languages = {
         "reach_max_win": "您達到了最大勝利",
         "real_mode": "真錢模式",
         "round_settle_msg": "祝你好運！",
+        "scatter_odds_preview": "累積4個或以上散佈標誌即可觸發免費旋轉。",
         "show_msg_when_spin_desktop": "按住空格鍵或點擊旋轉",
         "show_msg_when_spin_phone": "點擊或按住旋轉開始",
         "start": "開始",
@@ -285,8 +286,8 @@ export const languages = {
         "you_win_free_spin": "您贏得"
     },
     "LuckyNeko": {
-        "game_icon_name": "招財貓",
-        "game_name": "招財貓"
+        "game_icon_name": "幸運貓",
+        "game_name": "幸運貓"
     }
 };
 

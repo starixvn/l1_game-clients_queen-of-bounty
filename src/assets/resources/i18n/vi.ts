@@ -262,6 +262,7 @@ export const languages = {
         "reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa",
         "real_mode": "Chơi Thật",
         "round_settle_msg": "CHÚC MAY MẮN!",
+        "scatter_odds_preview": "4 biểu tượng Scatter trở lên sẽ kích hoạt vòng quay miễn phí.",
         "show_msg_when_spin_desktop": "BẤM QUAY HOẶC GIỮ PHÍM SPACE",
         "show_msg_when_spin_phone": "BẤM HOẶC GIỮ NÚT QUAY ĐỂ BẮT ĐẦU",
         "start": "Bắt Đầu",

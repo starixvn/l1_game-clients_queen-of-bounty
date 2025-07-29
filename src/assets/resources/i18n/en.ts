@@ -265,6 +265,7 @@ export const languages = {
         "reach_max_win": "You reached the Max Win",
         "real_mode": "Real Mode",
         "round_settle_msg": "GOOD LUCK!",
+        "scatter_odds_preview": "4 or more Scatter symbols will trigger free spins.",
         "show_msg_when_spin_desktop": "HOLD SPACE OR CLICK SPIN",
         "show_msg_when_spin_phone": "TAP OR HOLD SPIN TO BEGIN",
         "start": "Start",

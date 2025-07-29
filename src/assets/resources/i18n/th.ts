@@ -262,6 +262,7 @@ export const languages = {
         "reach_max_win": "คุณถึงยอดชนะสูงสุด",
         "real_mode": "โหมดจริง",
         "round_settle_msg": "โชคดี!",
+        "scatter_odds_preview": "สัญลักษณ์ Scatter 4 ตัวขึ้นไป จะเปิดใช้โบนัสฟรีสปิน",
         "show_msg_when_spin_desktop": "กดที่สเปคบาร์หรือคลิกสปิน",
         "show_msg_when_spin_phone": "แตะหรือกดค้างเพื่อเริ่มใหม่",
         "start": "เริ่ม",

@@ -262,6 +262,7 @@ export const languages = {
         "reach_max_win": "Anda mencapai Maksimal Menang",
         "real_mode": "Mode Nyata",
         "round_settle_msg": "SEMOGA BERUNTUNG!",
+        "scatter_odds_preview": "4 Simbol Scatter atau lebih akan memicu putaran gratis.",
         "show_msg_when_spin_desktop": "TAHAN SPASI ATAU KLIK SPIN",
         "show_msg_when_spin_phone": "KETUK ATAU TAHAN SPIN UNTUK MEMULAI",
         "start": "Mulai",
