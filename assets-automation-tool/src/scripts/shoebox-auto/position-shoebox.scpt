@@ -53,7 +53,7 @@ tell application "System Events"
     try
       -- 將 Finder 定位到 ShoeBox 下方
       set position of window 1 to {500, 450}
-      set size of window 1 to {500, 500}
+      set size of window 1 to {600, 400}
     end try
   end tell
   
@@ -90,18 +90,18 @@ tell application "System Events"
   log "🎯 目標字體文件: " & targetFontFile
   
   -- 根據字體文件名稱計算點擊位置
-  set clickX to 670
-  set clickY to 560
+  set clickX to 820
+  set clickY to 550
   
   if targetFontFile is "font-multiplier.png" then
-    set clickX to 670
-    set clickY to 560
+    set clickX to 820
+    set clickY to 550
   else if targetFontFile is "font-number.png" then
-    set clickX to 780
-    set clickY to 560
+    set clickX to 930
+    set clickY to 550
   else if targetFontFile is "font-win-money.png" then
-    set clickX to 900
-    set clickY to 560 
+    set clickX to 1040
+    set clickY to 550 
   end if
   
   log "📍 點擊位置: " & clickX & "," & clickY
