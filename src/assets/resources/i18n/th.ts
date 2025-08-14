@@ -281,9 +281,9 @@ export const languages = {
         "win_tumble_msg": "ขอแสดงความยินดี!",
         "you_win_free_spin": "คุณชนะ"
     },
-    "LuckyNeko": {
-        "game_icon_name": "แมวนำโชค",
-        "game_name": "แมวนำโชค"
+    "QueenOfBounty": {
+        "game_icon_name": "Queen of Bounty",
+        "game_name": "Queen of Bounty"
     }
 };
 

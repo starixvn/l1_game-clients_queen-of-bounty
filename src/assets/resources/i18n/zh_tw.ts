@@ -284,9 +284,9 @@ export const languages = {
         "win_tumble_msg": "恭喜！",
         "you_win_free_spin": "您贏得"
     },
-    "LuckyNeko": {
-        "game_icon_name": "招財貓",
-        "game_name": "招財貓"
+    "QueenOfBounty": {
+        "game_icon_name": "Queen of Bounty",
+        "game_name": "Queen of Bounty"
     }
 };
 

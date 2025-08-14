@@ -1,7 +1,7 @@
 export const settings = {
-    id: 143,
-    name: "LuckyNeko",
-    tolgeeNamespaces: ["LuckyNeko", "cascadingslot"],
+    id: 155,
+    name: "QueenOfBounty",
+    tolgeeNamespaces: ["QueenOfBounty", "cascadingslot"],
     durations: {
         wholeRound: 14,
         lockingBet: 3,
@@ -14,7 +14,7 @@ export const settings = {
     },
     isMiniGame: false,
     numberOfRoundHistory: 11,
-    observerNamespace: "LuckyNeko",
+    observerNamespace: "QueenOfBounty",
     validateBalanceWhenBet: true,
 };
 

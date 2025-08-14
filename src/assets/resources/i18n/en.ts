@@ -284,9 +284,9 @@ export const languages = {
         "win_tumble_msg": "CONGRATULATION!",
         "you_win_free_spin": "You win"
     },
-    "LuckyNeko": {
-        "game_icon_name": "Lucky Neko",
-        "game_name": "Lucky Neko"
+    "QueenOfBounty": {
+        "game_icon_name": "Queen of Bounty",
+        "game_name": "Queen of Bounty"
     }
 };
 

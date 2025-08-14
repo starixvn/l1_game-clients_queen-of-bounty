@@ -1,4 +1,4 @@
 window.crossConfig = {
     backgroundLocalized: false,
-    storagePrefixKey: "lucky_neko",
+    storagePrefixKey: "queen_of_bounty",
 };
