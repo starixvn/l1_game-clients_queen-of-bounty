@@ -1,0 +1,41 @@
+{
+  "name": "assets-automation-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "download": "node src/scripts/download-tool.js",
+    "download:2d": "node src/scripts/download-tool.js 2d",
+    "download:3d": "node src/scripts/download-tool.js 3d",
+    "download:detail": "node src/scripts/download-tool.js --detail",
+    "download:font-bitmap": "node src/scripts/download-tool.js font-bitmap",
+    "copytype": "node src/scripts/move-assets.js",
+    "copytype:2d": "node src/scripts/move-assets.js 2d",
+    "copytype:3d": "node src/scripts/move-assets.js 3d",
+    "copytype:font-bitmap": "node src/scripts/move-assets.js font-bitmap",
+    "full": "npm run download && npm run copytype",
+    "del-downloads": "rm -rf output/downloads",
+    "cli": "node src/scripts/slot-game-auto-tool-cli.js",
+    "texture-packer": "node src/scripts/texture-packer.js",
+    "symbol-checker-cli": "node src/scripts/symbol-checker-cli.js",
+    "get-height": "node src/scripts/shoebox-auto/get-height.js",
+    "shoebox-auto": "bash src/scripts/shoebox-auto/run-with-interrupt.sh all"
+  },
+  "dependencies": {
+    "googleapis": "^129.0.0",
+    "image-size": "^2.0.2"
+  },
+  "keywords": [
+    "google-drive",
+    "download",
+    "nodejs",
+    "folder",
+    "batch-download",
+    "file-sync",
+    "cocos-creator",
+    "assets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

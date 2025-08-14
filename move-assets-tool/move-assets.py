@@ -22,7 +22,7 @@ from pathlib import Path
 class FileSynchronizer:
     def __init__(self):
         self.source_folder = "/Users/jaysonCheng/Downloads/Test"
-        self.project_root = "/Users/jaysonCheng/pentagon/big-bass-fishing"
+        self.project_root = "/Users/jaysonCheng/pentagon/queen-of-bounty"
         self.operation_log = []
         self.folder_mapping = self._load_mapping()
     

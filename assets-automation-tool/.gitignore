@@ -1,0 +1,7 @@
+node_modules/
+dist/
+yarn.lock
+
+# protected files
+# config/credentials.json
+output/downloads/

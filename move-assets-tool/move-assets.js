@@ -29,7 +29,7 @@ const readFile = promisify(fs.readFile);
 class FileSynchronizer {
     constructor() {
         this.sourceFolder = "/Users/jaysonCheng/Downloads/Test";
-        this.projectRoot = "/Users/jaysonCheng/pentagon/lucky-neko";
+        this.projectRoot = "/Users/jaysonCheng/pentagon/queen-of-bounty";
         this.operationLog = [];
         this.folderMapping = null;
     }
