@@ -133,7 +133,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 48.16,
+      "width": 43.84,
       "height": 38
     },
     "_anchorPoint": {
@@ -179,7 +179,7 @@
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
-      "__uuid__": "7bf3edcc-e891-4662-8165-652b99c0688c",
+      "__uuid__": "6d63e2bb-e6d7-40d8-adaf-30cd5779a22e",
       "__expectedType__": "cc.BitmapFont"
     },
     "_isSystemFontUsed": false,
