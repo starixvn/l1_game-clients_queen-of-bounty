@@ -1,41 +1,55 @@
 
 transition.webp
-size: 1363,1095
+size: 1940,259
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-fish_black
+drop-1
   rotate: true
-  xy: 1107, 1
-  size: 1094, 256
-  orig: 1094, 256
+  xy: 1673, 74
+  size: 15, 31
+  orig: 15, 31
   offset: 0, 0
   index: -1
-fish_blue
-  rotate: false
-  xy: 0, 545
-  size: 1101, 271
-  orig: 1101, 271
+drop-2
+  rotate: true
+  xy: 1626, 43
+  size: 46, 47
+  orig: 46, 47
   offset: 0, 0
   index: -1
-fish_gold
+drop-3
   rotate: false
+  xy: 1717, 80
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+drop-4
+  rotate: false
+  xy: 1704, 76
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+taco_long
+  rotate: true
   xy: 0, 0
-  size: 1102, 270
-  orig: 1102, 270
-  offset: 0, 0
+  size: 259, 1626
+  orig: 350, 1626
+  offset: 38, 0
   index: -1
-fish_green
+water-1
   rotate: false
-  xy: 0, 818
-  size: 1105, 277
-  orig: 1105, 277
-  offset: 0, 0
+  xy: 1813, 33
+  size: 127, 226
+  orig: 127, 227
+  offset: 0, 1
   index: -1
-fish_red
-  rotate: false
-  xy: 0, 272
-  size: 1101, 271
-  orig: 1101, 271
+water-2
+  rotate: true
+  xy: 1626, 89
+  size: 170, 187
+  orig: 170, 187
   offset: 0, 0
   index: -1
