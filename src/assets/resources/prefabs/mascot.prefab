@@ -38,8 +38,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": -35,
+      "x": 500,
+      "y": 70,
       "z": 0
     },
     "_lrot": {
@@ -51,8 +51,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0.75,
-      "y": 0.75,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_mobility": 0,
@@ -145,7 +145,7 @@
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
-    "defaultAnimation": "idle",
+    "defaultAnimation": "event",
     "_premultipliedAlpha": false,
     "_timeScale": 1,
     "_preCacheMode": 0,
@@ -156,7 +156,7 @@
     "_debugBones": false,
     "_debugSlots": false,
     "_enableBatch": true,
-    "loop": false,
+    "loop": true,
     "_id": ""
   },
   {
