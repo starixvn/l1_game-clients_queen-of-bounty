@@ -1,573 +1,209 @@
 
 icon-game.webp
-size: 1922,1794
+size: 1990,523
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-bell
-  rotate: true
-  xy: 1825, 190
-  size: 98, 92
-  orig: 98, 92
+arm_L
+  rotate: false
+  xy: 928, 1
+  size: 176, 183
+  orig: 197, 196
+  offset: 0, 1
+  index: -1
+arm_R
+  rotate: false
+  xy: 1684, 3
+  size: 123, 251
+  orig: 123, 251
   offset: 0, 0
+  index: -1
+belt
+  rotate: false
+  xy: 310, 34
+  size: 130, 60
+  orig: 130, 60
+  offset: 0, 0
+  index: -1
+boat
+  rotate: true
+  xy: 1397, 39
+  size: 196, 287
+  orig: 198, 289
+  offset: 1, 1
   index: -1
 body
-  rotate: true
-  xy: 363, 1434
-  size: 360, 305
-  orig: 395, 320
-  offset: 0, 0
-  index: -1
-eyebrow-L
-  rotate: true
-  xy: 237, 9
-  size: 27, 20
-  orig: 27, 20
-  offset: 0, 0
-  index: -1
-eyebrow-R
-  rotate: true
-  xy: 324, 3
-  size: 37, 20
-  orig: 37, 20
-  offset: 0, 0
-  index: -1
-gameiconbg
   rotate: false
-  xy: 312, 40
-  size: 196, 429
-  orig: 196, 429
+  xy: 1211, 16
+  size: 186, 218
+  orig: 186, 218
   offset: 0, 0
   index: -1
-hand_L
-  rotate: false
-  xy: 363, 937
-  size: 102, 170
-  orig: 137, 178
-  offset: 0, 0
-  index: -1
-hand_R
-  rotate: false
-  xy: 152, 36
-  size: 160, 210
-  orig: 160, 210
-  offset: 0, 0
-  index: -1
-head
+cloud
   rotate: true
-  xy: 508, 142
-  size: 363, 344
-  orig: 363, 344
+  xy: 1104, 1
+  size: 233, 107
+  orig: 233, 107
   offset: 0, 0
   index: -1
-light
+earring-back
   rotate: false
-  xy: 0, 246
-  size: 185, 688
-  orig: 185, 688
+  xy: 322, 3
+  size: 16, 31
+  orig: 20, 31
+  offset: 0, 0
+  index: -1
+earring-front
+  rotate: true
+  xy: 229, 1
+  size: 19, 30
+  orig: 19, 30
+  offset: 0, 0
+  index: -1
+eyeback
+  rotate: true
+  xy: 308, 8
+  size: 21, 14
+  orig: 21, 14
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 338, 17
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+eyeclose
+  rotate: false
+  xy: 259, 2
+  size: 28, 18
+  orig: 31, 28
+  offset: 2, 2
+  index: -1
+face
+  rotate: true
+  xy: 1794, 299
+  size: 110, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+finger_L01
+  rotate: false
+  xy: 287, 8
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+finger_L02
+  rotate: false
+  xy: 283, 29
+  size: 27, 65
+  orig: 27, 65
+  offset: 0, 0
+  index: -1
+finger_L03
+  rotate: false
+  xy: 392, 94
+  size: 44, 43
+  orig: 44, 43
+  offset: 0, 0
+  index: -1
+finger_L_open
+  rotate: false
+  xy: 229, 20
+  size: 54, 74
+  orig: 54, 74
+  offset: 0, 0
+  index: -1
+gun
+  rotate: true
+  xy: 0, 0
+  size: 94, 229
+  orig: 94, 229
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 1534, 254
+  size: 269, 260
+  orig: 269, 260
+  offset: 0, 0
+  index: -1
+hair-front
+  rotate: false
+  xy: 740, 4
+  size: 188, 141
+  orig: 188, 141
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 1807, 55
+  size: 244, 140
+  orig: 244, 140
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 834, 184
+  size: 129, 339
+  orig: 129, 339
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 392, 137
+  size: 163, 386
+  orig: 163, 387
   offset: 0, 0
   index: -1
 lightoverlay
   rotate: false
-  xy: 326, 505
+  xy: 0, 94
   size: 196, 429
   orig: 196, 429
   offset: 0, 0
   index: -1
-mouth
-  rotate: true
-  xy: 1709, 15
-  size: 130, 116
-  orig: 133, 117
-  offset: 0, 1
-  index: -1
-paw-L
-  rotate: true
-  xy: 1220, 527
-  size: 100, 74
-  orig: 102, 74
-  offset: 0, 0
-  index: -1
-rope_R
-  rotate: true
-  xy: 0, 934
-  size: 860, 363
-  orig: 860, 363
-  offset: 0, 0
-  index: -1
-sakura-1
-  rotate: true
-  xy: 257, 10
-  size: 26, 67
-  orig: 26, 67
-  offset: 0, 0
-  index: -1
-sakura-2
-  rotate: true
-  xy: 152, 0
-  size: 36, 85
-  orig: 36, 85
-  offset: 0, 0
-  index: -1
-sakura-3
-  rotate: true
-  xy: 185, 249
-  size: 24, 54
-  orig: 24, 54
-  offset: 0, 0
-  index: -1
-sparkle
+main-bg
   rotate: false
-  xy: 1620, 1179
-  size: 67, 67
-  orig: 67, 67
+  xy: 196, 94
+  size: 196, 429
+  orig: 198, 431
+  offset: 1, 1
+  index: -1
+roll_L
+  rotate: false
+  xy: 555, 145
+  size: 279, 378
+  orig: 280, 379
   offset: 0, 0
   index: -1
-tail
+sail-L
   rotate: false
-  xy: 0, 7
-  size: 152, 239
-  orig: 152, 240
+  xy: 440, 7
+  size: 300, 130
+  orig: 300, 130
+  offset: 0, 0
+  index: -1
+skirt_back
+  rotate: false
+  xy: 963, 234
+  size: 286, 289
+  orig: 286, 289
+  offset: 0, 0
+  index: -1
+skirt_front
+  rotate: false
+  xy: 1249, 235
+  size: 285, 288
+  orig: 285, 288
   offset: 0, 0
   index: -1
 topcolor
-  rotate: true
-  xy: 185, 273
-  size: 196, 116
-  orig: 196, 121
-  offset: 0, 0
-  index: -1
-ui_particle_loop/particle_loop_00
-  rotate: true
-  xy: 1052, 205
-  size: 319, 193
-  orig: 350, 210
-  offset: 25, 6
-  index: -1
-ui_particle_loop/particle_loop_00000
   rotate: false
-  xy: 1681, 721
-  size: 160, 97
-  orig: 175, 105
-  offset: 12, 3
-  index: -1
-ui_particle_loop/particle_loop_00001
-  rotate: false
-  xy: 1681, 625
-  size: 160, 96
-  orig: 175, 105
-  offset: 12, 3
-  index: -1
-ui_particle_loop/particle_loop_00002
-  rotate: true
-  xy: 647, 946
-  size: 161, 92
-  orig: 175, 105
-  offset: 12, 7
-  index: -1
-ui_particle_loop/particle_loop_00003
-  rotate: true
-  xy: 1620, 1246
-  size: 161, 90
-  orig: 175, 105
-  offset: 12, 7
-  index: -1
-ui_particle_loop/particle_loop_00004
-  rotate: true
-  xy: 739, 946
-  size: 161, 91
-  orig: 175, 105
-  offset: 12, 7
-  index: -1
-ui_particle_loop/particle_loop_00005
-  rotate: true
-  xy: 465, 945
-  size: 162, 91
-  orig: 175, 105
-  offset: 12, 7
-  index: -1
-ui_particle_loop/particle_loop_00006
-  rotate: true
-  xy: 556, 945
-  size: 162, 91
-  orig: 175, 105
-  offset: 12, 7
-  index: -1
-ui_particle_loop/particle_loop_00007
-  rotate: false
-  xy: 1294, 534
-  size: 148, 98
-  orig: 175, 105
-  offset: 26, 0
-  index: -1
-ui_particle_loop/particle_loop_00008
-  rotate: true
-  xy: 1583, 537
-  size: 134, 98
-  orig: 175, 105
-  offset: 26, 0
-  index: -1
-ui_particle_loop/particle_loop_00009
-  rotate: true
-  xy: 1522, 1331
-  size: 148, 98
-  orig: 175, 105
-  offset: 27, 0
-  index: -1
-ui_particle_loop/particle_loop_00010
-  rotate: false
-  xy: 1575, 5
-  size: 134, 98
-  orig: 175, 105
-  offset: 27, 0
-  index: -1
-ui_particle_loop/particle_loop_00011
-  rotate: false
-  xy: 1442, 534
-  size: 141, 98
-  orig: 175, 105
-  offset: 27, 0
-  index: -1
-ui_particle_loop/particle_loop_00012
-  rotate: false
-  xy: 1083, 524
-  size: 137, 100
-  orig: 175, 105
-  offset: 32, 0
-  index: -1
-ui_particle_loop/particle_loop_00013
-  rotate: false
-  xy: 945, 524
-  size: 138, 100
-  orig: 175, 105
-  offset: 32, 0
-  index: -1
-ui_particle_loop/particle_loop_00014
-  rotate: false
-  xy: 805, 520
-  size: 140, 100
-  orig: 175, 105
-  offset: 31, 0
-  index: -1
-ui_particle_loop/particle_loop_00015
-  rotate: false
-  xy: 664, 518
-  size: 141, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00016
-  rotate: true
-  xy: 508, 0
-  size: 142, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00017
-  rotate: true
-  xy: 608, 0
-  size: 142, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00018
-  rotate: true
-  xy: 708, 0
-  size: 142, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00019
-  rotate: true
-  xy: 808, 0
-  size: 142, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00020
-  rotate: false
-  xy: 522, 518
-  size: 142, 100
-  orig: 175, 105
-  offset: 30, 0
-  index: -1
-ui_particle_loop/particle_loop_00021
-  rotate: true
-  xy: 1522, 1189
-  size: 142, 98
-  orig: 175, 105
-  offset: 30, 2
-  index: -1
-ui_particle_loop/particle_loop_00022
-  rotate: true
-  xy: 1631, 288
-  size: 143, 97
-  orig: 175, 105
-  offset: 29, 3
-  index: -1
-ui_particle_loop/particle_loop_00023
-  rotate: true
-  xy: 1672, 145
-  size: 143, 97
-  orig: 175, 105
-  offset: 29, 3
-  index: -1
-ui_particle_loop/particle_loop_00024
-  rotate: true
-  xy: 1728, 288
-  size: 143, 97
-  orig: 175, 105
-  offset: 29, 3
-  index: -1
-ui_particle_loop/particle_loop_00025
-  rotate: true
-  xy: 1825, 288
-  size: 143, 97
-  orig: 175, 105
-  offset: 29, 3
-  index: -1
-ui_particle_loop/particle_loop_00026
-  rotate: true
-  xy: 1575, 103
-  size: 144, 97
-  orig: 175, 105
-  offset: 28, 3
-  index: -1
-ui_particle_loop/particle_loop_00027
-  rotate: false
-  xy: 1709, 431
-  size: 144, 97
-  orig: 175, 105
-  offset: 28, 3
-  index: -1
-ui_particle_loop/particle_loop_00028
-  rotate: false
-  xy: 1681, 528
-  size: 159, 97
-  orig: 175, 105
-  offset: 13, 3
-  index: -1
-ui_particle_loop/particle_loop_00029
-  rotate: true
-  xy: 1478, 88
-  size: 159, 97
-  orig: 175, 105
-  offset: 13, 3
-  index: -1
-ui_particle_loop/particle_loop_01
-  rotate: true
-  xy: 1101, 627
-  size: 319, 192
-  orig: 350, 210
-  offset: 25, 6
-  index: -1
-ui_particle_loop/particle_loop_02
-  rotate: true
-  xy: 1243, 1474
-  size: 320, 191
-  orig: 350, 210
-  offset: 25, 6
-  index: -1
-ui_particle_loop/particle_loop_03
-  rotate: true
-  xy: 1141, 1150
-  size: 322, 188
-  orig: 350, 210
-  offset: 24, 6
-  index: -1
-ui_particle_loop/particle_loop_04
-  rotate: true
-  xy: 912, 624
-  size: 322, 189
-  orig: 350, 210
-  offset: 24, 7
-  index: -1
-ui_particle_loop/particle_loop_05
-  rotate: true
-  xy: 862, 1471
-  size: 323, 181
-  orig: 350, 210
-  offset: 24, 14
-  index: -1
-ui_particle_loop/particle_loop_06
-  rotate: true
-  xy: 752, 1145
-  size: 324, 189
-  orig: 350, 210
-  offset: 24, 7
-  index: -1
-ui_particle_loop/particle_loop_07
-  rotate: true
-  xy: 668, 1469
-  size: 325, 194
-  orig: 350, 210
-  offset: 23, 1
-  index: -1
-ui_particle_loop/particle_loop_08
-  rotate: true
-  xy: 717, 620
-  size: 326, 195
-  orig: 350, 210
-  offset: 23, 0
-  index: -1
-ui_particle_loop/particle_loop_09
-  rotate: true
-  xy: 522, 618
-  size: 327, 195
-  orig: 350, 210
-  offset: 23, 0
-  index: -1
-ui_particle_loop/particle_loop_10
-  rotate: true
-  xy: 363, 1107
-  size: 327, 196
-  orig: 350, 210
-  offset: 23, 0
-  index: -1
-ui_particle_loop/particle_loop_11
-  rotate: true
-  xy: 1434, 1479
-  size: 315, 196
-  orig: 350, 210
-  offset: 22, 0
-  index: -1
-ui_particle_loop/particle_loop_12
-  rotate: false
-  xy: 830, 946
-  size: 312, 199
-  orig: 350, 210
-  offset: 26, 0
-  index: -1
-ui_particle_loop/particle_loop_13
-  rotate: true
-  xy: 1710, 818
-  size: 310, 199
-  orig: 350, 210
-  offset: 31, 0
-  index: -1
-ui_particle_loop/particle_loop_14
-  rotate: true
-  xy: 1710, 1128
-  size: 279, 200
-  orig: 350, 210
-  offset: 63, 0
-  index: -1
-ui_particle_loop/particle_loop_15
-  rotate: true
-  xy: 852, 201
-  size: 319, 200
-  orig: 350, 210
-  offset: 24, 0
-  index: -1
-ui_particle_loop/particle_loop_16
-  rotate: false
-  xy: 1427, 956
-  size: 283, 200
-  orig: 350, 210
-  offset: 60, 0
-  index: -1
-ui_particle_loop/particle_loop_17
-  rotate: true
-  xy: 941, 1149
-  size: 322, 200
-  orig: 350, 210
-  offset: 22, 0
-  index: -1
-ui_particle_loop/particle_loop_18
-  rotate: true
-  xy: 1043, 1472
-  size: 322, 200
-  orig: 350, 210
-  offset: 22, 0
-  index: -1
-ui_particle_loop/particle_loop_19
-  rotate: false
-  xy: 1194, 5
-  size: 284, 200
-  orig: 350, 210
-  offset: 60, 0
-  index: -1
-ui_particle_loop/particle_loop_20
-  rotate: false
-  xy: 1142, 950
-  size: 285, 200
-  orig: 350, 210
-  offset: 60, 0
-  index: -1
-ui_particle_loop/particle_loop_21
-  rotate: false
-  xy: 908, 1
-  size: 286, 200
-  orig: 350, 210
-  offset: 59, 0
-  index: -1
-ui_particle_loop/particle_loop_22
-  rotate: true
-  xy: 1486, 671
-  size: 285, 195
-  orig: 350, 210
-  offset: 59, 5
-  index: -1
-ui_particle_loop/particle_loop_23
-  rotate: false
-  xy: 1630, 1407
-  size: 287, 194
-  orig: 350, 210
-  offset: 58, 6
-  index: -1
-ui_particle_loop/particle_loop_24
-  rotate: true
-  xy: 1438, 247
-  size: 287, 193
-  orig: 350, 210
-  offset: 57, 6
-  index: -1
-ui_particle_loop/particle_loop_25
-  rotate: true
-  xy: 559, 1107
-  size: 327, 193
-  orig: 350, 210
-  offset: 17, 6
-  index: -1
-ui_particle_loop/particle_loop_26
-  rotate: false
-  xy: 1630, 1601
-  size: 288, 193
-  orig: 350, 210
-  offset: 56, 6
-  index: -1
-ui_particle_loop/particle_loop_27
-  rotate: true
-  xy: 1293, 632
-  size: 318, 193
-  orig: 350, 210
-  offset: 26, 6
-  index: -1
-ui_particle_loop/particle_loop_28
-  rotate: true
-  xy: 1245, 209
-  size: 318, 193
-  orig: 350, 210
-  offset: 26, 6
-  index: -1
-ui_particle_loop/particle_loop_29
-  rotate: true
-  xy: 1329, 1156
-  size: 318, 193
-  orig: 350, 210
-  offset: 25, 6
-  index: -1
-whisker
-  rotate: false
-  xy: 239, 261
-  size: 61, 12
-  orig: 61, 13
-  offset: 0, 1
-  index: -1
-wood
-  rotate: true
-  xy: 185, 469
-  size: 465, 141
-  orig: 465, 141
-  offset: 0, 0
+  xy: 1794, 409
+  size: 196, 114
+  orig: 198, 117
+  offset: 1, 1
   index: -1
