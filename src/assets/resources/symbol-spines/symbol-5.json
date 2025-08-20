@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "ABw4I97JDux2luEFVrnvWPLz5CM",
+	"hash": "Va6ZWg6jkEf8w9/Lr4D5P7llGrs",
 	"spine": "3.8.99",
 	"x": -68.28,
 	"y": -71.55,
@@ -927,7 +927,8 @@
 			"s5_hammer": {
 				"rotate": [
 					{ "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.1333, "angle": -18.61 }
+					{ "time": 0.1333, "angle": -18.61, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667 }
 				]
 			},
 			"flash": {
