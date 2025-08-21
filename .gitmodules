@@ -18,3 +18,7 @@
 	path = src/extensions/shared-cascading-slot
 	url = ../game-client-packages/shared-cascading-slot.git
 	branch = main
+[submodule "src/extensions/shared-common-slot"]
+	path = src/extensions/shared-common-slot
+	url = ../game-client-packages/shared-common-slot.git
+	branch = main

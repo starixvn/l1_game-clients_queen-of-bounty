@@ -1,22 +1,30 @@
 {
     "lobbyNames": {
-        "en": "Queen Of Bounty",
+        "en": "Queen of Bounty",
+        "es": "Reina del Botín",
+        "fil_ph": "Queen of Bounty",
         "id": "Queen Of Bounty",
-        "th": "Queen Of Bounty",
-        "vi": "Queen Of Bounty",
-        "zh_cn": "Queen Of Bounty",
-        "zh_tw": "Queen Of Bounty",
-        "ja": "Queen Of Bounty",
-        "es": "Queen Of Bounty"
+        "ja": "海賊女王の財宝",
+        "ko": null,
+        "pt_br": "Queen of Bounty",
+        "th": "ราชินีแห่ง\nขุมทรัพย์",
+        "tr": null,
+        "vi": "Nữ Hoàng\nHải Tặc",
+        "zh_cn": "赏金女王",
+        "zh_tw": "賞金女王"
     },
     "gameNames": {
         "en": "Queen Of Bounty",
+        "es": "Reina del Botín",
+        "fil_ph": "Queen Of Bounty",
         "id": "Queen Of Bounty",
-        "th": "Queen Of Bounty",
-        "vi": "Queen Of Bounty",
-        "zh_cn": "Queen Of Bounty",
-        "zh_tw": "Queen Of Bounty",
-        "ja": "Queen Of Bounty",
-        "es": "Queen Of Bounty"
+        "ja": "海賊女王の財宝",
+        "ko": null,
+        "pt_br": "Queen Of Bounty",
+        "th": "ราชินีแห่งขุมทรัพย์",
+        "tr": null,
+        "vi": "Nữ Hoàng Hải Tặc",
+        "zh_cn": "赏金女王",
+        "zh_tw": "賞金女王"
     }
 }

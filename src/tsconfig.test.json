@@ -11,6 +11,7 @@
             "cc": ["./tests/cocos-testing/cc"],
             "db://shared-components/*": ["./extensions/shared-components/assets/*"],
             "db://i18n/*": ["./extensions/i18n/assets/*"],
+            "db://shared-common-slot/*": ["./tests/mocks/shared-common-slot/*"],
             "db://shared-cascading-slot/index": ["./tests/mocks/shared-cascading-slot/index"],
             "db://assets/game/scripts/game-settings": ["./tests/mocks/game-settings"],
             "db://assets/game/scripts/containerOptions": ["./tests/assets/game/scripts/containerOptions"]
