@@ -3,5 +3,8 @@
     "turnOnMultiplierMascot": true,
     "multiplierMascotAnimationName": "event",
     "bigWinMascotAnimationName": "event",
-    "freespinMascotAnimationName": "event"
+    "freespinMascotAnimationName": "event",
+    "enablePeekEffect": true,
+    "effectIntroMultiplier": true,
+    "fixedExplodeDuration": 0.6
 }
