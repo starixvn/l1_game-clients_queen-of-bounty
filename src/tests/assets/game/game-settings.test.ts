@@ -8,6 +8,10 @@ jest.mock("db://shared-components/shared/scripts/startup", () => ({
     getSharedContainer: jest.fn(() => ({ sharedContainer: true })),
 }));
 
+jest.mock("db://shared-components/shared/scripts/startup", () => ({
+    getSharedContainer: jest.fn(() => ({ sharedContainer: true })),
+}));
+
 describe("settings", () => {
     it("should have data as expected", () => {
         // Assert
