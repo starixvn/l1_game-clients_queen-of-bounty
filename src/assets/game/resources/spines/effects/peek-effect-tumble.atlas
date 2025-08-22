@@ -1,216 +1,181 @@
 
 peek-effect-tumble.webp
-size: 1770,244
+size: 1774,890
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-tumble00
+tumble/tumble_00
   rotate: false
-  xy: 61, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 0, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble01
+tumble/tumble_01
   rotate: false
-  xy: 120, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 111, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble02
+tumble/tumble_02
   rotate: false
-  xy: 179, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 222, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble03
+tumble/tumble_03
   rotate: false
-  xy: 238, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 333, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble04
+tumble/tumble_04
   rotate: false
-  xy: 297, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 444, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble05
+tumble/tumble_05
   rotate: false
-  xy: 356, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 555, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble06
-  rotate: false
-  xy: 415, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_06
+  rotate: true
+  xy: 0, 222
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble07
+tumble/tumble_07
   rotate: false
-  xy: 474, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 666, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble08
-  rotate: false
-  xy: 533, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_08
+  rotate: true
+  xy: 0, 111
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble09
+tumble/tumble_09
   rotate: false
-  xy: 592, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 777, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble10
-  rotate: false
-  xy: 651, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_10
+  rotate: true
+  xy: 0, 0
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble11
+tumble/tumble_11
   rotate: false
-  xy: 710, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 888, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble12
+tumble/tumble_12
   rotate: false
-  xy: 769, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 999, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble13
+tumble/tumble_13
   rotate: false
-  xy: 828, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1110, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble14
-  rotate: false
-  xy: 887, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_14
+  rotate: true
+  xy: 559, 222
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble15
+tumble/tumble_15
   rotate: false
-  xy: 946, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1221, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble16
-  rotate: false
-  xy: 1005, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_16
+  rotate: true
+  xy: 559, 111
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble17
+tumble/tumble_17
   rotate: false
-  xy: 1064, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1332, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble18
-  rotate: false
-  xy: 1123, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_18
+  rotate: true
+  xy: 559, 0
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble19
+tumble/tumble_19
   rotate: false
-  xy: 1182, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1443, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble20
+tumble/tumble_20
   rotate: false
-  xy: 1241, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1554, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble21
+tumble/tumble_21
   rotate: false
-  xy: 1300, 2
-  size: 55, 240
-  orig: 55, 240
+  xy: 1665, 333
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble22
-  rotate: false
-  xy: 1359, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_22
+  rotate: true
+  xy: 1118, 222
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble23
-  rotate: false
-  xy: 1418, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_23
+  rotate: true
+  xy: 1118, 111
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1
-tumble24
-  rotate: false
-  xy: 1477, 2
-  size: 55, 240
-  orig: 55, 240
-  offset: 0, 0
-  index: -1
-tumble25
-  rotate: false
-  xy: 1536, 2
-  size: 55, 240
-  orig: 55, 240
-  offset: 0, 0
-  index: -1
-tumble26
-  rotate: false
-  xy: 1595, 2
-  size: 55, 240
-  orig: 55, 240
-  offset: 0, 0
-  index: -1
-tumble27
-  rotate: false
-  xy: 1654, 2
-  size: 55, 240
-  orig: 55, 240
-  offset: 0, 0
-  index: -1
-tumble28
-  rotate: false
-  xy: 1713, 2
-  size: 55, 240
-  orig: 55, 240
-  offset: 0, 0
-  index: -1
-tumble29
-  rotate: false
-  xy: 2, 2
-  size: 55, 240
-  orig: 55, 240
+tumble/tumble_24
+  rotate: true
+  xy: 1118, 0
+  size: 109, 557
+  orig: 109, 557
   offset: 0, 0
   index: -1

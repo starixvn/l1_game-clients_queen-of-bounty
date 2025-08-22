@@ -59,6 +59,11 @@
         "path": "spinning-turbo",
         "isLazyLoad": true
     },
+    "symbol-match": {
+        "bundle": "resources",
+        "path": "symbol-match",
+        "isLazyLoad": true
+    },
     "transition": {
         "bundle": "resources",
         "path": "transition",
@@ -89,16 +94,27 @@
         "path": "increment-stop",
         "isLazyLoad": true
     },
-    "winning-level-up": {
-        "bundle": "resources",
-        "path": "winning-level-up",
-        "isLazyLoad": true
-    },
     "bgm-song1": {
         "bundle": "resources",
         "path": "background-music/song1",
         "type": "music",
         "isMusicGame": true,
+        "isLazyLoad": true
+    },
+    "peek-effect-item": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "peek-effect-reel": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "peek-effect-shift": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "transform-freespins": {
+        "bundle": "resources",
         "isLazyLoad": true
     }
 }

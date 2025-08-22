@@ -22,4 +22,5 @@ export enum AudioIds {
     SYMBOL_MATCH = "symbol-match",
     TRANSITION = "transition",
     WINNING_LEVEL_UP = "winning-level-up",
+    TRANSFORM_FREESPINS = "transform-freespins",
 }

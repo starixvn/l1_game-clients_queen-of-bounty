@@ -1,0 +1,30 @@
+{
+    "others": {
+        "resources": [
+            "audios/click",
+            "audios/peek-effect-item",
+            "audios/peek-effect-reel",
+            "audios/peek-effect-shift",
+            "audios/reelstop1",
+            "audios/reelstop2",
+            "audios/reelstop3",
+            "audios/reelstop4",
+            "audios/reelstop5",
+            "audios/spin-button",
+            "audios/spinning-normal",
+            "audios/spinning-turbo",
+            "audios/big-win-increment-ended",
+            "audios/big-win",
+            "audios/coin",
+            "audios/freespin",
+            "audios/increment",
+            "audios/increment-stop",
+            "audios/multiplier-appear"
+        ]
+    },
+    "localized": {
+        "resources": {
+            "1": []
+        }
+    }
+}
