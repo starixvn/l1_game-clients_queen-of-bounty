@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "WaWveEaiyRq683bSlW0yXv8eTkU",
+	"hash": "XlIlYyZy3Sy9RQIevBGF8A/fwUI",
 	"spine": "3.8.99",
 	"x": -382,
 	"y": -320.51,
@@ -152,7 +152,7 @@
 				"sparkle": { "x": 0.26, "y": -2.1, "rotation": 180, "width": 98, "height": 94 }
 			},
 			"text_freespins": {
-				"text_freespins": { "x": 1.7, "y": -255.6, "width": 369, "height": 59 }
+				"text_freespins": { "x": 1.7, "y": -255.6, "width": 386, "height": 65 }
 			}
 		}
 	}
