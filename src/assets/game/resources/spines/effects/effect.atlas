@@ -6,21 +6,21 @@ filter: Linear,Linear
 repeat: none
 big_win_anchor
   rotate: true
-  xy: 683, 1585
-  size: 164, 292
+  xy: 683, 1587
+  size: 162, 291
   orig: 168, 298
-  offset: 2, 3
+  offset: 3, 3
   index: -1
 cannon_gold
   rotate: false
-  xy: 1565, 1567
+  xy: 1564, 1567
   size: 231, 175
   orig: 231, 175
   offset: 0, 0
   index: -1
 cannon_silver
   rotate: false
-  xy: 1798, 1558
+  xy: 1797, 1558
   size: 232, 175
   orig: 232, 175
   offset: 0, 0
@@ -272,7 +272,7 @@ fs_particle/fs_particle_05
   index: -1
 mega_win_anchor
   rotate: true
-  xy: 977, 1585
+  xy: 976, 1585
   size: 164, 292
   orig: 168, 298
   offset: 2, 3
@@ -440,7 +440,7 @@ sparkle
   index: -1
 super_win_anchor
   rotate: true
-  xy: 1271, 1584
+  xy: 1270, 1584
   size: 164, 292
   orig: 168, 298
   offset: 2, 3

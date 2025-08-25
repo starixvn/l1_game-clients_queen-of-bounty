@@ -1,103 +1,103 @@
 
 decor-spine.webp
-size: 1922,1668
+size: 2012,1743
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 boat
-  rotate: true
-  xy: 0, 246
-  size: 1422, 786
-  orig: 1424, 788
-  offset: 1, 1
+  rotate: false
+  xy: 0, 956
+  size: 1780, 787
+  orig: 1780, 788
+  offset: 0, 0
   index: -1
 clould_L_01
-  rotate: false
-  xy: 644, 14
+  rotate: true
+  xy: 1780, 1287
   size: 456, 232
   orig: 456, 232
   offset: 0, 0
   index: -1
 clould_L_02
   rotate: false
-  xy: 1610, 797
+  xy: 1258, 7
   size: 293, 197
   orig: 293, 197
   offset: 0, 0
   index: -1
 clould_L_03
-  rotate: true
-  xy: 1691, 172
+  rotate: false
+  xy: 822, 155
   size: 436, 218
   orig: 436, 218
   offset: 0, 0
   index: -1
 clould_L_04
   rotate: false
-  xy: 1082, 948
+  xy: 644, 38
   size: 355, 46
   orig: 355, 48
   offset: 0, 1
   index: -1
 clould_L_05
   rotate: false
-  xy: 786, 1597
+  xy: 644, 84
   size: 304, 71
   orig: 305, 71
   offset: 1, 0
   index: -1
 clould_R_01
   rotate: true
-  xy: 786, 257
+  xy: 1653, 189
   size: 588, 274
   orig: 592, 275
   offset: 1, 1
   index: -1
 clould_R_02
   rotate: true
-  xy: 1610, 39
+  xy: 1927, 208
   size: 569, 81
   orig: 570, 107
   offset: 0, 26
   index: -1
 clould_R_03
-  rotate: false
-  xy: 1100, 31
+  rotate: true
+  xy: 1780, 777
   size: 510, 231
   orig: 510, 233
   offset: 0, 2
   index: -1
 clould_R_04
   rotate: false
-  xy: 1610, 608
+  xy: 1551, 0
   size: 286, 189
   orig: 286, 189
   offset: 0, 0
   index: -1
 roll_L
   rotate: true
-  xy: 1060, 262
+  xy: 822, 373
   size: 583, 535
   orig: 583, 535
   offset: 0, 0
   index: -1
 roll_R
   rotate: false
-  xy: 1100, 994
+  xy: 0, 282
   size: 822, 674
   orig: 822, 674
   offset: 0, 0
   index: -1
 sail-L
   rotate: true
-  xy: 786, 845
+  xy: 1357, 204
   size: 752, 296
   orig: 753, 296
   offset: 1, 0
   index: -1
 sail-R
   rotate: false
-  xy: 0, 0
+  xy: 0, 36
   size: 644, 246
   orig: 644, 246
   offset: 0, 0
