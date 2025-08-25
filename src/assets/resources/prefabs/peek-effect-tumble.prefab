@@ -124,12 +124,12 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 102.48999786376953,
-      "height": 534.719970703125
+      "width": 109,
+      "height": 557
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.49507271671437425,
+      "x": 0.5,
       "y": 0.5
     },
     "_id": ""
@@ -161,7 +161,7 @@
       "a": 255
     },
     "_skeletonData": {
-      "__uuid__": "cbb2f7e4-151c-4722-8dd7-a7a90261abf4",
+      "__uuid__": "d13eba02-3ce6-4b2f-a2fd-5c0f11601809",
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",

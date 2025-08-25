@@ -124,13 +124,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 172.75,
-      "height": 562.6300048828125
+      "width": 214.6199951171875,
+      "height": 689.02001953125
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5120694592444148,
-      "y": 0.5004709740478818
+      "x": 0.5,
+      "y": 0.5
     },
     "_id": ""
   },
@@ -165,7 +165,7 @@
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
-    "defaultAnimation": "show",
+    "defaultAnimation": "show(fall)",
     "_premultipliedAlpha": false,
     "_timeScale": 1,
     "_preCacheMode": 0,

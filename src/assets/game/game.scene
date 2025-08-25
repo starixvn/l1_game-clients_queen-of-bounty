@@ -606,7 +606,7 @@
       "__id__": 9
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 17
@@ -668,8 +668,8 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.4931075707579362,
-      "y": 0.7629760938567238
+      "x": 0.5,
+      "y": 0.5
     },
     "_id": "1azjYqIqVH2rE07+Pu1Bnb"
   },
