@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "jZwSRc+fT/34hH2h8s0lENxqe7M",
+	"hash": "8cTFijnc92i7uxsj7N1nf1if7zY",
 	"spine": "3.8.99",
 	"x": -81.78,
 	"y": -75,
@@ -1189,13 +1189,17 @@
 			"s9_frame_starglow": {
 				"color": [
 					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.2667, "color": "ffffffff" }
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
 				]
 			},
 			"s9_particle/s9_particle_00": {
 				"color": [
 					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.1667, "color": "ffffffff" }
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9, "color": "ffffff00" }
 				],
 				"attachment": [
 					{ "name": "s9_particle/s9_particle_00" },
@@ -1231,7 +1235,9 @@
 			"s9_rudder_starglow": {
 				"color": [
 					{ "color": "ffffff00", "curve": 0.25, "c3": 0.75 },
-					{ "time": 0.2667, "color": "ffffffff" }
+					{ "time": 0.2667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7333, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "color": "ffffff00" }
 				]
 			},
 			"s9_text_lightsweep/s9_text_lightsweep_00": {
