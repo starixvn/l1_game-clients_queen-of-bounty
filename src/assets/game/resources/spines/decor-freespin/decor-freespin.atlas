@@ -1,0 +1,97 @@
+
+decor-freespin.webp
+size: 2020,1538
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boat
+  rotate: false
+  xy: 0, 752
+  size: 1422, 786
+  orig: 1424, 788
+  offset: 1, 1
+  index: -1
+drop-2
+  rotate: false
+  xy: 0, 31
+  size: 46, 47
+  orig: 46, 47
+  offset: 0, 0
+  index: -1
+drop-3
+  rotate: false
+  xy: 2005, 1529
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1
+drop-4
+  rotate: false
+  xy: 1364, 739
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+lightning01
+  rotate: false
+  xy: 1364, 181
+  size: 430, 393
+  orig: 430, 393
+  offset: 0, 0
+  index: -1
+lightning02
+  rotate: false
+  xy: 1794, 201
+  size: 226, 373
+  orig: 226, 374
+  offset: 0, 0
+  index: -1
+lightning03
+  rotate: false
+  xy: 1422, 574
+  size: 519, 429
+  orig: 532, 441
+  offset: 0, 0
+  index: -1
+roll_L
+  rotate: false
+  xy: 1422, 1003
+  size: 583, 535
+  orig: 583, 535
+  offset: 0, 0
+  index: -1
+roll_R
+  rotate: false
+  xy: 0, 78
+  size: 822, 674
+  orig: 822, 674
+  offset: 0, 0
+  index: -1
+sail-L
+  rotate: true
+  xy: 822, 0
+  size: 752, 296
+  orig: 753, 296
+  offset: 1, 0
+  index: -1
+sail-R
+  rotate: true
+  xy: 1118, 108
+  size: 644, 246
+  orig: 644, 246
+  offset: 0, 0
+  index: -1
+water-1
+  rotate: true
+  xy: 1364, 54
+  size: 127, 226
+  orig: 127, 227
+  offset: 0, 1
+  index: -1
+water-2
+  rotate: true
+  xy: 1590, 11
+  size: 170, 187
+  orig: 170, 187
+  offset: 0, 0
+  index: -1
