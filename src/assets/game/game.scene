@@ -3043,7 +3043,7 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -5.360000000000005,
+      "x": 0,
       "y": 275,
       "z": 0
     },
@@ -3134,12 +3134,12 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 670,
+      "width": 660,
       "height": 550
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.508,
+      "x": 0.5,
       "y": 0
     },
     "_id": "40jUduYmJEdKX5jLDs0k/0"
