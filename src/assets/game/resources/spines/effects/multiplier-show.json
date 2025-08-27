@@ -1,22 +1,26 @@
 {
 "skeleton": {
-	"hash": "8mZeon4z674KiIODurDl44Q0pNA",
+	"hash": "Ks+pYSrslW37Wpc/nHiLvcu+NGM",
 	"spine": "3.8.99",
 	"x": -146,
-	"y": -354,
+	"y": -98,
 	"width": 292,
 	"height": 708,
 	"images": "./image/",
 	"audio": ""
 },
 "bones": [
-	{ "name": "root" }
+	{ "name": "root" },
+	{ "name": "level0", "parent": "root", "y": 256 },
+	{ "name": "level1", "parent": "root", "y": 256 },
+	{ "name": "level2", "parent": "root", "y": 256 },
+	{ "name": "level3", "parent": "root", "y": 256 }
 ],
 "slots": [
-	{ "name": "level0/level0_00", "bone": "root", "attachment": "level0/level0_23" },
-	{ "name": "level1/level1_00", "bone": "root", "attachment": "level1/level1_23" },
-	{ "name": "level2/level2_00", "bone": "root", "attachment": "level2/level2_23" },
-	{ "name": "level3/level3_00", "bone": "root", "attachment": "level3/level3_23" }
+	{ "name": "level0/level0_00", "bone": "level0", "attachment": "level0/level0_11" },
+	{ "name": "level1/level1_00", "bone": "level1", "attachment": "level1/level1_23" },
+	{ "name": "level2/level2_00", "bone": "level2", "attachment": "level2/level2_23" },
+	{ "name": "level3/level3_00", "bone": "level3", "attachment": "level3/level3_23" }
 ],
 "skins": [
 	{
