@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "3Acx5nwb4yerqzYXL5RmI/olx8A",
+	"hash": "kI5u14/fX3d3jDQQgWu72l5sPiU",
 	"spine": "3.8.99",
 	"x": -107.31,
 	"y": -344.51,
@@ -108,7 +108,7 @@
 	}
 ],
 "animations": {
-	"show(fall)": {
+	"show": {
 		"slots": {
 			"fall/fall_0": {
 				"attachment": [
@@ -168,25 +168,6 @@
 					{ "time": 0.7667, "name": "fall/fall_23" },
 					{ "time": 0.8, "name": "fall/fall_24" },
 					{ "time": 0.8333, "name": null }
-				]
-			},
-			"fire/fire_00": {
-				"attachment": [
-					{ "name": null }
-				]
-			}
-		}
-	},
-	"show(fire)": {
-		"slots": {
-			"fall/fall_0": {
-				"attachment": [
-					{ "name": null }
-				]
-			},
-			"fall/fall_00": {
-				"attachment": [
-					{ "name": null }
 				]
 			},
 			"fire/fire_00": {
