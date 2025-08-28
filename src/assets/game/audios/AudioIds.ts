@@ -23,4 +23,9 @@ export enum AudioIds {
     TRANSITION = "transition",
     WINNING_LEVEL_UP = "winning-level-up",
     FREESPINS_BONUS = "freespins-bonus",
+    CLICK_SYMBOL = "click-symbol",
+    MULTIPLIER_LAND = "multiplier-land",
+    BGM_FEATURE = "bgm-feature",
+    MEGA_WIN = "mega-win",
+    SUPER_WIN = "super-win",
 }

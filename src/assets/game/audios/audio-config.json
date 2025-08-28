@@ -113,7 +113,23 @@
         "bundle": "resources",
         "isLazyLoad": true
     },
-    "transform-freespins": {
+    "bgm-feature": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "click-symbol": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "multiplier-land": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "mega-win": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "super-win": {
         "bundle": "resources",
         "isLazyLoad": true
     }

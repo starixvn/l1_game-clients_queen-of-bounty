@@ -7,5 +7,5 @@
     "enablePeekEffect": true,
     "effectIntroMultiplier": true,
     "fixedExplodeDuration": 0.6,
-    "allowBackgroundChangeOnFreeSpins": true
+    "allowBonusFeature": true
 }
