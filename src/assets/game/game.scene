@@ -190,7 +190,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 434.621776504298,
+    "_orthoHeight": 397.8048780487805,
     "_near": 0,
     "_far": 1000,
     "_color": {
@@ -852,7 +852,6 @@
     "__type__": "859f3DQFd9B87HfO0X/HNex",
     "_name": "",
     "_objFlags": 0,
-    "__editorExtras__": {},
     "node": {
       "__id__": 9
     },
@@ -873,7 +872,6 @@
     "__type__": "0a7caXbYmxKTJaBmfYhrbb/",
     "_name": "",
     "_objFlags": 0,
-    "__editorExtras__": {},
     "node": {
       "__id__": 27
     },
