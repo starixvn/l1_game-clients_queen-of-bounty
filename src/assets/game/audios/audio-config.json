@@ -1,10 +1,10 @@
 {
-    "big_win": {
+    "big-win": {
         "bundle": "resources",
         "path": "big-win",
         "isLazyLoad": true
     },
-    "big_win_stop": {
+    "big-win-increment-ended": {
         "bundle": "resources",
         "path": "big-win-increment-ended",
         "isLazyLoad": true
@@ -14,47 +14,27 @@
         "path": "click",
         "isLazyLoad": true
     },
-    "coin": {
+    "win": {
         "bundle": "resources",
-        "path": "coin",
+        "path": "win",
         "isLazyLoad": true
     },
-    "reel_stop_1": {
+    "reel-stop": {
         "bundle": "resources",
-        "path": "reelstop1",
+        "path": "reel-stop",
         "isLazyLoad": true
     },
-    "reel_stop_2": {
-        "bundle": "resources",
-        "path": "reelstop2",
-        "isLazyLoad": true
-    },
-    "reel_stop_3": {
-        "bundle": "resources",
-        "path": "reelstop3",
-        "isLazyLoad": true
-    },
-    "reel_stop_4": {
-        "bundle": "resources",
-        "path": "reelstop4",
-        "isLazyLoad": true
-    },
-    "reel_stop_5": {
-        "bundle": "resources",
-        "path": "reelstop5",
-        "isLazyLoad": true
-    },
-    "spin_button": {
+    "spin-button": {
         "bundle": "resources",
         "path": "spin-button",
         "isLazyLoad": true
     },
-    "spinning_normal": {
+    "spinning-normal": {
         "bundle": "resources",
         "path": "spinning-normal",
         "isLazyLoad": true
     },
-    "spinning_turbo": {
+    "spinning-turbo": {
         "bundle": "resources",
         "path": "spinning-turbo",
         "isLazyLoad": true
@@ -69,34 +49,29 @@
         "path": "transition",
         "isLazyLoad": true
     },
-    "multiplier_appear": {
+    "multiplier-activate": {
         "bundle": "resources",
-        "path": "multiplier-appear",
+        "path": "multiplier-activate",
         "isLazyLoad": true
     },
-    "tumble_win": {
-        "bundle": "resources",
-        "path": "symbol-match",
-        "isLazyLoad": true
-    },
-    "free_spin": {
+    "freespin": {
         "bundle": "resources",
         "path": "freespin",
         "isLazyLoad": true
     },
-    "increment": {
+    "wincount-increment": {
         "bundle": "resources",
-        "path": "increment",
+        "path": "wincount-increment",
         "isLazyLoad": true
     },
-    "increment_stop": {
+    "increment-stop": {
         "bundle": "resources",
         "path": "increment-stop",
         "isLazyLoad": true
     },
-    "bgm-song1": {
+    "bgm-main": {
         "bundle": "resources",
-        "path": "background-music/song1",
+        "path": "background-music/bgm-main",
         "type": "music",
         "isMusicGame": true,
         "isLazyLoad": true
@@ -113,7 +88,7 @@
         "bundle": "resources",
         "isLazyLoad": true
     },
-    "bgm-feature": {
+    "bgm-freespin": {
         "bundle": "resources",
         "isLazyLoad": true
     },
@@ -125,11 +100,7 @@
         "bundle": "resources",
         "isLazyLoad": true
     },
-    "mega-win": {
-        "bundle": "resources",
-        "isLazyLoad": true
-    },
-    "super-win": {
+    "winning-level-up": {
         "bundle": "resources",
         "isLazyLoad": true
     }
