@@ -23,5 +23,8 @@ export enum AudioIds {
     MULTIPLIER_LAND = "multiplier-land",
     MEGA_WIN = "mega-win",
     SUPER_WIN = "super-win",
-    SYMBOL_SPECIAL = "symbol-special",
+    SYMBOL_SCATTER = "symbol-scatter",
+    SYMBOL_SCATTER_WIN = "symbol-scatter-win",
+    STINGER_WINCOUNT = "stinger-wincount",
+    STINGER_FREESPIN_WIN = "stinger-freespin-win",
 }
