@@ -64,9 +64,9 @@
         "path": "wincount-increment",
         "isLazyLoad": true
     },
-    "increment-stop": {
+    "wincount-stop": {
         "bundle": "resources",
-        "path": "increment-stop",
+        "path": "wincount-stop",
         "isLazyLoad": true
     },
     "bgm-main": {
@@ -101,6 +101,14 @@
         "isLazyLoad": true
     },
     "winning-level-up": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "super-win": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "mega-win": {
         "bundle": "resources",
         "isLazyLoad": true
     }

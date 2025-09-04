@@ -15,11 +15,16 @@
             "audios/spinning-turbo",
             "audios/big-win-increment-ended",
             "audios/big-win",
-            "audios/coin",
+            "audios/win",
             "audios/freespin",
-            "audios/increment",
-            "audios/increment-stop",
-            "audios/multiplier-appear"
+            "audios/wincount-increment",
+            "audios/wincount-stop",
+            "audios/multiplier-activate",
+            "audios/super-win",
+            "audios/mega-win",
+            "audios/multiplier-land",
+            "audios/bgm-freespin",
+            "audios/click-symbol"
         ]
     },
     "localized": {
