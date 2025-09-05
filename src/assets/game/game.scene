@@ -14148,7 +14148,7 @@
     "_enabled": true,
     "__prefab": null,
     "_clip": null,
-    "_loop": false,
+    "_loop": true,
     "_playOnAwake": true,
     "_volume": 1,
     "_id": "a6PFIjfLdFUp5WyEFGhDXS"
