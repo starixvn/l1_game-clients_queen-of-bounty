@@ -4,11 +4,6 @@
         "path": "big-win",
         "isLazyLoad": true
     },
-    "big-win-increment-ended": {
-        "bundle": "resources",
-        "path": "big-win-increment-ended",
-        "isLazyLoad": true
-    },
     "click": {
         "bundle": "resources",
         "path": "click",
@@ -80,7 +75,7 @@
         "bundle": "resources",
         "isLazyLoad": true
     },
-    "peek-effect-reel": {
+    "stinger-freespin-peek": {
         "bundle": "resources",
         "isLazyLoad": true
     },
@@ -109,6 +104,22 @@
         "isLazyLoad": true
     },
     "mega-win": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "stinger-wincount": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "stinger-freespin-win": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "symbol-scatter": {
+        "bundle": "resources",
+        "isLazyLoad": true
+    },
+    "symbol-scatter-win": {
         "bundle": "resources",
         "isLazyLoad": true
     }

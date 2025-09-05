@@ -8,7 +8,7 @@ export enum AudioIds {
     WINCOUNT_STOP = "wincount-stop",
     MULTIPLIER_ACTIVATE = "multiplier-activate",
     PEEK_EFFECT_ITEM = "peek-effect-item",
-    PEEK_EFFECT_REEL = "peek-effect-reel",
+    PEEK_EFFECT_REEL = "stinger-freespin-peek",
     PEEK_EFFECT_SHIFT = "peek-effect-shift",
     REEL_STOP = "reel-stop",
     BGM_MAIN = "bgm-main",
