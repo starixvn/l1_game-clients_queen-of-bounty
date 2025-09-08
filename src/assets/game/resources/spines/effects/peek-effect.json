@@ -1,12 +1,12 @@
 {
 "skeleton": {
-	"hash": "kI5u14/fX3d3jDQQgWu72l5sPiU",
+	"hash": "5ulUp1folxXgSIXQihLC4K/1KS8",
 	"spine": "3.8.99",
 	"x": -107.31,
 	"y": -344.51,
 	"width": 214.62,
 	"height": 689.02,
-	"images": "./image/",
+	"images": "",
 	"audio": ""
 },
 "bones": [
@@ -24,7 +24,7 @@
 		"name": "default",
 		"attachments": {
 			"fall/fall_0": {
-				"fall/fall_00": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
+				"fall/fall_00": { "x": 52.53, "y": 22.51, "width": 1, "height": 1 },
 				"fall/fall_01": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
 				"fall/fall_02": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
 				"fall/fall_03": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
@@ -51,7 +51,7 @@
 				"fall/fall_24": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 }
 			},
 			"fall/fall_00": {
-				"fall/fall_00": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
+				"fall/fall_00": { "x": 52.53, "y": 22.51, "width": 1, "height": 1 },
 				"fall/fall_01": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
 				"fall/fall_02": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
 				"fall/fall_03": { "x": 52.53, "y": 22.51, "width": 105, "height": 644 },
