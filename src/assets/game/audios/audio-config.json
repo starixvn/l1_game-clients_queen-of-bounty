@@ -4,6 +4,21 @@
         "path": "big-win",
         "isLazyLoad": true
     },
+    "gun-2-shot": {
+        "bundle": "resources",
+        "path": "gun-2-shot",
+        "isLazyLoad": true
+    },
+    "gun-3-shot": {
+        "bundle": "resources",
+        "path": "gun-3-shot",
+        "isLazyLoad": true
+    },
+    "multiplier": {
+        "bundle": "resources",
+        "path": "multiplier",
+        "isLazyLoad": true
+    },
     "click": {
         "bundle": "resources",
         "path": "click",

@@ -27,4 +27,7 @@ export enum AudioIds {
     SYMBOL_SCATTER_WIN = "symbol-scatter-win",
     STINGER_WINCOUNT = "stinger-wincount",
     STINGER_FREESPIN_WIN = "stinger-freespin-win",
+    GUN_2_SHOT = "gun-2-shot",
+    GUN_3_SHOT = "gun-3-shot",
+    MULTIPLIER = "multiplier"
 }
