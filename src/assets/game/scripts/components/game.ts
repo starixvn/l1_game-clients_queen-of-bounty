@@ -10,6 +10,7 @@ import "./../../../resources/i18n";
 import { CascadingUIStore } from "db://shared-cascading-slot/index";
 import { AudioUtils } from "db://shared-components/game/audios/utils";
 import { AudioIds } from "../../audios/AudioIds";
+import { globalEmitter, resourcesCache, SlotClientEvent } from "db://shared-cascading-slot/cascading-slot-utils";
 
 startGame(settings.name, containerOptions, siteConfigs, settings.tolgeeNamespaces);
 
@@ -20,6 +21,15 @@ const { observer, render, handle } = Observer;
 @observer(settings.name)
 export default class Game extends CascadingSlotGame {
     namespace = settings.name;
+    private gameConfig: any;
+    onLoad() {
+        super.onLoad();
+        this.gameConfig = resourcesCache.gameFeatures;
+        if (this.gameConfig.effectIntroMultiplier) {
+            globalEmitter.on(SlotClientEvent.EFFECT_INTRO_MULTIPLIER, this.playAnimMultiplierLand, this);
+        }
+    }
+
     @render(CascadingUIStore, (store) => store.haveBigWin)
     async renderHaveBigWin(haveBigWin: boolean) {
         if (haveBigWin) {
@@ -33,11 +43,8 @@ export default class Game extends CascadingSlotGame {
         }
     }
 
-    @render(CascadingUIStore, (store) => store.triggerWinMultiplier, { fireImmediately: false })
-    async renderTriggerWinMultiplier(triggerWinMultiplier: boolean) {
-        if (triggerWinMultiplier) {
-            console.log("renderTriggerWinMultiplier", triggerWinMultiplier);
-            AudioUtils.playSFX(AudioIds.MULTIPLIER);
-        }
+    playAnimMultiplierLand() {
+        AudioUtils.playSFX(AudioIds.MULTIPLIER);
     }
+
 }
