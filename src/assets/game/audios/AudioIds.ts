@@ -1,6 +1,5 @@
 export enum AudioIds {
     BIG_WIN = "big-win",
-    BIG_WIN_INCREMENT_ENDED = "big-win-increment-ended",
     CLICK = "click",
     WIN = "win",
     FREESPIN = "freespin",
