@@ -1,0 +1,12 @@
+{
+    "google": {
+        "folderId": "15piI-6KRuRbnFuA57FdvZR45xYPME5ry",
+        "credentialsPath": "config/credentials.json"
+    },
+    "download": {
+        "maxConcurrentDownloads": 20,
+        "maxConcurrentFolders": 5,
+        "retryAttempts": 3,
+        "retryDelay": 1000
+    }
+}

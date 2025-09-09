@@ -1,0 +1,22 @@
+{
+  "paths": {
+    "project_root": "/Users/jaysonCheng/pentagon/queen-of-bounty/assets-automation-tool",
+    "shoebox_app": "/Applications/Shoebox.app", 
+    "cliclick": "/opt/homebrew/bin/cliclick"
+  },
+  "directories": {
+    "font_bitmap": "output/downloads/font-bitmap", 
+    "export_result": "export-result"
+  },
+  "supported_fonts": [
+    "font-multiplier.png",
+    "font-number.png", 
+    "font-win-money.png"
+  ],
+  "delays": {
+    "finder_open": 2,
+    "shoebox_open": 4,
+    "file_generation": 3,
+    "auto_continue": 2
+  }
+}

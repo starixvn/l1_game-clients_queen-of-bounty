@@ -1,16 +1,19 @@
-{
-  "name": "game-client-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "generate-tolgee-data": "ts-node ./tolgee-generator/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@tolgee/web": "^5.10.1",
-    "ts-node": "^10.9.1"
+  {
+    "name": "game-client-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "generate-tolgee-data": "node --loader ts-node/esm ./tolgee-generator/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@cli/tolgee-generator": "^1.1.5",
+      "@tolgee/web": "^5.10.1",
+      "@types/jest": "^30.0.0",
+      "ts-node": "^10.9.1"
+    }
   }
-}

@@ -1,0 +1,10 @@
+{
+    "folder": "output/downloads/font-bitmap",
+    "files": [
+        "font-multiplier.png",
+        "font-number.png",
+        "font-win-money.png"
+      ],
+      "output": "image-heights.json"
+  }
+  

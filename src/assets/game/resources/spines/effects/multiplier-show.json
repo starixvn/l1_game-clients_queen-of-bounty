@@ -1,0 +1,330 @@
+{
+"skeleton": {
+	"hash": "Ks+pYSrslW37Wpc/nHiLvcu+NGM",
+	"spine": "3.8.99",
+	"x": -146,
+	"y": -98,
+	"width": 292,
+	"height": 708,
+	"images": "./image/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "level0", "parent": "root", "y": 256 },
+	{ "name": "level1", "parent": "root", "y": 256 },
+	{ "name": "level2", "parent": "root", "y": 256 },
+	{ "name": "level3", "parent": "root", "y": 256 }
+],
+"slots": [
+	{ "name": "level0/level0_00", "bone": "level0", "attachment": "level0/level0_11" },
+	{ "name": "level1/level1_00", "bone": "level1", "attachment": "level1/level1_23" },
+	{ "name": "level2/level2_00", "bone": "level2", "attachment": "level2/level2_23" },
+	{ "name": "level3/level3_00", "bone": "level3", "attachment": "level3/level3_23" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"level0/level0_00": {
+				"level0/level0_00": { "width": 292, "height": 708 },
+				"level0/level0_01": { "width": 292, "height": 708 },
+				"level0/level0_02": { "width": 292, "height": 708 },
+				"level0/level0_03": { "width": 292, "height": 708 },
+				"level0/level0_04": { "width": 292, "height": 708 },
+				"level0/level0_05": { "width": 292, "height": 708 },
+				"level0/level0_06": { "width": 292, "height": 708 },
+				"level0/level0_07": { "width": 292, "height": 708 },
+				"level0/level0_08": { "width": 292, "height": 708 },
+				"level0/level0_09": { "width": 292, "height": 708 },
+				"level0/level0_10": { "width": 292, "height": 708 },
+				"level0/level0_11": { "width": 292, "height": 708 },
+				"level0/level0_12": { "width": 292, "height": 708 },
+				"level0/level0_13": { "width": 292, "height": 708 },
+				"level0/level0_14": { "width": 292, "height": 708 },
+				"level0/level0_15": { "width": 292, "height": 708 },
+				"level0/level0_16": { "width": 292, "height": 708 },
+				"level0/level0_17": { "width": 292, "height": 708 },
+				"level0/level0_18": { "width": 292, "height": 708 },
+				"level0/level0_19": { "width": 292, "height": 708 },
+				"level0/level0_20": { "width": 292, "height": 708 },
+				"level0/level0_21": { "width": 292, "height": 708 },
+				"level0/level0_22": { "width": 292, "height": 708 },
+				"level0/level0_23": { "width": 292, "height": 708 }
+			},
+			"level1/level1_00": {
+				"level1/level1_00": { "width": 292, "height": 708 },
+				"level1/level1_01": { "width": 292, "height": 708 },
+				"level1/level1_02": { "width": 292, "height": 708 },
+				"level1/level1_03": { "width": 292, "height": 708 },
+				"level1/level1_04": { "width": 292, "height": 708 },
+				"level1/level1_05": { "width": 292, "height": 708 },
+				"level1/level1_06": { "width": 292, "height": 708 },
+				"level1/level1_07": { "width": 292, "height": 708 },
+				"level1/level1_08": { "width": 292, "height": 708 },
+				"level1/level1_09": { "width": 292, "height": 708 },
+				"level1/level1_10": { "width": 292, "height": 708 },
+				"level1/level1_11": { "width": 292, "height": 708 },
+				"level1/level1_12": { "width": 292, "height": 708 },
+				"level1/level1_13": { "width": 292, "height": 708 },
+				"level1/level1_14": { "width": 292, "height": 708 },
+				"level1/level1_15": { "width": 292, "height": 708 },
+				"level1/level1_16": { "width": 292, "height": 708 },
+				"level1/level1_17": { "width": 292, "height": 708 },
+				"level1/level1_18": { "width": 292, "height": 708 },
+				"level1/level1_19": { "width": 292, "height": 708 },
+				"level1/level1_20": { "width": 292, "height": 708 },
+				"level1/level1_21": { "width": 292, "height": 708 },
+				"level1/level1_22": { "width": 292, "height": 708 },
+				"level1/level1_23": { "width": 292, "height": 708 }
+			},
+			"level2/level2_00": {
+				"level2/level2_00": { "width": 292, "height": 708 },
+				"level2/level2_01": { "width": 292, "height": 708 },
+				"level2/level2_02": { "width": 292, "height": 708 },
+				"level2/level2_03": { "width": 292, "height": 708 },
+				"level2/level2_04": { "width": 292, "height": 708 },
+				"level2/level2_05": { "width": 292, "height": 708 },
+				"level2/level2_06": { "width": 292, "height": 708 },
+				"level2/level2_07": { "width": 292, "height": 708 },
+				"level2/level2_08": { "width": 292, "height": 708 },
+				"level2/level2_09": { "width": 292, "height": 708 },
+				"level2/level2_10": { "width": 292, "height": 708 },
+				"level2/level2_11": { "width": 292, "height": 708 },
+				"level2/level2_12": { "width": 292, "height": 708 },
+				"level2/level2_13": { "width": 292, "height": 708 },
+				"level2/level2_14": { "width": 292, "height": 708 },
+				"level2/level2_15": { "width": 292, "height": 708 },
+				"level2/level2_16": { "width": 292, "height": 708 },
+				"level2/level2_17": { "width": 292, "height": 708 },
+				"level2/level2_18": { "width": 292, "height": 708 },
+				"level2/level2_19": { "width": 292, "height": 708 },
+				"level2/level2_20": { "width": 292, "height": 708 },
+				"level2/level2_21": { "width": 292, "height": 708 },
+				"level2/level2_22": { "width": 292, "height": 708 },
+				"level2/level2_23": { "width": 292, "height": 708 }
+			},
+			"level3/level3_00": {
+				"level3/level3_00": { "width": 292, "height": 708 },
+				"level3/level3_01": { "width": 292, "height": 708 },
+				"level3/level3_02": { "width": 292, "height": 708 },
+				"level3/level3_03": { "width": 292, "height": 708 },
+				"level3/level3_04": { "width": 292, "height": 708 },
+				"level3/level3_05": { "width": 292, "height": 708 },
+				"level3/level3_06": { "width": 292, "height": 708 },
+				"level3/level3_07": { "width": 292, "height": 708 },
+				"level3/level3_08": { "width": 292, "height": 708 },
+				"level3/level3_09": { "width": 292, "height": 708 },
+				"level3/level3_10": { "width": 292, "height": 708 },
+				"level3/level3_11": { "width": 292, "height": 708 },
+				"level3/level3_12": { "width": 292, "height": 708 },
+				"level3/level3_13": { "width": 292, "height": 708 },
+				"level3/level3_14": { "width": 292, "height": 708 },
+				"level3/level3_15": { "width": 292, "height": 708 },
+				"level3/level3_16": { "width": 292, "height": 708 },
+				"level3/level3_17": { "width": 292, "height": 708 },
+				"level3/level3_18": { "width": 292, "height": 708 },
+				"level3/level3_19": { "width": 292, "height": 708 },
+				"level3/level3_20": { "width": 292, "height": 708 },
+				"level3/level3_21": { "width": 292, "height": 708 },
+				"level3/level3_22": { "width": 292, "height": 708 },
+				"level3/level3_23": { "width": 292, "height": 708 }
+			}
+		}
+	}
+],
+"animations": {
+	"level0": {
+		"slots": {
+			"level0/level0_00": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0333, "name": "level0/level0_00" },
+					{ "time": 0.0667, "name": "level0/level0_01" },
+					{ "time": 0.1, "name": "level0/level0_02" },
+					{ "time": 0.1333, "name": "level0/level0_03" },
+					{ "time": 0.1667, "name": "level0/level0_04" },
+					{ "time": 0.2, "name": "level0/level0_05" },
+					{ "time": 0.2333, "name": "level0/level0_06" },
+					{ "time": 0.2667, "name": "level0/level0_07" },
+					{ "time": 0.3, "name": "level0/level0_08" },
+					{ "time": 0.3333, "name": "level0/level0_09" },
+					{ "time": 0.3667, "name": "level0/level0_10" },
+					{ "time": 0.4, "name": "level0/level0_11" },
+					{ "time": 0.4333, "name": "level0/level0_12" },
+					{ "time": 0.4667, "name": "level0/level0_13" },
+					{ "time": 0.5, "name": "level0/level0_14" },
+					{ "time": 0.5333, "name": "level0/level0_15" },
+					{ "time": 0.5667, "name": "level0/level0_16" },
+					{ "time": 0.6, "name": "level0/level0_17" },
+					{ "time": 0.6333, "name": "level0/level0_18" },
+					{ "time": 0.6667, "name": "level0/level0_19" },
+					{ "time": 0.7, "name": "level0/level0_20" },
+					{ "time": 0.7333, "name": "level0/level0_21" },
+					{ "time": 0.7667, "name": "level0/level0_22" },
+					{ "time": 0.8, "name": "level0/level0_23" }
+				]
+			},
+			"level1/level1_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level2/level2_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level3/level3_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"level1": {
+		"slots": {
+			"level0/level0_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level1/level1_00": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0333, "name": "level1/level1_00" },
+					{ "time": 0.0667, "name": "level1/level1_01" },
+					{ "time": 0.1, "name": "level1/level1_02" },
+					{ "time": 0.1333, "name": "level1/level1_03" },
+					{ "time": 0.1667, "name": "level1/level1_04" },
+					{ "time": 0.2, "name": "level1/level1_05" },
+					{ "time": 0.2333, "name": "level1/level1_06" },
+					{ "time": 0.2667, "name": "level1/level1_07" },
+					{ "time": 0.3, "name": "level1/level1_08" },
+					{ "time": 0.3333, "name": "level1/level1_09" },
+					{ "time": 0.3667, "name": "level1/level1_10" },
+					{ "time": 0.4, "name": "level1/level1_11" },
+					{ "time": 0.4333, "name": "level1/level1_12" },
+					{ "time": 0.4667, "name": "level1/level1_13" },
+					{ "time": 0.5, "name": "level1/level1_14" },
+					{ "time": 0.5333, "name": "level1/level1_15" },
+					{ "time": 0.5667, "name": "level1/level1_16" },
+					{ "time": 0.6, "name": "level1/level1_17" },
+					{ "time": 0.6333, "name": "level1/level1_18" },
+					{ "time": 0.6667, "name": "level1/level1_19" },
+					{ "time": 0.7, "name": "level1/level1_20" },
+					{ "time": 0.7333, "name": "level1/level1_21" },
+					{ "time": 0.7667, "name": "level1/level1_22" },
+					{ "time": 0.8, "name": "level1/level1_23" }
+				]
+			},
+			"level2/level2_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level3/level3_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"level2": {
+		"slots": {
+			"level0/level0_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level1/level1_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level2/level2_00": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0333, "name": "level2/level2_00" },
+					{ "time": 0.0667, "name": "level2/level2_01" },
+					{ "time": 0.1, "name": "level2/level2_02" },
+					{ "time": 0.1333, "name": "level2/level2_03" },
+					{ "time": 0.1667, "name": "level2/level2_04" },
+					{ "time": 0.2, "name": "level2/level2_05" },
+					{ "time": 0.2333, "name": "level2/level2_06" },
+					{ "time": 0.2667, "name": "level2/level2_07" },
+					{ "time": 0.3, "name": "level2/level2_08" },
+					{ "time": 0.3333, "name": "level2/level2_09" },
+					{ "time": 0.3667, "name": "level2/level2_10" },
+					{ "time": 0.4, "name": "level2/level2_11" },
+					{ "time": 0.4333, "name": "level2/level2_12" },
+					{ "time": 0.4667, "name": "level2/level2_13" },
+					{ "time": 0.5, "name": "level2/level2_14" },
+					{ "time": 0.5333, "name": "level2/level2_15" },
+					{ "time": 0.5667, "name": "level2/level2_16" },
+					{ "time": 0.6, "name": "level2/level2_17" },
+					{ "time": 0.6333, "name": "level2/level2_18" },
+					{ "time": 0.6667, "name": "level2/level2_19" },
+					{ "time": 0.7, "name": "level2/level2_20" },
+					{ "time": 0.7333, "name": "level2/level2_21" },
+					{ "time": 0.7667, "name": "level2/level2_22" },
+					{ "time": 0.8, "name": "level2/level2_23" }
+				]
+			},
+			"level3/level3_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		}
+	},
+	"level3": {
+		"slots": {
+			"level0/level0_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level1/level1_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level2/level2_00": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"level3/level3_00": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.0333, "name": "level3/level3_00" },
+					{ "time": 0.0667, "name": "level3/level3_01" },
+					{ "time": 0.1, "name": "level3/level3_02" },
+					{ "time": 0.1333, "name": "level3/level3_03" },
+					{ "time": 0.1667, "name": "level3/level3_04" },
+					{ "time": 0.2, "name": "level3/level3_05" },
+					{ "time": 0.2333, "name": "level3/level3_06" },
+					{ "time": 0.2667, "name": "level3/level3_07" },
+					{ "time": 0.3, "name": "level3/level3_08" },
+					{ "time": 0.3333, "name": "level3/level3_09" },
+					{ "time": 0.3667, "name": "level3/level3_10" },
+					{ "time": 0.4, "name": "level3/level3_11" },
+					{ "time": 0.4333, "name": "level3/level3_12" },
+					{ "time": 0.4667, "name": "level3/level3_13" },
+					{ "time": 0.5, "name": "level3/level3_14" },
+					{ "time": 0.5333, "name": "level3/level3_15" },
+					{ "time": 0.5667, "name": "level3/level3_16" },
+					{ "time": 0.6, "name": "level3/level3_17" },
+					{ "time": 0.6333, "name": "level3/level3_18" },
+					{ "time": 0.6667, "name": "level3/level3_19" },
+					{ "time": 0.7, "name": "level3/level3_20" },
+					{ "time": 0.7333, "name": "level3/level3_21" },
+					{ "time": 0.7667, "name": "level3/level3_22" },
+					{ "time": 0.8, "name": "level3/level3_23" }
+				]
+			}
+		}
+	}
+}
+}

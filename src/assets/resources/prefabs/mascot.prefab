@@ -38,8 +38,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
+      "x": 500,
+      "y": 70,
       "z": 0
     },
     "_lrot": {
@@ -51,8 +51,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0.92,
-      "y": 0.92,
+      "x": 1,
+      "y": 1,
       "z": 1
     },
     "_mobility": 0,
@@ -79,13 +79,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 390.7099914550781,
-      "height": 603
+      "width": 372,
+      "height": 734.3499755859375
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.4974277862199514,
-      "y": 0.46449418961507566
+      "x": 1.875806418798303,
+      "y": 0.6751413154869805
     },
     "_id": ""
   },
@@ -107,10 +107,6 @@
     },
     "spineMascot": {
       "__id__": 6
-    },
-    "gameInfo": {
-      "__uuid__": "5f4849f3-ae3e-4ff1-a0e5-18c01ece03dc",
-      "__expectedType__": "cc.JsonAsset"
     },
     "_id": ""
   },
@@ -141,7 +137,7 @@
       "a": 255
     },
     "_skeletonData": {
-      "__uuid__": "7322a8ac-c34e-4e0a-a859-d6965dfb3088",
+      "__uuid__": "0079e9c8-03e0-430d-90dc-4de3671323ad",
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
@@ -156,7 +152,7 @@
     "_debugBones": false,
     "_debugSlots": false,
     "_enableBatch": true,
-    "loop": false,
+    "loop": true,
     "_id": ""
   },
   {

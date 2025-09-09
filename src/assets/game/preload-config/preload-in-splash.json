@@ -1,0 +1,25 @@
+{
+    "others": {
+        "resources": [
+            "symbol-spines/symbol-0",
+            "symbol-spines/symbol-1",
+            "symbol-spines/symbol-2",
+            "symbol-spines/symbol-3",
+            "symbol-spines/symbol-4",
+            "symbol-spines/symbol-5",
+            "symbol-spines/symbol-6",
+            "symbol-spines/symbol-7",
+            "symbol-spines/symbol-8",
+            "symbol-spines/symbol-9",
+            "symbol-spines/symbol-10",
+            "symbol-spines/symbol-11",
+            "symbol-spines/symbol-12",
+            "symbol-spines/symbol-13"
+        ]
+    },
+    "localized": {
+        "resources": {
+            "1": []
+        }
+    }
+}

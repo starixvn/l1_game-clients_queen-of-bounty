@@ -9,11 +9,11 @@
         "resolveJsonModule": true,
         "paths": {
             "cc": ["./tests/cocos-testing/cc"],
+            "db://shared-common-slot/*": ["./extensions/shared-common-slot/assets/*"],
             "db://shared-components/*": ["./extensions/shared-components/assets/*"],
             "db://i18n/*": ["./extensions/i18n/assets/*"],
-            "db://shared-cascading-slot/index": ["./tests/mocks/shared-cascading-slot/index"],
-            "db://assets/game/scripts/game-settings": ["./tests/mocks/game-settings"],
-            "db://assets/game/scripts/containerOptions": ["./tests/assets/game/scripts/containerOptions"]
+            "db://shared-cascading-slot/*": ["./extensions/shared-cascading-slot/assets/*"],
+            "db://assets/*": ["./assets/*"]
         }
     }
 }

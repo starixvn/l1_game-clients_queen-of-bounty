@@ -1,0 +1,4 @@
+{
+    "mainNamespace": "QueenOfBounty",
+    "additionalNamespaces": ["Common", "cascadingslot", "FreeSpinBonus"]
+}

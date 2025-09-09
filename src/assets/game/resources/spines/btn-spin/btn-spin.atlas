@@ -1,279 +1,552 @@
 
 btn-spin.webp
-size: 1915,300
+size: 1662,1524
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-Emerald_glow
-  rotate: false
-  xy: 2, 121
-  size: 172, 177
-  orig: 176, 177
-  offset: 3, 0
+Ship_Wheel-1
+  rotate: true
+  xy: 748, 0
+  size: 174, 168
+  orig: 174, 168
+  offset: 0, 0
   index: -1
-circle_glow
+Ship_Wheel-2
+  rotate: true
+  xy: 1533, 268
+  size: 116, 115
+  orig: 116, 115
+  offset: 0, 0
+  index: -1
+Ship_Wheel-3
+  rotate: true
+  xy: 1120, 324
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+btn_bg
   rotate: false
-  xy: 351, 131
-  size: 167, 167
-  orig: 176, 177
-  offset: 4, 5
+  xy: 1303, 32
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+btn_glow
+  rotate: false
+  xy: 596, 743
+  size: 188, 188
+  orig: 200, 200
+  offset: 6, 6
   index: -1
 disable
   rotate: false
-  xy: 662, 151
-  size: 147, 147
-  orig: 147, 147
-  offset: 0, 0
-  index: -1
-extra/Electric _1
-  rotate: false
-  xy: 847, 8
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _2
-  rotate: false
-  xy: 957, 154
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _3
-  rotate: false
-  xy: 993, 8
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _4
-  rotate: false
-  xy: 1103, 154
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _5
-  rotate: false
-  xy: 1139, 8
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _6
-  rotate: false
-  xy: 1249, 154
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _7
-  rotate: false
-  xy: 1285, 8
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
-  index: -1
-extra/Electric _8
-  rotate: false
-  xy: 811, 154
-  size: 144, 144
-  orig: 144, 144
-  offset: 0, 0
+  xy: 596, 933
+  size: 189, 189
+  orig: 200, 200
+  offset: 6, 5
   index: -1
 extra_particle/extra_particle_00
   rotate: false
-  xy: 2, 4
+  xy: 593, 1129
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
   index: -1
 extra_particle/extra_particle_01
   rotate: false
-  xy: 662, 139
-  size: 10, 10
-  orig: 176, 177
-  offset: 83, 83
+  xy: 1120, 24
+  size: 181, 169
+  orig: 200, 200
+  offset: 10, 22
   index: -1
 extra_particle/extra_particle_02
-  rotate: true
-  xy: 1459, 8
-  size: 19, 18
-  orig: 176, 177
-  offset: 78, 79
+  rotate: false
+  xy: 0, 1324
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_03
-  rotate: true
-  xy: 1431, 2
-  size: 25, 26
-  orig: 176, 177
-  offset: 75, 75
+  rotate: false
+  xy: 202, 1324
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_04
   rotate: false
-  xy: 1643, 20
-  size: 33, 33
-  orig: 176, 177
-  offset: 71, 72
+  xy: 404, 1324
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_05
-  rotate: false
-  xy: 1601, 13
-  size: 40, 40
-  orig: 176, 177
-  offset: 68, 69
+  rotate: true
+  xy: 1354, 386
+  size: 182, 194
+  orig: 200, 200
+  offset: 0, 6
   index: -1
 extra_particle/extra_particle_06
-  rotate: false
-  xy: 1551, 5
-  size: 48, 48
-  orig: 176, 177
-  offset: 64, 65
+  rotate: true
+  xy: 978, 944
+  size: 178, 200
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_07
-  rotate: true
-  xy: 1852, 69
-  size: 55, 56
-  orig: 176, 177
-  offset: 61, 62
+  rotate: false
+  xy: 1400, 1324
+  size: 177, 200
+  orig: 200, 200
+  offset: 1, 0
   index: -1
 extra_particle/extra_particle_08
-  rotate: true
-  xy: 1849, 237
-  size: 61, 64
-  orig: 176, 177
-  offset: 58, 59
+  rotate: false
+  xy: 1357, 184
+  size: 174, 200
+  orig: 200, 200
+  offset: 3, 0
   index: -1
 extra_particle/extra_particle_09
-  rotate: false
-  xy: 1846, 126
-  size: 67, 74
-  orig: 176, 177
-  offset: 55, 55
+  rotate: true
+  xy: 1399, 956
+  size: 180, 200
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_10
   rotate: false
-  xy: 1776, 27
-  size: 74, 83
-  orig: 176, 177
-  offset: 51, 51
+  xy: 977, 559
+  size: 185, 195
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_11
-  rotate: false
-  xy: 1764, 112
-  size: 80, 88
-  orig: 176, 177
-  offset: 48, 48
+  rotate: true
+  xy: 1210, 1339
+  size: 185, 188
+  orig: 200, 200
+  offset: 0, 0
   index: -1
 extra_particle/extra_particle_12
   rotate: false
-  xy: 1759, 202
-  size: 88, 96
-  orig: 176, 177
-  offset: 44, 45
+  xy: 928, 2
+  size: 167, 177
+  orig: 200, 200
+  offset: 23, 0
   index: -1
 extra_particle/extra_particle_13
-  rotate: false
-  xy: 1662, 192
-  size: 95, 106
-  orig: 176, 177
-  offset: 39, 41
+  rotate: true
+  xy: 372, 2
+  size: 162, 166
+  orig: 200, 200
+  offset: 20, 0
   index: -1
 extra_particle/extra_particle_14
   rotate: false
-  xy: 1551, 55
-  size: 104, 116
-  orig: 176, 177
-  offset: 33, 37
+  xy: 1547, 605
+  size: 115, 155
+  orig: 200, 200
+  offset: 20, 0
   index: -1
 extra_particle/extra_particle_15
-  rotate: false
-  xy: 1549, 173
-  size: 111, 125
-  orig: 176, 177
-  offset: 29, 34
+  rotate: true
+  xy: 1579, 1329
+  size: 109, 67
+  orig: 200, 200
+  offset: 22, 14
   index: -1
 extra_particle/extra_particle_16
   rotate: false
-  xy: 1431, 29
-  size: 118, 131
-  orig: 176, 177
-  offset: 26, 31
+  xy: 1545, 762
+  size: 111, 74
+  orig: 200, 200
+  offset: 19, 0
   index: -1
 extra_particle/extra_particle_17
   rotate: true
-  xy: 414, 5
-  size: 124, 138
-  orig: 176, 177
-  offset: 24, 27
+  xy: 1579, 1216
+  size: 111, 66
+  orig: 200, 200
+  offset: 17, 0
   index: -1
 extra_particle/extra_particle_18
   rotate: true
-  xy: 554, 6
-  size: 131, 144
-  orig: 176, 177
-  offset: 19, 24
+  xy: 1601, 1117
+  size: 97, 58
+  orig: 200, 200
+  offset: 17, 0
   index: -1
-extra_particle/extra_particle_19
+hover_circle/hover_circle_00
   rotate: true
-  xy: 1395, 162
-  size: 136, 152
-  orig: 176, 177
-  offset: 15, 21
+  xy: 567, 883
+  size: 17, 16
+  orig: 200, 200
+  offset: 91, 92
   index: -1
-extra_particle/extra_particle_20
+hover_circle/hover_circle_01
   rotate: false
-  xy: 520, 139
-  size: 140, 159
-  orig: 176, 177
-  offset: 12, 18
+  xy: 567, 902
+  size: 24, 24
+  orig: 200, 200
+  offset: 87, 88
   index: -1
-extra_particle/extra_particle_21
+hover_circle/hover_circle_02
   rotate: false
-  xy: 277, 3
-  size: 135, 119
-  orig: 176, 177
-  offset: 13, 35
+  xy: 1601, 1062
+  size: 52, 53
+  orig: 200, 200
+  offset: 73, 74
   index: -1
-extra_particle/extra_particle_22
+hover_circle/hover_circle_03
   rotate: false
-  xy: 142, 10
-  size: 133, 109
-  orig: 176, 177
-  offset: 13, 36
+  xy: 1579, 1440
+  size: 82, 84
+  orig: 200, 200
+  offset: 57, 58
   index: -1
-extra_particle/extra_particle_23
+hover_circle/hover_circle_04
   rotate: false
-  xy: 2, 7
-  size: 138, 112
-  orig: 176, 177
-  offset: 9, 32
+  xy: 1545, 838
+  size: 116, 116
+  orig: 200, 200
+  offset: 40, 42
   index: -1
-extra_particle/extra_particle_24
+hover_circle/hover_circle_05
   rotate: true
-  xy: 1657, 64
-  size: 107, 105
-  orig: 176, 177
-  offset: 42, 28
+  xy: 1455, 49
+  size: 133, 135
+  orig: 200, 200
+  offset: 31, 33
   index: -1
-extra_particle/extra_particle_25
+hover_circle/hover_circle_06
   rotate: false
-  xy: 1678, 4
-  size: 96, 58
-  orig: 176, 177
-  offset: 43, 58
+  xy: 0, 8
+  size: 152, 152
+  orig: 200, 200
+  offset: 20, 24
   index: -1
-hover_circle
+hover_circle/hover_circle_07
+  rotate: false
+  xy: 185, 1
+  size: 164, 162
+  orig: 200, 200
+  offset: 13, 19
+  index: -1
+hover_circle/hover_circle_08
+  rotate: false
+  xy: 560, 2
+  size: 169, 168
+  orig: 200, 200
+  offset: 10, 16
+  index: -1
+hover_circle/hover_circle_09
   rotate: true
-  xy: 176, 124
-  size: 174, 173
-  orig: 176, 177
-  offset: 1, 2
+  xy: 1400, 1146
+  size: 176, 177
+  orig: 200, 200
+  offset: 7, 13
   index: -1
-spin_btn
+hover_circle/hover_circle_10
   rotate: false
-  xy: 700, 4
-  size: 145, 145
-  orig: 147, 147
-  offset: 1, 1
+  xy: 748, 176
+  size: 178, 180
+  orig: 200, 200
+  offset: 6, 12
+  index: -1
+hover_circle/hover_circle_11
+  rotate: false
+  xy: 0, 162
+  size: 183, 188
+  orig: 200, 200
+  offset: 4, 10
+  index: -1
+hover_circle/hover_circle_12
+  rotate: false
+  xy: 0, 731
+  size: 187, 193
+  orig: 200, 200
+  offset: 2, 7
+  index: -1
+hover_circle/hover_circle_13
+  rotate: true
+  xy: 593, 1132
+  size: 190, 194
+  orig: 200, 200
+  offset: 1, 6
+  index: -1
+hover_circle/hover_circle_14
+  rotate: true
+  xy: 396, 1129
+  size: 193, 195
+  orig: 200, 200
+  offset: 0, 5
+  index: -1
+hover_circle/hover_circle_15
+  rotate: false
+  xy: 199, 1127
+  size: 195, 195
+  orig: 200, 200
+  offset: 0, 5
+  index: -1
+hover_circle/hover_circle_16
+  rotate: false
+  xy: 198, 927
+  size: 196, 196
+  orig: 200, 200
+  offset: 0, 4
+  index: -1
+hover_circle/hover_circle_17
+  rotate: true
+  xy: 0, 926
+  size: 197, 196
+  orig: 200, 200
+  offset: 0, 4
+  index: -1
+hover_circle/hover_circle_18
+  rotate: false
+  xy: 0, 1125
+  size: 197, 197
+  orig: 200, 200
+  offset: 0, 3
+  index: -1
+hover_circle/hover_circle_19
+  rotate: true
+  xy: 1009, 1124
+  size: 199, 198
+  orig: 200, 200
+  offset: 0, 2
+  index: -1
+hover_circle/hover_circle_20
+  rotate: false
+  xy: 1009, 1325
+  size: 199, 199
+  orig: 200, 200
+  offset: 0, 1
+  index: -1
+hover_circle/hover_circle_21
+  rotate: false
+  xy: 808, 1324
+  size: 199, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+hover_circle/hover_circle_22
+  rotate: false
+  xy: 606, 1324
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+hover_circle/hover_circle_23
+  rotate: false
+  xy: 396, 928
+  size: 198, 194
+  orig: 200, 200
+  offset: 0, 6
+  index: -1
+spin_particle/spin_particle_00
+  rotate: true
+  xy: 787, 944
+  size: 186, 189
+  orig: 200, 200
+  offset: 6, 5
+  index: -1
+spin_particle/spin_particle_01
+  rotate: false
+  xy: 377, 546
+  size: 186, 188
+  orig: 200, 200
+  offset: 6, 7
+  index: -1
+spin_particle/spin_particle_02
+  rotate: false
+  xy: 565, 549
+  size: 186, 186
+  orig: 200, 200
+  offset: 5, 9
+  index: -1
+spin_particle/spin_particle_03
+  rotate: false
+  xy: 0, 352
+  size: 185, 186
+  orig: 200, 200
+  offset: 5, 9
+  index: -1
+spin_particle/spin_particle_04
+  rotate: false
+  xy: 562, 172
+  size: 184, 185
+  orig: 200, 200
+  offset: 5, 9
+  index: -1
+spin_particle/spin_particle_05
+  rotate: true
+  xy: 1357, 767
+  size: 182, 186
+  orig: 200, 200
+  offset: 6, 9
+  index: -1
+spin_particle/spin_particle_06
+  rotate: false
+  xy: 375, 357
+  size: 185, 186
+  orig: 200, 200
+  offset: 7, 9
+  index: -1
+spin_particle/spin_particle_07
+  rotate: false
+  xy: 1209, 951
+  size: 188, 185
+  orig: 200, 200
+  offset: 7, 10
+  index: -1
+spin_particle/spin_particle_08
+  rotate: false
+  xy: 789, 1136
+  size: 189, 186
+  orig: 200, 200
+  offset: 7, 10
+  index: -1
+spin_particle/spin_particle_09
+  rotate: false
+  xy: 786, 556
+  size: 189, 186
+  orig: 200, 200
+  offset: 7, 10
+  index: -1
+spin_particle/spin_particle_10
+  rotate: false
+  xy: 975, 756
+  size: 189, 186
+  orig: 200, 200
+  offset: 7, 10
+  index: -1
+spin_particle/spin_particle_11
+  rotate: true
+  xy: 375, 166
+  size: 189, 183
+  orig: 200, 200
+  offset: 7, 12
+  index: -1
+spin_particle/spin_particle_12
+  rotate: false
+  xy: 1166, 570
+  size: 188, 185
+  orig: 200, 200
+  offset: 7, 11
+  index: -1
+spin_particle/spin_particle_13
+  rotate: false
+  xy: 786, 744
+  size: 187, 187
+  orig: 200, 200
+  offset: 8, 9
+  index: -1
+spin_particle/spin_particle_14
+  rotate: false
+  xy: 189, 545
+  size: 186, 189
+  orig: 200, 200
+  offset: 9, 7
+  index: -1
+spin_particle/spin_particle_15
+  rotate: true
+  xy: 1166, 757
+  size: 185, 189
+  orig: 200, 200
+  offset: 9, 6
+  index: -1
+spin_particle/spin_particle_16
+  rotate: true
+  xy: 1209, 1138
+  size: 185, 189
+  orig: 200, 200
+  offset: 10, 6
+  index: -1
+spin_particle/spin_particle_17
+  rotate: true
+  xy: 977, 372
+  size: 185, 190
+  orig: 200, 200
+  offset: 10, 5
+  index: -1
+spin_particle/spin_particle_18
+  rotate: true
+  xy: 1356, 573
+  size: 182, 189
+  orig: 200, 200
+  offset: 13, 6
+  index: -1
+spin_particle/spin_particle_19
+  rotate: false
+  xy: 1169, 380
+  size: 183, 188
+  orig: 200, 200
+  offset: 12, 6
+  index: -1
+spin_particle/spin_particle_20
+  rotate: false
+  xy: 565, 359
+  size: 185, 188
+  orig: 200, 200
+  offset: 9, 6
+  index: -1
+spin_particle/spin_particle_21
+  rotate: false
+  xy: 189, 736
+  size: 187, 188
+  orig: 200, 200
+  offset: 7, 6
+  index: -1
+spin_particle/spin_particle_22
+  rotate: true
+  xy: 378, 737
+  size: 188, 187
+  orig: 200, 200
+  offset: 6, 6
+  index: -1
+spin_particle/spin_particle_23
+  rotate: true
+  xy: 0, 540
+  size: 189, 186
+  orig: 200, 200
+  offset: 6, 5
+  index: -1
+spin_particle/spin_particle_24
+  rotate: true
+  xy: 752, 358
+  size: 189, 184
+  orig: 200, 200
+  offset: 5, 6
+  index: -1
+spin_particle/spin_particle_25
+  rotate: true
+  xy: 187, 165
+  size: 189, 183
+  orig: 200, 200
+  offset: 5, 6
+  index: -1
+spin_particle/spin_particle_26
+  rotate: true
+  xy: 938, 181
+  size: 189, 180
+  orig: 200, 200
+  offset: 5, 7
+  index: -1
+spin_particle/spin_particle_27
+  rotate: false
+  xy: 1169, 195
+  size: 186, 183
+  orig: 200, 200
+  offset: 6, 7
+  index: -1
+spin_particle/spin_particle_28
+  rotate: false
+  xy: 188, 356
+  size: 185, 187
+  orig: 200, 200
+  offset: 6, 7
   index: -1

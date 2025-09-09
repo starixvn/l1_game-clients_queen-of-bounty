@@ -1,139 +1,209 @@
 
 icon-game.webp
-size: 1980,444
+size: 1990,523
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
-images/Eyelid
+arm_L
   rotate: false
-  xy: 847, 18
-  size: 45, 17
-  orig: 45, 17
+  xy: 928, 1
+  size: 176, 183
+  orig: 197, 196
+  offset: 0, 1
+  index: -1
+arm_R
+  rotate: false
+  xy: 1684, 3
+  size: 123, 251
+  orig: 123, 251
   offset: 0, 0
   index: -1
-images/Flag
+belt
+  rotate: false
+  xy: 310, 34
+  size: 130, 60
+  orig: 130, 60
+  offset: 0, 0
+  index: -1
+boat
   rotate: true
-  xy: 1400, 3
-  size: 159, 260
-  orig: 161, 262
-  offset: 0, 0
-  index: -1
-images/Group 1
-  rotate: true
-  xy: 1332, 164
-  size: 278, 448
-  orig: 279, 449
-  offset: 1, 0
-  index: -1
-images/Head
-  rotate: false
-  xy: 1782, 84
-  size: 172, 215
-  orig: 172, 216
-  offset: 0, 0
-  index: -1
-images/bg
-  rotate: false
-  xy: 451, 13
-  size: 196, 429
-  orig: 196, 429
-  offset: 0, 0
-  index: -1
-images/body
-  rotate: false
-  xy: 847, 37
-  size: 300, 405
-  orig: 306, 405
-  offset: 5, 0
-  index: -1
-images/circlelight
-  rotate: true
-  xy: 2, 3
-  size: 439, 447
-  orig: 439, 447
-  offset: 0, 0
-  index: -1
-images/coin1
-  rotate: false
-  xy: 1913, 36
-  size: 53, 46
-  orig: 60, 46
-  offset: 4, 0
-  index: -1
-images/coin2
-  rotate: false
-  xy: 1756, 3
-  size: 81, 79
-  orig: 98, 97
-  offset: 10, 11
-  index: -1
-images/color
-  rotate: false
-  xy: 1782, 301
-  size: 196, 141
-  orig: 196, 142
-  offset: 0, 0
-  index: -1
-images/eyes
-  rotate: false
-  xy: 894, 18
-  size: 44, 17
-  orig: 44, 17
-  offset: 0, 0
-  index: -1
-images/hip-armor-left
-  rotate: true
-  xy: 1332, 110
-  size: 52, 66
-  orig: 54, 66
-  offset: 0, 0
-  index: -1
-images/hip-armor-right
-  rotate: false
-  xy: 1662, 2
-  size: 92, 80
-  orig: 92, 80
-  offset: 0, 0
-  index: -1
-images/left-hand
-  rotate: false
-  xy: 1149, 110
-  size: 181, 332
-  orig: 181, 333
-  offset: 0, 0
-  index: -1
-images/lightoverlay
-  rotate: false
-  xy: 649, 13
-  size: 196, 429
-  orig: 196, 429
-  offset: 0, 0
-  index: -1
-images/right-arm 1
-  rotate: true
-  xy: 1248, 4
-  size: 104, 140
-  orig: 105, 141
-  offset: 0, 0
-  index: -1
-images/shoulder-armor-left
-  rotate: false
-  xy: 1839, 3
-  size: 72, 79
-  orig: 72, 79
-  offset: 0, 0
-  index: -1
-images/shoulder-armor-right
-  rotate: true
-  xy: 1149, 2
-  size: 106, 97
-  orig: 107, 99
+  xy: 1397, 39
+  size: 196, 287
+  orig: 198, 289
   offset: 1, 1
   index: -1
-images/strawberry
+body
   rotate: false
-  xy: 1662, 85
-  size: 79, 77
-  orig: 110, 110
-  offset: 19, 16
+  xy: 1211, 16
+  size: 186, 218
+  orig: 186, 218
+  offset: 0, 0
+  index: -1
+cloud
+  rotate: true
+  xy: 1104, 1
+  size: 233, 107
+  orig: 233, 107
+  offset: 0, 0
+  index: -1
+earring-back
+  rotate: false
+  xy: 322, 3
+  size: 16, 31
+  orig: 20, 31
+  offset: 0, 0
+  index: -1
+earring-front
+  rotate: true
+  xy: 229, 1
+  size: 19, 30
+  orig: 19, 30
+  offset: 0, 0
+  index: -1
+eyeback
+  rotate: true
+  xy: 308, 8
+  size: 21, 14
+  orig: 21, 14
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 338, 17
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+eyeclose
+  rotate: false
+  xy: 259, 2
+  size: 28, 18
+  orig: 31, 28
+  offset: 2, 2
+  index: -1
+face
+  rotate: true
+  xy: 1794, 299
+  size: 110, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+finger_L01
+  rotate: false
+  xy: 287, 8
+  size: 21, 21
+  orig: 21, 21
+  offset: 0, 0
+  index: -1
+finger_L02
+  rotate: false
+  xy: 283, 29
+  size: 27, 65
+  orig: 27, 65
+  offset: 0, 0
+  index: -1
+finger_L03
+  rotate: false
+  xy: 392, 94
+  size: 44, 43
+  orig: 44, 43
+  offset: 0, 0
+  index: -1
+finger_L_open
+  rotate: false
+  xy: 229, 20
+  size: 54, 74
+  orig: 54, 74
+  offset: 0, 0
+  index: -1
+gun
+  rotate: true
+  xy: 0, 0
+  size: 94, 229
+  orig: 94, 229
+  offset: 0, 0
+  index: -1
+hair
+  rotate: true
+  xy: 1534, 254
+  size: 269, 260
+  orig: 269, 260
+  offset: 0, 0
+  index: -1
+hair-front
+  rotate: false
+  xy: 740, 4
+  size: 188, 141
+  orig: 188, 141
+  offset: 0, 0
+  index: -1
+hat
+  rotate: true
+  xy: 1807, 55
+  size: 244, 140
+  orig: 244, 140
+  offset: 0, 0
+  index: -1
+leg_L
+  rotate: false
+  xy: 834, 184
+  size: 129, 339
+  orig: 129, 339
+  offset: 0, 0
+  index: -1
+leg_R
+  rotate: false
+  xy: 392, 137
+  size: 163, 386
+  orig: 163, 387
+  offset: 0, 0
+  index: -1
+lightoverlay
+  rotate: false
+  xy: 0, 94
+  size: 196, 429
+  orig: 196, 429
+  offset: 0, 0
+  index: -1
+main-bg
+  rotate: false
+  xy: 196, 94
+  size: 196, 429
+  orig: 198, 431
+  offset: 1, 1
+  index: -1
+roll_L
+  rotate: false
+  xy: 555, 145
+  size: 279, 378
+  orig: 280, 379
+  offset: 0, 0
+  index: -1
+sail-L
+  rotate: false
+  xy: 440, 7
+  size: 300, 130
+  orig: 300, 130
+  offset: 0, 0
+  index: -1
+skirt_back
+  rotate: false
+  xy: 963, 234
+  size: 286, 289
+  orig: 286, 289
+  offset: 0, 0
+  index: -1
+skirt_front
+  rotate: false
+  xy: 1249, 235
+  size: 285, 288
+  orig: 285, 288
+  offset: 0, 0
+  index: -1
+topcolor
+  rotate: false
+  xy: 1794, 409
+  size: 196, 114
+  orig: 198, 117
+  offset: 1, 1
   index: -1

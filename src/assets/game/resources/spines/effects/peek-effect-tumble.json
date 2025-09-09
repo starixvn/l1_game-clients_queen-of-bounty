@@ -1,0 +1,146 @@
+{
+"skeleton": {
+	"hash": "cLvls/bsUdloCBSO+t3UkvKP/10",
+	"spine": "3.8.99",
+	"x": -54.5,
+	"y": -278.5,
+	"width": 109,
+	"height": 557,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "tumble/tumble_00", "bone": "root", "attachment": "tumble/tumble_24" },
+	{ "name": "tumble/tumble_0", "bone": "root", "attachment": "tumble/tumble_24" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"tumble/tumble_0": {
+				"tumble/tumble_00": { "width": 109, "height": 557 },
+				"tumble/tumble_01": { "width": 109, "height": 557 },
+				"tumble/tumble_02": { "width": 109, "height": 557 },
+				"tumble/tumble_03": { "width": 109, "height": 557 },
+				"tumble/tumble_04": { "width": 109, "height": 557 },
+				"tumble/tumble_05": { "width": 109, "height": 557 },
+				"tumble/tumble_06": { "width": 109, "height": 557 },
+				"tumble/tumble_07": { "width": 109, "height": 557 },
+				"tumble/tumble_08": { "width": 109, "height": 557 },
+				"tumble/tumble_09": { "width": 109, "height": 557 },
+				"tumble/tumble_10": { "width": 109, "height": 557 },
+				"tumble/tumble_11": { "width": 109, "height": 557 },
+				"tumble/tumble_12": { "width": 109, "height": 557 },
+				"tumble/tumble_13": { "width": 109, "height": 557 },
+				"tumble/tumble_14": { "width": 109, "height": 557 },
+				"tumble/tumble_15": { "width": 109, "height": 557 },
+				"tumble/tumble_16": { "width": 109, "height": 557 },
+				"tumble/tumble_17": { "width": 109, "height": 557 },
+				"tumble/tumble_18": { "width": 109, "height": 557 },
+				"tumble/tumble_19": { "width": 109, "height": 557 },
+				"tumble/tumble_20": { "width": 109, "height": 557 },
+				"tumble/tumble_21": { "width": 109, "height": 557 },
+				"tumble/tumble_22": { "width": 109, "height": 557 },
+				"tumble/tumble_23": { "width": 109, "height": 557 },
+				"tumble/tumble_24": { "width": 109, "height": 557 }
+			},
+			"tumble/tumble_00": {
+				"tumble/tumble_00": { "width": 109, "height": 557 },
+				"tumble/tumble_01": { "width": 109, "height": 557 },
+				"tumble/tumble_02": { "width": 109, "height": 557 },
+				"tumble/tumble_03": { "width": 109, "height": 557 },
+				"tumble/tumble_04": { "width": 109, "height": 557 },
+				"tumble/tumble_05": { "width": 109, "height": 557 },
+				"tumble/tumble_06": { "width": 109, "height": 557 },
+				"tumble/tumble_07": { "width": 109, "height": 557 },
+				"tumble/tumble_08": { "width": 109, "height": 557 },
+				"tumble/tumble_09": { "width": 109, "height": 557 },
+				"tumble/tumble_10": { "width": 109, "height": 557 },
+				"tumble/tumble_11": { "width": 109, "height": 557 },
+				"tumble/tumble_12": { "width": 109, "height": 557 },
+				"tumble/tumble_13": { "width": 109, "height": 557 },
+				"tumble/tumble_14": { "width": 109, "height": 557 },
+				"tumble/tumble_15": { "width": 109, "height": 557 },
+				"tumble/tumble_16": { "width": 109, "height": 557 },
+				"tumble/tumble_17": { "width": 109, "height": 557 },
+				"tumble/tumble_18": { "width": 109, "height": 557 },
+				"tumble/tumble_19": { "width": 109, "height": 557 },
+				"tumble/tumble_20": { "width": 109, "height": 557 },
+				"tumble/tumble_21": { "width": 109, "height": 557 },
+				"tumble/tumble_22": { "width": 109, "height": 557 },
+				"tumble/tumble_23": { "width": 109, "height": 557 },
+				"tumble/tumble_24": { "width": 109, "height": 557 }
+			}
+		}
+	}
+],
+"animations": {
+	"show": {
+		"slots": {
+			"tumble/tumble_0": {
+				"attachment": [
+					{ "name": "tumble/tumble_00" },
+					{ "time": 0.0333, "name": "tumble/tumble_01" },
+					{ "time": 0.0667, "name": "tumble/tumble_02" },
+					{ "time": 0.1, "name": "tumble/tumble_03" },
+					{ "time": 0.1333, "name": "tumble/tumble_04" },
+					{ "time": 0.1667, "name": "tumble/tumble_05" },
+					{ "time": 0.2, "name": "tumble/tumble_06" },
+					{ "time": 0.2333, "name": "tumble/tumble_07" },
+					{ "time": 0.2667, "name": "tumble/tumble_08" },
+					{ "time": 0.3, "name": "tumble/tumble_09" },
+					{ "time": 0.3333, "name": "tumble/tumble_10" },
+					{ "time": 0.3667, "name": "tumble/tumble_11" },
+					{ "time": 0.4, "name": "tumble/tumble_12" },
+					{ "time": 0.4333, "name": "tumble/tumble_13" },
+					{ "time": 0.4667, "name": "tumble/tumble_14" },
+					{ "time": 0.5, "name": "tumble/tumble_15" },
+					{ "time": 0.5333, "name": "tumble/tumble_16" },
+					{ "time": 0.5667, "name": "tumble/tumble_17" },
+					{ "time": 0.6, "name": "tumble/tumble_18" },
+					{ "time": 0.6333, "name": "tumble/tumble_19" },
+					{ "time": 0.6667, "name": "tumble/tumble_20" },
+					{ "time": 0.7, "name": "tumble/tumble_21" },
+					{ "time": 0.7333, "name": "tumble/tumble_22" },
+					{ "time": 0.7667, "name": "tumble/tumble_23" },
+					{ "time": 0.8, "name": "tumble/tumble_24" },
+					{ "time": 0.8333, "name": "tumble/tumble_00" }
+				]
+			},
+			"tumble/tumble_00": {
+				"attachment": [
+					{ "name": "tumble/tumble_00" },
+					{ "time": 0.0333, "name": "tumble/tumble_01" },
+					{ "time": 0.0667, "name": "tumble/tumble_02" },
+					{ "time": 0.1, "name": "tumble/tumble_03" },
+					{ "time": 0.1333, "name": "tumble/tumble_04" },
+					{ "time": 0.1667, "name": "tumble/tumble_05" },
+					{ "time": 0.2, "name": "tumble/tumble_06" },
+					{ "time": 0.2333, "name": "tumble/tumble_07" },
+					{ "time": 0.2667, "name": "tumble/tumble_08" },
+					{ "time": 0.3, "name": "tumble/tumble_09" },
+					{ "time": 0.3333, "name": "tumble/tumble_10" },
+					{ "time": 0.3667, "name": "tumble/tumble_11" },
+					{ "time": 0.4, "name": "tumble/tumble_12" },
+					{ "time": 0.4333, "name": "tumble/tumble_13" },
+					{ "time": 0.4667, "name": "tumble/tumble_14" },
+					{ "time": 0.5, "name": "tumble/tumble_15" },
+					{ "time": 0.5333, "name": "tumble/tumble_16" },
+					{ "time": 0.5667, "name": "tumble/tumble_17" },
+					{ "time": 0.6, "name": "tumble/tumble_18" },
+					{ "time": 0.6333, "name": "tumble/tumble_19" },
+					{ "time": 0.6667, "name": "tumble/tumble_20" },
+					{ "time": 0.7, "name": "tumble/tumble_21" },
+					{ "time": 0.7333, "name": "tumble/tumble_22" },
+					{ "time": 0.7667, "name": "tumble/tumble_23" },
+					{ "time": 0.8, "name": "tumble/tumble_24" },
+					{ "time": 0.8333, "name": "tumble/tumble_00" }
+				]
+			}
+		}
+	}
+}
+}

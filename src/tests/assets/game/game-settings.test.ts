@@ -8,13 +8,17 @@ jest.mock("db://shared-components/shared/scripts/startup", () => ({
     getSharedContainer: jest.fn(() => ({ sharedContainer: true })),
 }));
 
+// Mock the FSB promotion file to avoid TypeScript compilation errors
+jest.mock("db://shared-common-slot/fsb-promotion/scripts/components/fsb-promotion-ui-manager", () => ({}));
+
+
 describe("settings", () => {
     it("should have data as expected", () => {
         // Assert
         expect(settings).toStrictEqual({
-            id: 132,
-            name: "FruitSamurai",
-            tolgeeNamespaces: ["FruitSamurai", "cascadingslot"],
+            id: 155,
+            name: "QueenOfBounty",
+            tolgeeNamespaces: ["QueenOfBounty", "cascadingslot"],
             durations: {
                 wholeRound: 14,
                 lockingBet: 3,
@@ -27,7 +31,7 @@ describe("settings", () => {
             },
             isMiniGame: false,
             numberOfRoundHistory: 11,
-            observerNamespace: "FruitSamurai",
+            observerNamespace: "QueenOfBounty",
             validateBalanceWhenBet: true,
         });
     });

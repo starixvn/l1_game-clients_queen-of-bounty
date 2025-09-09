@@ -96,7 +96,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 19,
+      "y": 19.5,
       "z": 0
     },
     "_lrot": {
@@ -137,7 +137,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 214,
-      "height": 4
+      "height": 3
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -476,7 +476,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -57,
-      "y": 0,
+      "y": 0.5,
       "z": 0
     },
     "_lrot": {
@@ -517,7 +517,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 36,
-      "height": 36
+      "height": 33
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -563,7 +563,7 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": false,
+    "_isTrimmedMode": true,
     "_useGrayscale": false,
     "_atlas": null,
     "_id": ""
@@ -920,6 +920,7 @@
     "winningValue": {
       "__id__": 26
     },
+    "scatterPayout": null,
     "mainAtlas": {
       "__uuid__": "cab245b3-fac5-4aa6-bb02-f370c663806f",
       "__expectedType__": "cc.SpriteAtlas"
@@ -955,7 +956,7 @@
     "_paddingTop": 0,
     "_paddingBottom": 0,
     "_spacingX": 0,
-    "_spacingY": 0,
+    "_spacingY": 1,
     "_verticalDirection": 1,
     "_horizontalDirection": 0,
     "_constraint": 0,

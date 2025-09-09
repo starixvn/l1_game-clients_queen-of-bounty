@@ -1,0 +1,15 @@
+window.envConfig = {
+    systemType: "VG",
+    ssl: true,
+    subDomain: "l2proxy",
+    env: "SIT",
+    sentryUrl: "https://df0ce89a96b045e4ae626c16a143d8f9@scsentry.sgamesuat.com/51",
+    subGuideDomain: "l2guides",
+    enableMsgpackParserAllGames: true,
+    enableMsgpackParserOnNotification: true,
+    subDirectory: "sit",
+    SGConnectSubDomain: "l2-connect-sit",
+    defaultLanguage: "en",
+    clientSubDomain: "l2client",
+    subPromotionDomain: "l2promotion"
+};
