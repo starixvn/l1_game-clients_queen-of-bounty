@@ -7,6 +7,6 @@
     "enablePeekEffect": true,
     "effectIntroMultiplier": true,
     "fixedExplodeDuration": 0.6,
-    "allowFreeSpinsFeature": false,
+    "allowFreeSpinsFeature": true,
     "multiplierLandMascotAnimationName": "multiplier"
 }
